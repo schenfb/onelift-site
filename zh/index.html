@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onelift — 一天一個動作，慢慢變強</title>
+<meta name="description" content="免費的力量訓練 app。一根啞鈴、一天一個動作、漸進加重。在家 20 分鐘就能練。">
+<link rel="alternate" hreflang="en" href="/">
+<link rel="alternate" hreflang="zh-Hant" href="/zh/">
+<link rel="canonical" href="https://onelift.org/zh/">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  color: #1c1c1e; background: #fff; line-height: 1.6;
+}
+a { color: #e8372c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #f2f2f7; padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-size: 20px; font-weight: 800; color: #e8372c; letter-spacing: 1px; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #636366; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #1c1c1e; text-decoration: none; }
+.lang-switch {
+  font-size: 13px; color: #8e8e93; border: 1px solid #d1d1d6;
+  padding: 4px 12px; border-radius: 6px;
+}
+.lang-switch:hover { border-color: #e8372c; color: #e8372c; text-decoration: none; }
+.hero {
+  padding: 140px 24px 80px; text-align: center;
+  background: linear-gradient(180deg, #fff 0%, #fef2f1 100%);
+}
+.hero-badge {
+  display: inline-block; font-size: 13px; font-weight: 600;
+  color: #e8372c; background: #fef2f1; padding: 6px 16px;
+  border-radius: 20px; margin-bottom: 24px; border: 1px solid #fecaca;
+}
+.hero h1 {
+  font-size: clamp(36px, 6vw, 56px); font-weight: 800;
+  line-height: 1.15; max-width: 700px; margin: 0 auto 16px;
+}
+.hero h1 span { color: #e8372c; }
+.hero-sub {
+  font-size: clamp(16px, 2.5vw, 20px); color: #636366;
+  max-width: 520px; margin: 0 auto 40px; line-height: 1.5;
+}
+.hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 14px 28px; border-radius: 12px; font-size: 16px; font-weight: 600;
+  cursor: pointer; border: none; transition: all 0.15s;
+}
+.btn-primary { background: #e8372c; color: #fff; }
+.btn-primary:hover { background: #c5302a; text-decoration: none; }
+.btn-secondary { background: #fff; color: #1c1c1e; border: 2px solid #e5e5ea; }
+.btn-secondary:hover { border-color: #e8372c; text-decoration: none; }
+.features {
+  padding: 80px 24px; max-width: 1080px; margin: 0 auto;
+}
+.features-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+.feature-card {
+  padding: 32px; border-radius: 16px; background: #f9fafb;
+  border: 1px solid #f2f2f7;
+}
+.feature-icon { font-size: 36px; margin-bottom: 16px; }
+.feature-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.feature-desc { font-size: 15px; color: #636366; line-height: 1.6; }
+.how { padding: 80px 24px; background: #fafafa; }
+.how-inner { max-width: 720px; margin: 0 auto; }
+.section-title {
+  font-size: clamp(28px, 4vw, 36px); font-weight: 800;
+  text-align: center; margin-bottom: 48px;
+}
+.step { display: flex; gap: 20px; margin-bottom: 32px; align-items: flex-start; }
+.step-num {
+  width: 40px; height: 40px; border-radius: 50%; background: #e8372c;
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 18px; flex-shrink: 0;
+}
+.step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
+.step-content p { font-size: 15px; color: #636366; }
+.system { padding: 80px 24px; max-width: 800px; margin: 0 auto; }
+.system-table { width: 100%; border-collapse: collapse; font-size: 16px; }
+.system-table th {
+  text-align: left; padding: 12px 16px; background: #f9fafb;
+  font-weight: 600; border-bottom: 2px solid #e5e5ea;
+}
+.system-table td { padding: 12px 16px; border-bottom: 1px solid #f2f2f7; }
+.system-table td:first-child { color: #8e8e93; }
+.author { padding: 80px 24px; text-align: center; background: #fafafa; }
+.author-inner { max-width: 600px; margin: 0 auto; }
+.author-name { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+.author-bio { font-size: 15px; color: #636366; line-height: 1.6; margin-bottom: 24px; }
+.footer {
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #8e8e93;
+  border-top: 1px solid #f2f2f7;
+}
+@media (max-width: 640px) {
+  .nav-links a:not(.lang-switch) { display: none; }
+  .hero { padding: 120px 20px 60px; }
+  .features { padding: 60px 20px; }
+  .how { padding: 60px 20px; }
+  .system { padding: 60px 20px; }
+  .step { flex-direction: column; gap: 12px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo">ONELIFT</div>
+    <div class="nav-links">
+      <a href="#features">功能</a>
+      <a href="#how">怎麼練</a>
+      <a href="#system">系統</a>
+      <a href="/" class="lang-switch">English</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-badge">免費 — 不需要註冊帳號</div>
+  <h1>一天一個動作<br><span>慢慢變強</span></h1>
+  <p class="hero-sub">
+    免費的力量訓練 app。最簡單、你真的能堅持下去的訓練計畫，就是最有效的計畫。
+  </p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#notify">下載（即將推出）</a>
+    <a class="btn btn-secondary" href="#system">了解訓練系統</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="features-grid">
+    <div class="feature-card">
+      <div class="feature-icon">🏋️</div>
+      <div class="feature-title">一根啞鈴</div>
+      <div class="feature-desc">只需要一根可調式啞鈴（或一組不同重量的啞鈴）和一張椅子。在家練，不用去健身房。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🎯</div>
+      <div class="feature-title">零決策</div>
+      <div class="feature-desc">打開 app，它告訴你做什麼、用多重、做幾下。點一下完成每一組。20 分鐘收工。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📈</div>
+      <div class="feature-title">漸進加重</div>
+      <div class="feature-desc">App 自動建議下次的重量。撞牆時告訴你該退多少。這是唯一被證明有效的變強方法。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">⏱️</div>
+      <div class="feature-title">休息計時器</div>
+      <div class="feature-desc">組間自動倒數計時。時間到會提醒你，不用盯著時鐘。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">進度圖表</div>
+      <div class="feature-desc">看著你的力量在幾週、幾個月裡往上走。加重、退回、再疊上去的鋸齒曲線。</div>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <div class="feature-title">100% 本地</div>
+      <div class="feature-desc">資料存在你的手機上。不需要帳號、不需要雲端、不用付費。永遠免費。</div>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="how-inner">
+    <h2 class="section-title">怎麼練</h2>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>拿起啞鈴</h3>
+        <p>五個動作，一天做一個，五天循環。保加利亞分腿蹲、單手肩推、單腿硬舉、單手划船、單手臥推。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>做 5 下，左右各 3 組</h3>
+        <p>弱側先做。每組同一個重量。組間休息 2-3 分鐘。全程大約 20 分鐘。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>下次加一點重量</h3>
+        <p>App 建議下次的重量，你根據啞鈴實際有的重量確認。小幅度、持續地加，幾個月下來就是很大的進步。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h3>撞牆？退回去重來</h3>
+        <p>加到快做不動時，退回 4 週前的重量重新往上疊。你會超過上次的紀錄繼續前進。這就是週期：加重、退回、再疊上去。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="system" id="system">
+  <h2 class="section-title">訓練系統</h2>
+  <table class="system-table">
+    <tr><td>器材</td><td>一根可調式啞鈴 + 一張椅子或長凳</td></tr>
+    <tr><td>動作</td><td>5 個單側多關節大動作</td></tr>
+    <tr><td>每天訓練量</td><td>5 下 × 6 組（左右各 3 組）</td></tr>
+    <tr><td>頻率</td><td>一天一個動作，5 天循環</td></tr>
+    <tr><td>加重</td><td>全部完成就加重</td></tr>
+    <tr><td>退回</td><td>撞牆時退回 4 週前的重量</td></tr>
+    <tr><td>時間</td><td>每次約 20 分鐘</td></tr>
+    <tr><td>費用</td><td>免費，永遠免費</td></tr>
+  </table>
+</section>
+
+<section class="author" id="author">
+  <div class="author-inner">
+    <div class="author-name">矽谷工程師的抗衰老實驗室</div>
+    <div class="author-bio">
+      Caltech 電機博士，大型科技公司首席工程師。十年以上力量訓練經驗。
+      蹲舉 2 倍體重，加重引體 2/3 體重。48 歲，持續寫關於長壽、力量和健康的文章。
+    </div>
+    <a class="btn btn-secondary" href="https://www.facebook.com/engineeringlongevity" target="_blank">閱讀完整文章</a>
+  </div>
+</section>
+
+<section id="notify" style="padding: 60px 24px; text-align: center;">
+  <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">即將推出</h2>
+  <p style="font-size: 16px; color: #636366; margin-bottom: 24px;">iOS 和 Android，免費，不需要帳號。</p>
+  <p style="font-size: 14px; color: #8e8e93;">追蹤 <a href="https://www.facebook.com/engineeringlongevity" target="_blank">矽谷工程師的抗衰老實驗室</a> 獲取最新消息。</p>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2026 Onelift. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
