@@ -15,35 +15,35 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
-  color: #1c1c1e; background: #fff; line-height: 1.6;
+  color: #1E293B; background: #FAFAF9; line-height: 1.6;
 }
-a { color: #e8372c; text-decoration: none; }
+a { color: #0D9488; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(255,255,255,0.95); backdrop-filter: blur(12px);
-  border-bottom: 1px solid #f2f2f7; padding: 0 24px;
+  background: rgba(250,250,249,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #E7E5E4; padding: 0 24px;
 }
 .nav-inner {
   max-width: 1080px; margin: 0 auto; height: 60px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo { font-size: 20px; font-weight: 800; color: #e8372c; letter-spacing: 1px; }
-.nav-logo a { color: #e8372c; }
+.nav-logo { font-size: 20px; font-weight: 800; color: #0D9488; letter-spacing: 3px; }
+.nav-logo a { color: #0D9488; }
 .nav-logo a:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 24px; align-items: center; }
 .nav-links a { color: #636366; font-size: 15px; font-weight: 500; }
-.nav-links a:hover { color: #1c1c1e; text-decoration: none; }
+.nav-links a:hover { color: #1E293B; text-decoration: none; }
 .lang-switch {
   font-size: 13px; color: #8e8e93; border: 1px solid #d1d1d6;
   padding: 4px 12px; border-radius: 6px;
 }
-.lang-switch:hover { border-color: #e8372c; color: #e8372c; text-decoration: none; }
+.lang-switch:hover { border-color: #0D9488; color: #0D9488; text-decoration: none; }
 
 .article-header {
   padding: 120px 24px 48px;
   text-align: center;
-  background: linear-gradient(180deg, #fff 0%, #fef2f1 100%);
+  background: linear-gradient(180deg, #FAFAF9 0%, #F0FDFA 100%);
 }
 .article-header h1 {
   font-size: clamp(28px, 5vw, 42px);
@@ -52,7 +52,7 @@ a:hover { text-decoration: underline; }
   max-width: 720px;
   margin: 0 auto 16px;
 }
-.article-header h1 span { color: #e8372c; }
+.article-header h1 span { color: #0D9488; }
 .article-meta {
   font-size: 14px;
   color: #8e8e93;
@@ -74,7 +74,7 @@ a:hover { text-decoration: underline; }
   font-size: clamp(22px, 3.5vw, 28px);
   font-weight: 800;
   margin: 2.5em 0 0.8em;
-  color: #e8372c;
+  color: #0D9488;
 }
 .article-body h3 {
   font-size: 18px;
@@ -84,7 +84,7 @@ a:hover { text-decoration: underline; }
 .article-body hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #e8372c40, transparent);
+  background: linear-gradient(90deg, transparent, #0D948840, transparent);
   margin: 3em 0;
 }
 .article-body ul, .article-body ol {
@@ -105,8 +105,8 @@ a:hover { text-decoration: underline; }
   padding: 4px 0;
 }
 .log-example {
-  background: #f9fafb;
-  border: 1px solid #f2f2f7;
+  background: #fff;
+  border: 1px solid #E7E5E4;
   border-radius: 8px;
   padding: 16px 20px;
   font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
@@ -114,6 +114,7 @@ a:hover { text-decoration: underline; }
   line-height: 1.7;
   margin: 1em 0 1.5em;
   color: #636366;
+  box-shadow: 0 1px 4px rgba(120,100,80,0.06);
 }
 .video-links {
   list-style: none;
@@ -122,7 +123,7 @@ a:hover { text-decoration: underline; }
 }
 .video-links li {
   padding: 8px 0;
-  border-bottom: 1px solid #f2f2f7;
+  border-bottom: 1px solid #E7E5E4;
 }
 .video-links li:last-child {
   border-bottom: none;
@@ -140,12 +141,13 @@ a:hover { text-decoration: underline; }
 .source-link {
   margin-top: 3em;
   padding: 24px;
-  background: #f9fafb;
-  border: 1px solid #f2f2f7;
+  background: #fff;
+  border: 1px solid #E7E5E4;
   border-radius: 12px;
   text-align: center;
   font-size: 15px;
   color: #636366;
+  box-shadow: 0 1px 4px rgba(120,100,80,0.06);
 }
 .source-link a {
   font-weight: 600;
@@ -153,7 +155,7 @@ a:hover { text-decoration: underline; }
 
 .footer {
   padding: 40px 24px; text-align: center; font-size: 13px; color: #8e8e93;
-  border-top: 1px solid #f2f2f7;
+  border-top: 1px solid #E7E5E4;
 }
 @media (max-width: 640px) {
   .nav-links a:not(.lang-switch) { display: none; }
