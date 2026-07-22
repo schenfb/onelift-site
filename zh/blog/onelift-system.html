@@ -15,35 +15,35 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
-  color: #1E293B; background: #FAFAF9; line-height: 1.6;
+  color: #292524; background: #F7F3EC; line-height: 1.6;
 }
-a { color: #0D9488; text-decoration: none; }
+a { color: #1B4332; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-  background: rgba(250,250,249,0.95); backdrop-filter: blur(12px);
-  border-bottom: 1px solid #E7E5E4; padding: 0 24px;
+  background: rgba(247,243,236,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D6D3D1; padding: 0 24px;
 }
 .nav-inner {
   max-width: 1080px; margin: 0 auto; height: 60px;
   display: flex; align-items: center; justify-content: space-between;
 }
-.nav-logo { font-size: 20px; font-weight: 800; color: #0D9488; letter-spacing: 3px; }
-.nav-logo a { color: #0D9488; }
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 3px; }
+.nav-logo a { color: #1B4332; }
 .nav-logo a:hover { text-decoration: none; }
 .nav-links { display: flex; gap: 24px; align-items: center; }
-.nav-links a { color: #636366; font-size: 15px; font-weight: 500; }
-.nav-links a:hover { color: #1E293B; text-decoration: none; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
 .lang-switch {
-  font-size: 13px; color: #8e8e93; border: 1px solid #d1d1d6;
+  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
   padding: 4px 12px; border-radius: 6px;
 }
-.lang-switch:hover { border-color: #0D9488; color: #0D9488; text-decoration: none; }
+.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
 
 .article-header {
   padding: 120px 24px 48px;
   text-align: center;
-  background: linear-gradient(180deg, #FAFAF9 0%, #F0FDFA 100%);
+  background: linear-gradient(180deg, #F7F3EC 0%, #EDF3EE 100%);
 }
 .article-header h1 {
   font-size: clamp(28px, 5vw, 42px);
@@ -52,10 +52,10 @@ a:hover { text-decoration: underline; }
   max-width: 720px;
   margin: 0 auto 16px;
 }
-.article-header h1 span { color: #0D9488; }
+.article-header h1 span { color: #1B4332; }
 .article-meta {
   font-size: 14px;
-  color: #8e8e93;
+  color: #A8A29E;
   max-width: 720px;
   margin: 0 auto;
 }
@@ -74,7 +74,7 @@ a:hover { text-decoration: underline; }
   font-size: clamp(22px, 3.5vw, 28px);
   font-weight: 800;
   margin: 2.5em 0 0.8em;
-  color: #0D9488;
+  color: #1B4332;
 }
 .article-body h3 {
   font-size: 18px;
@@ -84,7 +84,7 @@ a:hover { text-decoration: underline; }
 .article-body hr {
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #0D948840, transparent);
+  background: linear-gradient(90deg, transparent, #74A89280, transparent);
   margin: 3em 0;
 }
 .article-body ul, .article-body ol {
@@ -106,15 +106,15 @@ a:hover { text-decoration: underline; }
 }
 .log-example {
   background: #fff;
-  border: 1px solid #E7E5E4;
+  border: 1px solid #D6D3D1;
   border-radius: 8px;
   padding: 16px 20px;
   font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
   font-size: 15px;
   line-height: 1.7;
   margin: 1em 0 1.5em;
-  color: #636366;
-  box-shadow: 0 1px 4px rgba(120,100,80,0.06);
+  color: #78716C;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
 }
 .video-links {
   list-style: none;
@@ -123,7 +123,7 @@ a:hover { text-decoration: underline; }
 }
 .video-links li {
   padding: 8px 0;
-  border-bottom: 1px solid #E7E5E4;
+  border-bottom: 1px solid #D6D3D1;
 }
 .video-links li:last-child {
   border-bottom: none;
@@ -142,20 +142,20 @@ a:hover { text-decoration: underline; }
   margin-top: 3em;
   padding: 24px;
   background: #fff;
-  border: 1px solid #E7E5E4;
+  border: 1px solid #D6D3D1;
   border-radius: 12px;
   text-align: center;
   font-size: 15px;
-  color: #636366;
-  box-shadow: 0 1px 4px rgba(120,100,80,0.06);
+  color: #78716C;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
 }
 .source-link a {
   font-weight: 600;
 }
 
 .footer {
-  padding: 40px 24px; text-align: center; font-size: 13px; color: #8e8e93;
-  border-top: 1px solid #E7E5E4;
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E;
+  border-top: 1px solid #D6D3D1;
 }
 @media (max-width: 640px) {
   .nav-links a:not(.lang-switch) { display: none; }
@@ -472,9 +472,9 @@ a:hover { text-decoration: underline; }
 
 <p>但重點不在分析，重點在記錄本身。記錄是漸進式超負荷能運作的前提。沒有記錄，系統就不成立。</p>
 
-<div style="background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 20px; margin: 24px 0;">
-<div style="font-size: 18px; font-weight: 700; color: #166534; margin-bottom: 8px;">📱 現在不用手動記日誌了</div>
-<p style="color: #15803d; margin: 0;">Onelift App 幫你自動記錄每一組、計時、算下次重量。免費，不需要帳號。</p>
+<div style="background: #EDF3EE; border: 1px solid #C9DCD1; border-radius: 12px; padding: 20px; margin: 24px 0;">
+<div style="font-size: 18px; font-weight: 700; color: #1B4332; margin-bottom: 8px;">📱 現在不用手動記日誌了</div>
+<p style="color: #3E6B54; margin: 0;">Onelift App 幫你自動記錄每一組、計時、算下次重量。免費，不需要帳號。</p>
 </div>
 
 <hr>
