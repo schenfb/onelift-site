@@ -103,10 +103,22 @@ a:hover { text-decoration: underline; }
 .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .step-content p { font-size: 15px; color: #78716C; }
 
+.exercise-links { list-style: none; margin: 12px 0 0; padding: 0; }
+.exercise-links li { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px solid #E7E5E4; }
+.exercise-links li:last-child { border-bottom: none; }
+.exercise-links a { font-weight: 600; }
+.exercise-links a::before { content: "▶ "; font-size: 11px; color: #74A892; }
+.exercise-links span { font-size: 13px; color: #A8A29E; }
+.notfor { padding: 60px 24px; max-width: 720px; margin: 0 auto; }
+.notfor ul { list-style: none; margin: 24px 0 0; padding: 0; }
+.notfor li { padding: 12px 0 12px 32px; position: relative; font-size: 16px; color: #292524; border-bottom: 1px solid #E7E5E4; }
+.notfor li:last-child { border-bottom: none; }
+.notfor li::before { content: "\2715"; position: absolute; left: 0; color: #C86B4A; font-weight: 700; }
 /* System overview */
 .system {
   padding: 80px 24px; max-width: 800px; margin: 0 auto;
 }
+.system-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .system-table {
   width: 100%; border-collapse: collapse; font-size: 16px;
 }
@@ -212,7 +224,14 @@ a:hover { text-decoration: underline; }
       <div class="step-num">1</div>
       <div class="step-content">
         <h3>Pick up the dumbbell</h3>
-        <p>Five exercises, one per day, rotating. Bulgarian split squat, single-arm press, single-leg deadlift, single-arm row, single-arm bench press.</p>
+        <p>Five exercises, one per day, rotating. Tap a name to watch how it's done:</p>
+        <ul class="exercise-links">
+          <li><a href="https://www.youtube.com/results?search_query=Bulgarian+Split+Squat+dumbbell" target="_blank">Bulgarian Split Squat</a><span>lower push</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Shoulder+Press" target="_blank">Single-Arm Press</a><span>upper push (vertical)</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Leg+Dumbbell+Romanian+Deadlift" target="_blank">Single-Leg Deadlift</a><span>lower pull</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Row" target="_blank">Single-Arm Row</a><span>upper pull</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Bench+Press" target="_blank">Single-Arm Bench Press</a><span>upper push (horizontal)</span></li>
+        </ul>
       </div>
     </div>
     <div class="step">
@@ -241,6 +260,7 @@ a:hover { text-decoration: underline; }
 
 <section class="system" id="system">
   <h2 class="section-title">The System</h2>
+  <div class="system-wrap">
   <table class="system-table">
     <tr><td>Equipment</td><td>One adjustable dumbbell + a chair or bench</td></tr>
     <tr><td>Exercises</td><td>5 single-arm/single-leg compound movements</td></tr>
@@ -251,6 +271,19 @@ a:hover { text-decoration: underline; }
     <tr><td>Time</td><td>~20 minutes per session</td></tr>
     <tr><td>Cost</td><td>Free.</td></tr>
   </table>
+  </div>
+</section>
+
+<section class="notfor">
+  <h2 class="section-title" style="text-align:left;">Who This Isn't For</h2>
+  <p style="color:#78716C;">I always mark the boundaries honestly. This system is not built for you if:</p>
+  <ul>
+    <li>You want to become a bodybuilder or chase maximum hypertrophy — that needs higher volume and a more complex program. Take another road.</li>
+    <li>You're already an intermediate barbell lifter past linear progression — you need periodization, not this.</li>
+    <li>You want fancy variety and a new routine every week — this is deliberately monotonous. It works through consistency, not novelty.</li>
+    <li>You won't log one line after each session — without records, the whole system falls apart.</li>
+  </ul>
+  <p style="color:#78716C; margin-top:24px;">But if you just want to get stronger at home, with the lowest possible friction, steadily, for years — this was built for you.</p>
 </section>
 
 <section class="author" id="author">
@@ -264,10 +297,11 @@ a:hover { text-decoration: underline; }
   </div>
 </section>
 
-<section id="notify" style="padding: 60px 24px; text-align: center;">
+<section id="notify" style="padding: 60px 24px; text-align: center; background: #F1EBE1;">
   <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Coming Soon</h2>
-  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS and Android. Free. No account required.</p>
-  <p style="font-size: 14px; color: #A8A29E;">Follow <a href="https://www.facebook.com/engineeringlongevity" target="_blank">Engineering Longevity</a> for updates.</p>
+  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS and Android. Free. No account required.<br>Leave your email and we'll tell you the moment it launches.</p>
+  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform" target="_blank" style="margin-bottom:16px;">Join the Waitlist</a>
+  <p style="font-size: 14px; color: #A8A29E;">Or follow <a href="https://www.facebook.com/engineeringlongevity" target="_blank">Engineering Longevity</a> for updates.</p>
 </section>
 
 <footer class="footer">

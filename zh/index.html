@@ -90,7 +90,20 @@ a:hover { text-decoration: underline; }
 }
 .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .step-content p { font-size: 15px; color: #78716C; }
+.exercise-links { list-style: none; margin: 12px 0 0; padding: 0; }
+.exercise-links li { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px solid #E7E5E4; }
+.exercise-links li:last-child { border-bottom: none; }
+.exercise-links a { font-weight: 600; }
+.exercise-links a::before { content: "▶ "; font-size: 11px; color: #74A892; }
+.exercise-links span { font-size: 13px; color: #A8A29E; }
+.notfor { padding: 60px 24px; max-width: 720px; margin: 0 auto; }
+.notfor ul { list-style: none; margin: 24px 0 0; padding: 0; }
+.notfor li { padding: 12px 0 12px 32px; position: relative; font-size: 16px; color: #292524; border-bottom: 1px solid #E7E5E4; }
+.notfor li:last-child { border-bottom: none; }
+.notfor li::before { content: "✕"; position: absolute; left: 0; color: #C86B4A; font-weight: 700; }
+.email-form { display: flex; gap: 8px; max-width: 420px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
 .system { padding: 80px 24px; max-width: 800px; margin: 0 auto; }
+.system-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 .system-table { width: 100%; border-collapse: collapse; font-size: 16px; }
 .system-table th {
   text-align: left; padding: 12px 16px; background: #F1EBE1;
@@ -184,7 +197,14 @@ a:hover { text-decoration: underline; }
       <div class="step-num">1</div>
       <div class="step-content">
         <h3>拿起啞鈴</h3>
-        <p>五個動作，一天做一個，五天循環。保加利亞分腿蹲、單手肩推、單腿硬舉、單手划船、單手臥推。</p>
+        <p>五個動作，一天做一個，五天循環。點動作名稱看教學影片：</p>
+        <ul class="exercise-links">
+          <li><a href="https://www.youtube.com/results?search_query=Bulgarian+Split+Squat+dumbbell" target="_blank">保加利亞分腿蹲</a><span>下肢推</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Shoulder+Press" target="_blank">單手肩推</a><span>上肢推（垂直）</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Leg+Dumbbell+Romanian+Deadlift" target="_blank">單腿硬舉</a><span>下肢拉</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Row" target="_blank">單手划船</a><span>上肢拉</span></li>
+          <li><a href="https://www.youtube.com/results?search_query=Single+Arm+Dumbbell+Bench+Press" target="_blank">單手臥推</a><span>上肢推（水平）</span></li>
+        </ul>
       </div>
     </div>
     <div class="step">
@@ -213,6 +233,7 @@ a:hover { text-decoration: underline; }
 
 <section class="system" id="system">
   <h2 class="section-title">訓練系統</h2>
+  <div class="system-wrap">
   <table class="system-table">
     <tr><td>器材</td><td>一根可調式啞鈴 + 一張椅子或長凳</td></tr>
     <tr><td>動作</td><td>5 個單側多關節大動作</td></tr>
@@ -223,6 +244,19 @@ a:hover { text-decoration: underline; }
     <tr><td>時間</td><td>每次約 20 分鐘</td></tr>
     <tr><td>費用</td><td>免費</td></tr>
   </table>
+  </div>
+</section>
+
+<section class="notfor">
+  <h2 class="section-title" style="text-align:left;">這套系統不適合誰</h2>
+  <p style="color:#78716C;">我一向誠實標出邊界。如果你是這幾種人，這套系統不是為你設計的：</p>
+  <ul>
+    <li>想練成健美選手、追求極致肌肥大——那需要更高訓練量與更複雜的課表，請走另一條路。</li>
+    <li>已經是中高階槓鈴訓練者，線性加重早就跑完——你需要的是週期化課表，不是這個。</li>
+    <li>想要花俏的動作變化、每週換菜單的新鮮感——這套刻意單調，靠的是持續，不是刺激。</li>
+    <li>不願意每次記錄一行日誌——沒有紀錄，整套系統就不成立。</li>
+  </ul>
+  <p style="color:#78716C; margin-top:24px;">如果你只是想在家、用最低的摩擦力、長期穩定地變強，那這套就是為你做的。</p>
 </section>
 
 <section class="author" id="author">
@@ -235,10 +269,11 @@ a:hover { text-decoration: underline; }
   </div>
 </section>
 
-<section id="notify" style="padding: 60px 24px; text-align: center;">
+<section id="notify" style="padding: 60px 24px; text-align: center; background: #F1EBE1;">
   <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">即將推出</h2>
-  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS 和 Android，免費，不需要帳號。</p>
-  <p style="font-size: 14px; color: #A8A29E;">追蹤 <a href="https://www.facebook.com/engineeringlongevity" target="_blank">矽谷工程師的抗衰老實驗室</a> 獲取最新消息。</p>
+  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS 和 Android，免費，不需要帳號。<br>留下 email，上架第一時間通知你。</p>
+  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform" target="_blank" style="margin-bottom:16px;">加入等候名單</a>
+  <p style="font-size: 14px; color: #A8A29E;">或追蹤 <a href="https://www.facebook.com/engineeringlongevity" target="_blank">矽谷工程師的抗衰老實驗室</a> 獲取最新消息。</p>
 </section>
 
 <footer class="footer">
