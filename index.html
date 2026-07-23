@@ -3,6 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+// Chinese-first: redirect zh browsers to /zh/ unless the visitor explicitly chose a language.
+(function(){
+  try{
+    if(localStorage.getItem('onelift_lang')) return;
+    var l=(navigator.language||navigator.userLanguage||'').toLowerCase();
+    if(l.indexOf('zh')===0){ location.replace('/zh/'); }
+  }catch(e){}
+})();
+</script>
 <title>Onelift — One Exercise a Day, Get Stronger</title>
 <meta name="description" content="A free strength training app. One dumbbell, one exercise a day, progressive overload. Get stronger at home in 20 minutes.">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/">
@@ -32,10 +42,10 @@ a:hover { text-decoration: underline; }
 .nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
 .nav-links a:hover { color: #292524; text-decoration: none; }
 .lang-switch {
-  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
-  padding: 4px 12px; border-radius: 6px;
+  font-size: 14px; color: #1B4332; font-weight: 600; border: 1.5px solid #1B4332;
+  padding: 5px 14px; border-radius: 999px;
 }
-.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+.lang-switch:hover { background: #1B4332; color: #fff; text-decoration: none; }
 
 /* Hero */
 .hero {
@@ -154,6 +164,14 @@ a:hover { text-decoration: underline; }
   .system { padding: 60px 20px; }
   .step { flex-direction: column; gap: 12px; }
 }
+/* Narrow phones: table becomes stacked cards */
+@media (max-width: 420px) {
+  .system-table, .system-table tbody, .system-table tr, .system-table td { display: block; width: 100%; }
+  .system-table tr { border: 1px solid #D6D3D1; border-radius: 12px; padding: 8px 14px; margin-bottom: 10px; background: #fff; }
+  .system-table td { border: none !important; padding: 4px 0; }
+  .system-table td:first-child { color: #A8A29E; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .system-table td:last-child { font-weight: 600; font-size: 17px; }
+}
 </style>
 </head>
 <body>
@@ -162,10 +180,10 @@ a:hover { text-decoration: underline; }
   <div class="nav-inner">
     <div class="nav-logo">ONELIFT</div>
     <div class="nav-links">
-      <a href="#features">Features</a>
       <a href="#how">How It Works</a>
       <a href="#system">The System</a>
-      <a href="/zh/" class="lang-switch">中文</a>
+      <a href="/blog/onelift-system.html">Read the Guide</a>
+      <a href="/zh/" class="lang-switch" onclick="try{localStorage.setItem('onelift_lang','zh')}catch(e){}">中文</a>
     </div>
   </div>
 </nav>
@@ -293,15 +311,17 @@ a:hover { text-decoration: underline; }
       PhD in Electrical Engineering. Big Tech Director / Principal Engineer.
       20 years studying strength training. Lives in the Bay Area.
     </div>
-    <a class="btn btn-secondary" href="https://www.facebook.com/engineeringlongevity" target="_blank">Read the Articles (Chinese)</a>
+    <a class="btn btn-secondary" href="/blog/onelift-system.html">Read the Full Guide</a>
   </div>
 </section>
 
 <section id="notify" style="padding: 60px 24px; text-align: center; background: #F1EBE1;">
-  <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Coming Soon</h2>
-  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS and Android. Free. No account required.<br>Leave your email and we'll tell you the moment it launches.</p>
-  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform" target="_blank" style="margin-bottom:16px;">Join the Waitlist</a>
-  <p style="font-size: 14px; color: #A8A29E;">Or follow <a href="https://www.facebook.com/engineeringlongevity" target="_blank">Engineering Longevity</a> for updates.</p>
+  <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">Notify Me at Launch</h2>
+  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS and Android. Free. No account required.</p>
+  <div style="max-width: 480px; margin: 0 auto; background:#fff; border:1px solid #D6D3D1; border-radius:16px; overflow:hidden;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" style="display:block;">Loading…</iframe>
+  </div>
+  <p style="font-size: 14px; color: #A8A29E; margin-top: 16px;">Or follow <a href="https://www.facebook.com/engineeringlongevity" target="_blank">Engineering Longevity</a> for updates.</p>
 </section>
 
 <footer class="footer">

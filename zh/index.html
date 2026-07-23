@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+// Remember an explicit English choice so the English page won't auto-redirect back here.
+(function(){ try{ var l=(navigator.language||'').toLowerCase(); if(l.indexOf('zh')===0 && !localStorage.getItem('onelift_lang')) localStorage.setItem('onelift_lang','zh'); }catch(e){} })();
+</script>
 <title>Onelift — 一天一個動作，慢慢變強</title>
 <meta name="description" content="免費的力量訓練 app。一根啞鈴、一天一個動作、漸進加重。在家 20 分鐘就能練。">
 <link rel="alternate" hreflang="en" href="/">
@@ -30,10 +34,10 @@ a:hover { text-decoration: underline; }
 .nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
 .nav-links a:hover { color: #292524; text-decoration: none; }
 .lang-switch {
-  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
-  padding: 4px 12px; border-radius: 6px;
+  font-size: 14px; color: #1B4332; font-weight: 600; border: 1.5px solid #1B4332;
+  padding: 5px 14px; border-radius: 999px;
 }
-.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+.lang-switch:hover { background: #1B4332; color: #fff; text-decoration: none; }
 .hero {
   padding: 140px 24px 80px; text-align: center;
   background: linear-gradient(180deg, #F7F3EC 0%, #EDF3EE 100%);
@@ -127,6 +131,13 @@ a:hover { text-decoration: underline; }
   .system { padding: 60px 20px; }
   .step { flex-direction: column; gap: 12px; }
 }
+@media (max-width: 420px) {
+  .system-table, .system-table tbody, .system-table tr, .system-table td { display: block; width: 100%; }
+  .system-table tr { border: 1px solid #D6D3D1; border-radius: 12px; padding: 8px 14px; margin-bottom: 10px; background: #fff; }
+  .system-table td { border: none !important; padding: 4px 0; }
+  .system-table td:first-child { color: #A8A29E; font-size: 13px; }
+  .system-table td:last-child { font-weight: 600; font-size: 17px; }
+}
 </style>
 </head>
 <body>
@@ -135,10 +146,10 @@ a:hover { text-decoration: underline; }
   <div class="nav-inner">
     <div class="nav-logo">ONELIFT</div>
     <div class="nav-links">
-      <a href="#features">功能</a>
       <a href="#how">怎麼練</a>
       <a href="#system">系統</a>
-      <a href="/" class="lang-switch">English</a>
+      <a href="/zh/blog/onelift-system.html">完整教學</a>
+      <a href="/" class="lang-switch" onclick="try{localStorage.setItem('onelift_lang','en')}catch(e){}">English</a>
     </div>
   </div>
 </nav>
@@ -270,10 +281,12 @@ a:hover { text-decoration: underline; }
 </section>
 
 <section id="notify" style="padding: 60px 24px; text-align: center; background: #F1EBE1;">
-  <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">即將推出</h2>
-  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS 和 Android，免費，不需要帳號。<br>留下 email，上架第一時間通知你。</p>
-  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform" target="_blank" style="margin-bottom:16px;">加入等候名單</a>
-  <p style="font-size: 14px; color: #A8A29E;">或追蹤 <a href="https://www.facebook.com/engineeringlongevity" target="_blank">矽谷工程師的抗衰老實驗室</a> 獲取最新消息。</p>
+  <h2 style="font-size: 28px; font-weight: 800; margin-bottom: 8px;">上架時通知我</h2>
+  <p style="font-size: 16px; color: #78716C; margin-bottom: 24px;">iOS 和 Android，免費，不需要帳號。</p>
+  <div style="max-width: 480px; margin: 0 auto; background:#fff; border:1px solid #D6D3D1; border-radius:16px; overflow:hidden;">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform?embedded=true" width="100%" height="520" frameborder="0" marginheight="0" marginwidth="0" style="display:block;">載入中…</iframe>
+  </div>
+  <p style="font-size: 14px; color: #A8A29E; margin-top: 16px;">或追蹤 <a href="https://www.facebook.com/engineeringlongevity" target="_blank">矽谷工程師的抗衰老實驗室</a> 獲取最新消息。</p>
 </section>
 
 <footer class="footer">
