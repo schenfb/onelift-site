@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onelift FAQ：常見問題</title>
+<meta name="description" content="Onelift 讀者 FAQ：熱身、受傷替代動作、每週三日 vs 每日、健身房器械、徒手方案、有氧與 Zone 2、肌酸、女生補充、線性計畫、要不要找教練，一次解答。">
+<meta name="keywords" content="力量訓練, 熱身, 有氧, Zone 2, 肌酸, 徒手訓練, 居家健身, Onelift FAQ">
+<meta property="og:title" content="Onelift FAQ：常見問題">
+<meta property="og:description" content="Onelift 讀者 FAQ：熱身、受傷替代、每週三日、健身房器械、徒手方案、有氧 Zone 2、肌酸、女生補充、線性計畫、找教練，一次解答。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:url" content="https://onelift.org/zh/blog/onelift-faq.html">
+<link rel="canonical" href="https://onelift.org/zh/blog/onelift-faq.html">
+<link rel="alternate" hreflang="en" href="https://onelift.org/blog/onelift-faq.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://onelift.org/zh/blog/onelift-faq.html">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  color: #292524; background: #F7F3EC; line-height: 1.6;
+}
+a { color: #1B4332; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(247,243,236,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D6D3D1; padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 2px; }
+.nav-logo a { color: #1B4332; }
+.nav-logo a:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
+.lang-switch {
+  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
+  padding: 4px 12px; border-radius: 6px;
+}
+.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+
+.article-header {
+  padding: 120px 24px 48px;
+  text-align: center;
+  background: linear-gradient(180deg, #F7F3EC 0%, #EDF3EE 100%);
+}
+.article-header h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+.article-header h1 span { color: #1B4332; }
+.article-meta {
+  font-size: 14px;
+  color: #A8A29E;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+.article-body p {
+  margin-bottom: 1.2em;
+}
+.article-body h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  font-weight: 800;
+  margin: 2.5em 0 0.8em;
+  color: #1B4332;
+}
+.article-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1.8em 0 0.6em;
+}
+.article-body hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #74A89280, transparent);
+  margin: 3em 0;
+}
+.article-body ul, .article-body ol {
+  margin: 0.8em 0 1.2em 1.5em;
+}
+.article-body li {
+  margin-bottom: 0.4em;
+}
+.article-body strong {
+  font-weight: 700;
+}
+.intro-lead {
+  font-size: 19px;
+  color: #3E6B54;
+  font-weight: 500;
+}
+.schedule {
+  background: #fff;
+  border: 1px solid #D6D3D1;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px;
+  line-height: 1.8;
+  margin: 1em 0 1.5em;
+  color: #57534E;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+  overflow-x: auto;
+  white-space: pre;
+}
+.callout {
+  background: #EDF3EE;
+  border: 1px solid #C9DCD1;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.callout .callout-title {
+  font-size: 18px; font-weight: 700; color: #1B4332; margin-bottom: 8px;
+}
+.callout p { color: #3E6B54; margin: 0; }
+.source-link {
+  margin-top: 3em;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #D6D3D1;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #78716C;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.source-link a {
+  font-weight: 600;
+}
+.source-link p { margin-bottom: 0.5em; }
+.source-link p:last-child { margin-bottom: 0; }
+
+.footer {
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E;
+  border-top: 1px solid #D6D3D1;
+}
+@media (max-width: 640px) {
+  .nav-links a:not(.lang-switch) { display: none; }
+  .article-header { padding: 100px 20px 36px; }
+  .article-body { padding: 36px 20px 60px; font-size: 16px; }
+  .schedule { font-size: 13px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="/zh/">ONELIFT</a></div>
+    <div class="nav-links">
+      <a href="/zh/">首頁</a>
+      <a href="/zh/blog/onelift-system.html">完整教學</a>
+      <a href="/blog/onelift-faq.html" class="lang-switch">English</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <h1><span>Onelift FAQ</span>：常見問題</h1>
+  <div class="article-meta">矽谷工程師的抗衰老實驗室</div>
+</header>
+
+<article class="article-body">
+
+<p class="intro-lead">多數人健身失敗，不是因為不努力，是因為一開始就選錯方法。</p>
+
+<p>上一篇 Onelift 講了完整的系統：五個單側啞鈴動作、一天一動作、漸進式超負荷、記日誌。這是摩擦最低、最容易成功的方法。</p>
+
+<p>這篇是衍生的讀者 FAQ。每個問題獨立，可以跳著看，挑你需要的。這篇探討：熱身、受傷替代、每週三日 vs 每日、健身房 vs 在家、器械 vs 啞鈴、徒手方案、有氧怎麼搭、要不要吃肌酸、女生的補充、什麼時候線性計畫會練完、要不要找教練。</p>
+
+<hr>
+
+<h2>需要熱身嗎？</h2>
+
+<p>不需要特別做動態熱身。</p>
+
+<p>用比工作重量輕的重量做個幾下，把動作模式喚醒就好。比如今天做臥推，工作重量 40 公斤，先拿 20 公斤做 5 下，再拿 30 公斤做 3 下，邊加槓片邊做幾下，然後直接上 40。</p>
+
+<p>像划船這種非常安全的動作，很多時候直接上工作重量也沒問題。</p>
+
+<p>不要把體力浪費在一堆熱身上。重點是：安全、快速、開始做正式組。</p>
+
+<div class="callout">
+  <div class="callout-title">📱 Onelift App 會幫你算好熱身重量、記錄每一組。</div>
+  <p>免費，不需要帳號。</p>
+</div>
+
+<hr>
+
+<h2>受傷了怎麼辦？</h2>
+
+<p>做替代動作。原則是：繞開痛的動作，找一個不痛的動作練同一個動作模式，一樣記日誌、一樣漸進式超負荷。</p>
+
+<p>例如退化性膝關節炎，分腿蹲做不了，改做 wall sit（靠牆靜蹲）。背靠牆滑下去，大腿跟地面的角度看你的膝蓋能接受多少，找一個不痛的角度，撐住。從 20 秒 × 3 組開始，每次多撐幾秒，一樣記錄、一樣加量。等長收縮（isometric）不需要關節移動，對膝關節的壓力遠低於動態動作，而且有 meta-analysis 支持它對膝關節炎的疼痛緩解和肌力提升有顯著效果。</p>
+
+<p>如果某個動作今天痛，不要硬做。換一個不痛的替代動作，或者跳過這天做下一個動作。受傷的時候最重要的原則是：不要讓訓練變成傷害的來源，但也不要完全停練。你能做什麼就做什麼，持續給身體刺激，傷好了再把原本的動作加回來。</p>
+
+<p>如果你不確定自己的狀況適合做什麼，這是找教練或物理治療師最值得的時候。</p>
+
+<hr>
+
+<h2>我一週只能練三天，怎麼排？</h2>
+
+<p>五個動作分成兩天，A/B 交替，一週三次：</p>
+
+<div class="schedule">A日：分腿蹲、划船、臥推
+B日：硬舉、肩推、划船
+
+第一週：A – B – A
+第二週：B – A – B</div>
+
+<p>每個動作一樣 5×6，加重邏輯、日誌、組間休息全部不變。肩推一樣每兩次同重量再加一次。</p>
+
+<p>划船出現在兩天，是刻意的。多數人胸比背強——長期久坐、看螢幕、用鍵盤，胸肌和前三角肌縮短緊繃，上背和後三角弱化，肩胛骨被往前拉，形成圓背駝背。多拉一點、多練背，是對抗這個失衡最直接的方式。划船是五個動作裡最安全、恢復成本最低的，多做不會有問題。</p>
+
+<p>要提醒：三日全身一次做三個動作，一次訓練大約 60-90 分鐘。很多人會因為這個時間成本撐不下去。一日一練的二十分鐘是大部分人能長期接受的甜蜜點，拉到一小時放棄率會明顯上升。選排程的時候想清楚。大部分人不是練不好，是練太久。</p>
+
+<p>如果你在猶豫，選一日一練，不要想了。</p>
+
+<hr>
+
+<h2>我去健身房，可以用器械嗎？</h2>
+
+<p>可以。五大動作模式是原則，器材是手段。</p>
+
+<p>對應表：</p>
+
+<div class="schedule">蹲     → Hack Squat Machine（首推）或 Leg Press
+髖伸屈 → 槓鈴 RDL、羅馬椅、或就做 Hack Squat（行程本身包含相當程度的髖伸屈）
+上推   → Machine Shoulder Press
+前推   → Machine Chest Press
+後拉   → Cable Row 或 Lat Pulldown</div>
+
+<p>加重邏輯一樣：5×6 做完，下次加一格。記日誌，卡關減量重來。</p>
+
+<p>器械坐下來就能用，軌道穩定，對新手友善，練得好一樣能變強。但啞鈴有一個器械做不到的優勢：它是 universal 的。你學會的動作模式走到哪都能用——出差、旅遊、換健身房、回家過年，只要有一根啞鈴就能練。而且單側自由重量的抗旋轉核心訓練、穩定需求、有效強度高於帳面——這些好處在固定軌道器械上幾乎消失。</p>
+
+<p>如果你有得選，我推薦啞鈴。但如果器械對你來說更方便更容易持續，那就用器械。能持續的方案永遠是最好的方案。</p>
+
+<p>如果你去健身房，我推薦一週三日全身，把交通成本縮小成一週三次：</p>
+
+<div class="schedule">A日：Hack Squat、Cable Pull Down、Machine Chest Press
+B日：Hack Squat、Machine Row、Machine Shoulder Press</div>
+
+<p>A/B 交替，一週三次。Hack Squat 出現在兩天，因為它同時涵蓋蹲和髖伸屈，是器械裡效益最高的單一動作。加重邏輯一樣，記日誌一樣。</p>
+
+<hr>
+
+<h2>我沒有啞鈴，可以徒手練嗎？</h2>
+
+<p>可以。先講怎麼做，再講為什麼。</p>
+
+<p>最低裝備：一根門框單槓。拉力是五大動作模式之一，徒手沒有東西可以拉。幾百塊台幣，裝門框上不佔空間。你要是連這個都不願意買，我不知道要說什麼了。</p>
+
+<p>做四個動作，每天一個，五天循環（下肢蹲排兩天）：</p>
+
+<div class="schedule">Day 1：單腿蹲
+Day 2：Pike Push Up（肩推方向）
+Day 3：單腿蹲
+Day 4：引體向上
+Day 5：伏地挺身
+Day 6：回到 Day 1</div>
+
+<p>每個動作 3 組，從每組 5 下開始，每次多做一下：</p>
+
+<div class="schedule">3×5 → 3×6 → 3×7 → 3×8</div>
+
+<p>做到 3×8，動作品質好、還有餘力，換下一個更難的變式，從 3×5 重新開始。超過 8 下練的是耐力不是力量，壓低次數、拉高難度。</p>
+
+<p>記日誌，格式跟啞鈴版一樣：</p>
+
+<div class="schedule">20260320 引體（椅子輔助）3×6
+20260319 伏地挺身（標準）3×8 → 畢業
+20260318 pistol squat（椅子輔助）3×5</div>
+
+<p>這個 3×5-8 的進階框架來自 Steven Low 的 Overcoming Gravity（第二版），作者是物理治療博士（DPT），是自重力量訓練領域最系統化的參考書。裡面有非常多進階動作路線，包括 front lever、human flag 等高難度技巧的完整 progression。推薦。</p>
+
+<p>要先講清楚徒手的根本限制：加重不連續。啞鈴可以每次加 1.25 公斤，徒手從標準伏地挺身到 archer push up，強度可能一次跳 30-40%，中間沒有平滑過渡。這是徒手練到中階之後進步變慢的根本原因。</p>
+
+<p>四條進階路線：</p>
+
+<h3>引體向上</h3>
+
+<div class="schedule">椅子輔助引體 → 離心引體（跳到頂，慢放 5 秒）→ 標準引體 3×8
+→ 寬握/窄握/L-sit 引體 → 負重引體（背包加重）
+→ Archer Pull Up → 單手引體</div>
+
+<p>離心引體是關鍵過渡：你拉不上去但一定放得下來，離心訓練會快速建立拉力的神經肌肉連結和肌腱強度。第一個完整引體向上是重要的里程碑，從零到一比從一到十難得多。</p>
+
+<h3>伏地挺身</h3>
+
+<div class="schedule">膝著地 → 標準 → 腳墊高 → Diamond → Archer → 單手伏地挺身</div>
+
+<p>Diamond 到 Archer 跳級大，可以用偏重伏地挺身（一手前一手後）作為中間過渡。</p>
+
+<h3>Pike Push Up（肩推方向）</h3>
+
+<div class="schedule">Pike Push Up → 腳墊高 Pike → 靠牆倒立撐（先練離心）
+→ 全行程倒立伏地挺身</div>
+
+<p>靠牆倒立伏地挺身 3×8 的肩膀力量絕對可以跟長期練槓鈴肩推的人比。但要靠純自重漸進練到這一步非常困難——中間跳級大、平衡需求高、學習曲線陡。真的，去買個啞鈴吧。</p>
+
+<h3>單腿蹲</h3>
+
+<div class="schedule">椅子輔助 Pistol Squat → 降低椅子高度 → 無輔助 Pistol → 負重 Pistol</div>
+
+<p>踝關節背屈和髖關節活動度要求高，蹲不下去可能是活動度問題不是力量問題。穿有跟的鞋或腳跟墊東西可以降低踝關節需求。</p>
+
+<p>徒手可以入門，但如果你想穩定進步，最終還是會回到加重。</p>
+
+<hr>
+
+<h2>有氧要怎麼做？</h2>
+
+<p>兩個推薦方案，選一個：</p>
+
+<p><strong>方案一：室內超慢跑。</strong>零器材，在家原地踮腳慢跑，心率 120-140，每天 30 分鐘。體能好的人心率拉不上來，每 3-5 分鐘插一個 burpee，心率瞬間跳上來，繼續慢跑讓它降回去。中間廣告的時候剛好做一個。</p>
+
+<p><strong>方案二：走步機上坡走。</strong>如果你有預算和空間，買一台便宜、安靜的低速走步機（under desk treadmill 那種就行，不需要能跑步的，只要能走路），用瑜珈磚或木塊把前端墊高做成斜坡，或者直接買有坡度功能的機型。設定好速度，上去一直走。好處是完全不需要想——速度固定、坡度固定，你只要站上去走，安靜、低衝擊、不用跑，心理成本比超慢跑更低。適合邊看劇邊走、邊開會邊走。</p>
+
+<p>兩個方案的目標一樣：心率 120-140，每天 30 分鐘，週一到五，一週 150 分鐘。想多做就週末加，上限 300 分鐘（WHO 建議）。</p>
+
+<p>心率可以手按頸動脈量 15 秒乘以 4，或買一隻便宜的心率錶。體感標準：能講完整句子、不會喘到斷句。</p>
+
+<p>力量跟有氧分開做。早上 Onelift、晚上有氧，或反過來，都行。不要同一個時段做，原因後面解釋。</p>
+
+<p>有氧以後會專門寫一篇更完整的。這裡先講為什麼要做、為什麼選 Zone 2。</p>
+
+<hr>
+
+<h2>為什麼要做有氧？力量訓練不夠嗎？</h2>
+
+<p>不夠。力量訓練和有氧練的是完全不同的生理系統。</p>
+
+<p>Onelift 練的是快縮肌纖維的力量輸出、神經肌肉徵召、骨密度。但 Onelift 不練心血管系統，不練粒線體。這些要靠有氧。</p>
+
+<p>粒線體（mitochondria）是細胞裡的能量工廠。每一個肌肉細胞裡面有幾百到幾千個，負責把氧氣和燃料透過氧化磷酸化轉換成 ATP——你身體所有活動的能量貨幣。粒線體多、功能好，基礎代謝高，脂肪氧化強，胰島素敏感度好，慢性發炎低。</p>
+
+<p>有氧運動啟動肌肉細胞裡的 AMPK（AMP-activated protein kinase）通路。AMPK 是能量感應器，細胞能量下降時被活化，然後啟動 PGC-1α——粒線體生合成的主調控因子。PGC-1α 上調粒線體製造、脂肪酸氧化、微血管增生相關的基因表達。</p>
+
+<p>如果你讀過上一篇，你記得力量訓練啟動的是 mTOR 通路——負責肌肉蛋白質合成。AMPK 和 mTOR 是身體的陰和陽：AMPK 感應能量不足，啟動分解和再生（粒線體增生、脂肪氧化、細胞自噬）；mTOR 感應機械張力和胺基酸，啟動合成（肌原纖維蛋白增生）。兩者互相拮抗——這就是為什麼力量和有氧不要同一個時段做。AMPK 和 mTOR 同時啟動，訊號互相干擾，就是所謂的干擾效應（interference effect）。分開做，各做各的，兩邊都拿到完整的訓練適應。</p>
+
+<p>持續數週的有氧訓練可以顯著增加粒線體密度、檸檬酸合成酶活性、微血管密度、以及 VO2max（最大攝氧量）。</p>
+
+<p>VO2max 是目前已知最強的全因死亡率預測因子之一。Cooper Center Longitudinal Study——追蹤超過 12 萬人——顯示，從最低 25% 的心肺適能提升到中位數，全因死亡率風險降低約 50%。這個效果比控制血壓、膽固醇、甚至戒菸都大。</p>
+
+<p>你的心肺有多好，很大程度決定你能活多久、活得多健康。Onelift 不練這個。有氧練的就是這個。</p>
+
+<hr>
+
+<h2>為什麼是 Zone 2，不是跑快一點更有效？</h2>
+
+<p>Zone 2 是這篇推薦的有氧方案，不代表其他強度不好。HIIT 對心肺和粒線體的刺激效率很高，這有大量研究支持。但這篇跟 Onelift 的哲學一樣：給你摩擦力最低、最容易每天做、最容易持續一輩子的方案。Zone 2 就是有氧版的刷牙。HIIT 以後有機會再專門寫。</p>
+
+<p>Zone 2 有幾個特別適合作為日常有氧基底的好處：</p>
+
+<p><strong>恢復成本幾乎為零。</strong>做完 30 分鐘什麼感覺都沒有，隔天 Onelift 照常練。可以天天做，不干擾力量進步。</p>
+
+<p><strong>選擇性訓練慢縮肌纖維（Type I）的粒線體。</strong>Onelift 訓練快縮纖維，Zone 2 訓練慢縮纖維。慢縮纖維是有氧代謝的主力，粒線體密度比快縮纖維高。Zone 2 的強度剛好讓慢縮纖維獨立應付，快縮纖維不參與，刺激集中在慢縮纖維的粒線體上。這不是「比 HIIT 差的替代品」，是不同的訓練適應。</p>
+
+<p><strong>訓練脂肪氧化和代謝靈活性（metabolic flexibility）。</strong>Zone 2 強度下能量主要來自脂肪氧化，大約對應 Fatmax。長期訓練提升你身體把脂肪當燃料燒的能力。代謝靈活性好的人：平常靠脂肪供能，血糖穩定，不容易餓，不囤脂。代謝靈活性差的人：一直在燒醣，血糖雲霄飛車，餐後想睡，兩餐之間就餓。這是久坐、胰島素阻抗的典型代謝特徵。Zone 2 是改善這個能力最直接的方式。</p>
+
+<p><strong>可以做一輩子。</strong>70 歲的人走路走到 Zone 2 心率，完全沒問題。沒有受傷風險，沒有急性心血管壓力。</p>
+
+<p>完整架構：</p>
+
+<div class="schedule">Onelift = 高強度、快縮肌纖維、力量和骨密度、mTOR
+Zone 2  = 低強度、慢縮肌纖維、粒線體和心血管、AMPK</div>
+
+<p>陰跟陽。互補，不重疊，不衝突。</p>
+
+<hr>
+
+<h2>要不要吃 Creatine？</h2>
+
+<p>除了蛋白質之外，creatine（肌酸）是最有效、被研究最透徹的訓練補劑。</p>
+
+<p>上一篇講過磷酸肌酸系統：你做大重量的前 10-15 秒主要靠 PCr 供能。口服 creatine monohydrate 可以增加肌肉中的 PCr 儲量約 10-40%，讓你每一組能維持最大力量輸出的時間更長，組間恢復更快。</p>
+
+<p>超過 500 篇同行評審研究，數十篇 meta-analysis，一致結論：對力量和高強度運動表現有顯著正面效果，長期安全。ISSN（International Society of Sports Nutrition）2017 年立場聲明：creatine monohydrate 是目前最有效的營養補劑。</p>
+
+<p>用法：每天 3-5 克，跟任何一餐吃，每天吃，不用停，不需要 loading phase，3-4 週飽和。一公斤台幣三四百塊，吃超過半年。</p>
+
+<p>近年研究還發現對認知功能有正面效果，特別是睡眠不足或高認知壓力下。大腦也用 PCr 系統。方向正面，研究還在早期。</p>
+
+<p>常見迷思「吃肌酸會水腫」：體重增加約 1-2 公斤，是肌肉細胞內的水分，不是皮下水腫，不是脂肪。肌肉飽滿是大家都喜歡的外形加分。</p>
+
+<hr>
+
+<h2>這篇講的東西，女生有什麼不一樣？</h2>
+
+<p>方法完全一樣。上一篇講過為什麼女生更需要力量訓練，女生更在意膠原蛋白流失（臉垮掉）、女生更容易骨質疏鬆、女生更容易肌少症。</p>
+
+<p>這裡針對這篇的幾個問答，補充三件事：</p>
+
+<p><strong>第一，有氧不要練過量。</strong>女生的通病就是有氧過量：很多女生為了要瘦，每天跑步一小時、飛輪課、大量心肺，但不做力量。結果肌肉沒增長，基礎代謝沒提升，瘦得鬆垮，一停就回來。力量訓練增加的肌肉量長期提升基礎代謝，這才是可持續的體組成改善。有氧搭配力量，不是取代。Zone 2 每天 30 分鐘就夠了。</p>
+
+<p><strong>第二，Creatine 對女生可能更有效。</strong>女性肌酸儲量天生低——肌肉量基數小，紅肉攝取通常也少——補充後的相對提升幅度可能比男性更大。不會水腫，體重增加 1-2 公斤是肌肉細胞內的水分。</p>
+
+<p><strong>第三，徒手方案的引體向上做不了很正常。</strong>椅子輔助或離心引體開始，幾個月內會拉出第一個。女生能做標準引體向上是非常炫的事——大部分男生都做不了幾個，女生能做，那是真正的實力展示。</p>
+
+<hr>
+
+<h2>線性加重遲早會練完吧？然後呢？</h2>
+
+<p>會。但離你很遠。</p>
+
+<p>首先線性加重一定要配週期性減重量，不是一直加上去卡住之後還是嘗試在同樣重量加重。就如同你想跳高，一定是先蹲後跳，站著跳、跳不高，要突破原來的瓶頸就要先減強度，再加回來。</p>
+
+<p>線性加重 + 週期性減重量，這個方法可以跑好幾年，一個週期可以從 8 週拉長到 12 週。到你真的跑完，不再進步，你的力量大概已經到基因潛力的八成。</p>
+
+<p>到那個階段，不需要換器材。一樣的啞鈴槓，一樣的五個動作。換的是加重策略：從線性轉到波形加重（undulating periodization）——一個週期裡安排輕、中、重不同強度的訓練日，用 training max 的百分比管理負荷。比線性複雜，需要試算表。</p>
+
+<p>經典系統：5/3/1（Jim Wendler）、Texas Method、Tactical Barbell 原本為槓鈴設計，但週期化邏輯完全適用於單邊啞鈴。我自己現在用的就是 Tactical Barbell 其中一種 Template。</p>
+
+<p>以後專門寫。現在只需要知道：線性跑完不是終點，是畢業。你不需要買新器材。</p>
+
+<hr>
+
+<h2>要不要找教練？</h2>
+
+<p>如果有時間和資源，我推薦請個好教練。好的教練非常有價值。</p>
+
+<p>我講的是心法內功：漸進式超負荷的原理、系統設計邏輯、日誌的意義、長期心態。</p>
+
+<p>教練更能教的是外功：你的膝蓋為什麼內夾、髖鉸鏈哪裡卡住、肩膀為什麼推不直。一個好教練幾分鐘看出問題，一兩個 cue 修正過來。你自己看影片可能摸索幾個月。</p>
+
+<p>我自己也找過兩個教練。Bay Area 健力選手 Dan Green，台灣舉重國手烈哥。兩個人都幫我突破動作瓶頸，對我很有價值。教練不是專給新手用的。</p>
+
+<p>但找教練有前提。他至少一定要知道複合動作、知道漸進式超負荷（例如怪獸訓練體系的教練就不錯），不是帶你做一堆彈力繩、bosu 球、亂七八糟不會進步的動作。教練有時候怕學生覺得他沒價值就一直搞新花樣。你可以先溝通：我就是要做這五個動作，你教會我就好。光一招槓鈴深蹲就教不完練不完了，真的不用教二十種東西。</p>
+
+<p>教練自己要是練家子。自己都練不起來的人是不可能教會你的。你可以問教練：硬舉多少？深蹲多少？不需要是什麼怪物級的數字，但至少要是一個走過這條路、進步過的數字，否則他自己的方法在自己身上都沒試成功，憑什麼來教你。</p>
+
+<p>我敢在這邊教人，是因為我自己能蹲舉 2 倍體重 9 下，引體向上加重 2/3 體重 3 下。根據 Strength Level（strengthlevel.com，超過 1800 萬筆訓練數據），這兩個數字都是 Elite（訓練人群裡，前 1-2%），而且是所有年齡、有在訓練的男性人群排名，45 歲以上還會更高。</p>
+
+<p>我不是職業運動員，不是教練，就是一個普通的工程師上班族，用空閒時間訓練的。這些年讀過上百本健身書和無數參考論文，多年的功夫不只在身上，更在大腦裡。我寫的東西不是從網路上亂找來的，是自己練出來、讀透了、驗證過、長期有效的。</p>
+
+<hr>
+
+<h2>結語</h2>
+
+<p>大原則不變。</p>
+
+<p><strong>第一，五個基本動作模式：蹲、髖伸屈、上推、前推、後拉。</strong>單邊啞鈴動作可以替代成器械、槓鈴、甚至徒手，只要那個動作對應同一種基礎動作模式、可以漸進式負荷就可以。例如前推，單手啞鈴臥推可以換成 Machine Chest Press，一樣加重、一樣記日誌，效果一樣。</p>
+
+<p><strong>第二，一天一動作，或一週三日全身，兩種排程都可以。</strong>看你日常行程安排的便利性。在家推薦每日一動作，去健身房就每週三日全身。</p>
+
+<p>不管你選哪個版本，核心邏輯永遠不變：</p>
+
+<p><strong>漸進式超負荷（+週期性減量！）。記日誌。睡飽。吃蛋白質。</strong></p>
+
+<p>另外介紹了一項重要性不亞於力量訓練的有氧方法：Zone 2，每天 30 分鐘，超慢跑或走步機上坡走，看半集劇就完成了。</p>
+
+<p>做一個月就贏了。因為你做了一個月，我有信心你就可以做三年。數字會慢慢往上走。你會成為那個最強壯健康的人。</p>
+
+<div class="source-link">
+  <p>先讀：<a href="/zh/blog/onelift-system.html">Onelift 完整訓練系統 &rarr;</a></p>
+  <p>本文原載於 Facebook「矽谷工程師的抗衰老實驗室」</p>
+  <p><a href="https://www.facebook.com/engineeringlongevity/posts/pfbid02E54tWJWAZr196TmDrwmbp7F3jptLhzqetwcSKbv4FqfGaZLvTuVYZ23RnZDjra9Tl" target="_blank" rel="noopener">閱讀 Facebook 原文 &rarr;</a></p>
+</div>
+
+</article>
+
+<footer class="footer">
+  <p>&copy; 2026 Onelift. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
