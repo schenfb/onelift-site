@@ -376,5 +376,88 @@ a:hover { text-decoration: underline; }
   <p>&copy; 2026 Solid &middot; One Lift a Day. All rights reserved.</p>
 </footer>
 
+<script>
+/* solid-anim: animate the How It Works stick figures (forward kinematics,
+   ported from the app's AnimatedFigure). Self-contained, no external requests.
+   Replaces the static inline SVGs on load; reduced-motion keeps them static. */
+(function(){
+  if (!window.requestAnimationFrame) return;
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var ORDER = ['bss','ohp','sldl','row','bench'];
+  var POSES = {
+    "bss": { "anchor":"fA","head":"head","headParent":"sh","load":{"at":"hd2","parent":"el"},
+      "bones":[["fA","fK","hip"],["hip","rK","rF"],["hip","sh"],["sh","el","hd2"]], "joints":["fA","fK","hip","sh","rK"], "bench":[100,148,404],
+      "bottom":{"fA":[214,462],"fK":[222,398],"hip":[186,400],"sh":[192,320],"head":[206,300],"el":[194,362],"hd2":[196,404],"rK":[160,452],"rF":[130,404]},
+      "top":{"fA":[214,462],"fK":[214,432],"hip":[196,352],"sh":[202,274],"head":[214,256],"el":[204,316],"hd2":[206,358],"rK":[176,420],"rF":[132,404]} },
+    "ohp": { "anchor":"an","head":"head","headParent":"sh","load":{"at":"hand","parent":"el"},
+      "bones":[["an","kn","hip","sh"],["sh","el","hand"]], "joints":["kn","hip","sh","el"], "bench":null,
+      "bottom":{"an":[202,462],"kn":[195,430],"hip":[200,392],"sh":[200,332],"head":[213,308],"el":[180,344],"hand":[188,322]},
+      "top":{"an":[202,462],"kn":[195,430],"hip":[200,392],"sh":[200,332],"head":[213,308],"el":[192,300],"hand":[184,272]} },
+    "sldl": { "anchor":"an","head":"head","headParent":"sh","load":{"at":"hd","parent":"sh"},
+      "bones":[["an","kn","hip"],["hip","rK","rF"],["hip","sh"],["sh","hd"]], "joints":["an","kn","hip","sh","rK"], "bench":null,
+      "bottom":{"an":[192,462],"kn":[205,408],"hip":[196,354],"sh":[250,338],"hd":[248,398],"rK":[170,406],"rF":[152,458],"head":[270,332]},
+      "top":{"an":[192,462],"kn":[201,406],"hip":[197,352],"sh":[198,262],"hd":[202,352],"rK":[181,410],"rF":[170,458],"head":[200,240]} },
+    "row": { "anchor":"an","head":"head","headParent":"sh","load":{"at":"hand","parent":"el"},
+      "bones":[["an","kn","hip"],["hip","rK2","rF2"],["hip","sh"],["sh","sup"],["sh","el","hand"]], "joints":["an","kn","hip","rK2","sh","el"], "bench":[210,292,400],
+      "bottom":{"an":[170,462],"kn":[168,414],"hip":[158,352],"rK2":[128,408],"rF2":[104,462],"sh":[222,330],"sup":[240,394],"el":[216,372],"hand":[212,414],"head":[242,322]},
+      "top":{"an":[170,462],"kn":[168,414],"hip":[158,352],"rK2":[128,408],"rF2":[104,462],"sh":[222,330],"sup":[240,394],"el":[192,312],"hand":[206,362],"head":[242,322]} },
+    "bench": { "anchor":"hip","head":"head","headParent":"sh","load":{"at":"hand","parent":"el"},
+      "bones":[["hip","lk","lf"],["hip","sh"],["sh","el","hand"]], "joints":["sh","el"], "bench":[150,236,436],
+      "bottom":{"hip":[156,424],"sh":[222,424],"el":[212,440],"hand":[220,418],"head":[242,418],"lk":[136,448],"lf":[154,470]},
+      "top":{"hip":[156,424],"sh":[222,424],"el":[222,405],"hand":[222,382],"head":[242,418],"lk":[136,448],"lf":[154,470]} }
+  };
+  function buildEdges(m){
+    var adj={}; function push(a,b){(adj[a]=adj[a]||[]).push(b);}
+    for(var ci=0;ci<m.bones.length;ci++){var ch=m.bones[ci];for(var i=1;i<ch.length;i++)push(ch[i-1],ch[i]);}
+    push(m.headParent,m.head); push(m.load.parent,m.load.at);
+    var seen={}; seen[m.anchor]=1; var q=[m.anchor], edges=[];
+    while(q.length){var p=q.shift(), kids=adj[p]||[];
+      for(var k=0;k<kids.length;k++){var c=kids[k]; if(seen[c])continue; seen[c]=1;
+        var B=m.bottom,T=m.top,
+            len=Math.hypot(B[c][0]-B[p][0],B[c][1]-B[p][1]),
+            a0=Math.atan2(B[c][1]-B[p][1],B[c][0]-B[p][0]),
+            a1=Math.atan2(T[c][1]-T[p][1],T[c][0]-T[p][0]);
+        edges.push({p:p,c:c,len:len,a0:a0,a1:a1}); q.push(c);}}
+    return edges;
+  }
+  function fk(m,edges,t){
+    var P={}, a=m.bottom[m.anchor], b=m.top[m.anchor];
+    P[m.anchor]=[a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t];
+    for(var i=0;i<edges.length;i++){var e=edges[i], d=e.a1-e.a0;
+      while(d>Math.PI)d-=2*Math.PI; while(d<-Math.PI)d+=2*Math.PI;
+      var ang=e.a0+d*t, pp=P[e.p]; P[e.c]=[pp[0]+e.len*Math.cos(ang), pp[1]+e.len*Math.sin(ang)];}
+    return P;
+  }
+  var GROUND='<line x1="105" y1="470" x2="295" y2="470" stroke="#B3AA9A" stroke-width="3" opacity="0.9"/>';
+  for(var gx=113; gx<=289; gx+=16) GROUND+='<line x1="'+gx+'" y1="470" x2="'+(gx-8)+'" y2="479" stroke="#B3AA9A" stroke-width="2" opacity="0.5"/>';
+  function f(n){return n.toFixed(1);}
+  function frame(m,edges,t){
+    var P=fk(m,edges,t), s=GROUND;
+    if(m.bench){var a=m.bench[0],b=m.bench[1],tp=m.bench[2];
+      s+='<line x1="'+a+'" y1="'+tp+'" x2="'+b+'" y2="'+tp+'" stroke="#B3AA9A" stroke-width="12"/>'
+        +'<line x1="'+(a+8)+'" y1="'+(tp+6)+'" x2="'+(a+8)+'" y2="470" stroke="#B3AA9A" stroke-width="5" stroke-linecap="round"/>'
+        +'<line x1="'+(b-8)+'" y1="'+(tp+6)+'" x2="'+(b-8)+'" y2="470" stroke="#B3AA9A" stroke-width="5" stroke-linecap="round"/>';}
+    for(var ci=0;ci<m.bones.length;ci++){var ch=m.bones[ci], pts=[];
+      for(var j=0;j<ch.length;j++)pts.push(f(P[ch[j]][0])+','+f(P[ch[j]][1]));
+      s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="#26221C" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>';}
+    var h=P[m.head]; s+='<circle cx="'+f(h[0])+'" cy="'+f(h[1])+'" r="12" fill="none" stroke="#26221C" stroke-width="7"/>';
+    var L=P[m.load.at]; s+='<g transform="translate('+f(L[0])+','+f(L[1])+')" stroke="#C2711C" fill="none" stroke-width="5" stroke-linejoin="round"><line x1="-15" y1="0" x2="15" y2="0" stroke-linecap="round"/><rect x="-25" y="-14" width="10" height="28" rx="4"/><rect x="15" y="-14" width="10" height="28" rx="4"/></g>';
+    for(var ji=0;ji<m.joints.length;ji++){var jj=P[m.joints[ji]]; s+='<circle cx="'+f(jj[0])+'" cy="'+f(jj[1])+'" r="5" fill="#1B4332"/>';}
+    return '<svg viewBox="95 283 210 202" preserveAspectRatio="xMidYMax meet" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;display:block">'+s+'</svg>';
+  }
+  var figs=[], els=document.querySelectorAll('.move-grid .fig');
+  for(var i=0;i<els.length;i++){var slug=ORDER[i], m=POSES[slug]; if(!m)continue; figs.push({el:els[i], m:m, edges:buildEdges(m)});}
+  if(!figs.length) return;
+  var t0=null, period=2.4;
+  function loop(ts){
+    if(t0==null)t0=ts;
+    var el=(ts-t0)/1000, ph=(el%period)/period, tri=ph<0.5?ph*2:(1-ph)*2,
+        t=tri<0.5?2*tri*tri:1-Math.pow(-2*tri+2,2)/2;
+    for(var i=0;i<figs.length;i++) figs[i].el.innerHTML=frame(figs[i].m,figs[i].edges,t);
+    requestAnimationFrame(loop);
+  }
+  requestAnimationFrame(loop);
+})();
+</script>
 </body>
 </html>
