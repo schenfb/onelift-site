@@ -13,8 +13,8 @@
   }catch(e){}
 })();
 </script>
-<title>Onelift — One Exercise a Day, Get Stronger</title>
-<meta name="description" content="A free strength training app. One dumbbell, one exercise a day, progressive overload. Get stronger at home in 20 minutes.">
+<title>Solid — Strength, One Lift a Day</title>
+<meta name="description" content="Solid is a free strength training app built on the One Lift a Day method. One dumbbell, one lift a day, progressive overload. Get stronger at home in 20 minutes.">
 <link rel="alternate" hreflang="zh-Hant" href="/zh/">
 <link rel="alternate" hreflang="en" href="/">
 <link rel="canonical" href="https://onelift.org/">
@@ -64,8 +64,19 @@ a:hover { text-decoration: underline; }
 .hero h1 span { color: #1B4332; }
 .hero-sub {
   font-size: clamp(16px, 2.5vw, 20px); color: #78716C;
-  max-width: 520px; margin: 0 auto 40px; line-height: 1.5;
+  max-width: 520px; margin: 0 auto 28px; line-height: 1.5;
 }
+/* Brand acrostic: STRENGTH · ONE · LIFT · A · DAY -> SOLID */
+.acrostic {
+  display: inline-flex; align-items: center; gap: 12px; flex-wrap: wrap; justify-content: center;
+  margin: 0 auto 36px; padding: 10px 20px; border-radius: 999px;
+  background: #fff; border: 1px solid #D6D3D1;
+}
+.acrostic .method { font-size: 15px; color: #78716C; letter-spacing: 0.2px; }
+.acrostic .method b { color: #1B4332; font-weight: 800; }
+.acrostic .eq { color: #C0BBB2; font-size: 14px; }
+.acrostic .name { font-size: 16px; font-weight: 800; color: #292524; letter-spacing: 1px; }
+.acrostic .name b { color: #1B4332; }
 .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
@@ -180,7 +191,7 @@ a:hover { text-decoration: underline; }
 
 <nav class="nav">
   <div class="nav-inner">
-    <div class="nav-logo">Onelift</div>
+    <div class="nav-logo">Solid</div>
     <div class="nav-links">
       <a href="#how">How It Works</a>
       <a href="#system">The System</a>
@@ -193,12 +204,17 @@ a:hover { text-decoration: underline; }
 
 <section class="hero">
   <div class="hero-badge">Free &mdash; No account required</div>
-  <h1>One exercise a day.<br><span>Get stronger.</span></h1>
+  <h1>One lift a day.<br><span>Get stronger.</span></h1>
   <p class="hero-sub">
-    A free strength training app built on one idea: the simplest program you can actually stick with is the one that works.
+    <b>Solid</b> is a free strength training app built on one idea: the simplest program you can actually stick with is the one that works.
   </p>
+  <div class="acrostic" title="One Lift a Day spells Solid">
+    <span class="method"><b>S</b>trength &middot; <b>O</b>ne &middot; <b>LI</b>ft &middot; a &middot; <b>D</b>ay</span>
+    <span class="eq">&rarr;</span>
+    <span class="name"><b>SOLID</b></span>
+  </div>
   <div class="hero-cta">
-    <a class="btn btn-primary" href="#notify">Download (Coming Soon)</a>
+    <a class="btn btn-primary" href="#notify">Download Solid (Coming Soon)</a>
     <a class="btn btn-secondary" href="#system">Learn the System</a>
   </div>
 </section>
@@ -324,12 +340,12 @@ a:hover { text-decoration: underline; }
 <section id="notify" style="padding: 72px 24px; text-align: center; background: #1B4332;">
   <div style="font-size: 40px; margin-bottom: 12px;">🔔</div>
   <h2 style="font-size: 30px; font-weight: 800; margin-bottom: 10px; color: #fff;">Be the first to know</h2>
-  <p style="font-size: 17px; color: #C9DCD1; margin-bottom: 28px; max-width: 440px; margin-left:auto; margin-right:auto;">iOS and Android. Free, no account. Get one email the day it launches — nothing else.</p>
+  <p style="font-size: 17px; color: #C9DCD1; margin-bottom: 28px; max-width: 440px; margin-left:auto; margin-right:auto;">Solid launches on iOS and Android. Free, no account. Get one email the day it launches — nothing else.</p>
   <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfCPs9CeeVQoGMoJu4ZCbh1PAUpAL0CK2V4e_xsvBa0zsKApg/viewform" target="_blank" style="background:#fff; color:#1B4332; font-size:17px; padding:16px 40px;">Join the Waitlist →</a>
 </section>
 
 <footer class="footer">
-  <p>&copy; 2026 Onelift. All rights reserved.</p>
+  <p>&copy; 2026 Solid &middot; One Lift a Day. All rights reserved.</p>
 </footer>
 
 </body>
