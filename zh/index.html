@@ -124,7 +124,9 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid #D6D3D1;
 }
 @media (max-width: 640px) {
-  .nav-links a:not(.lang-switch) { display: none; }
+  .nav { padding: 0 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.lang-switch):not(.mobile-blog) { display: none; }
   .hero { padding: 120px 20px 60px; }
   .features { padding: 60px 20px; }
   .how { padding: 60px 20px; }
@@ -149,7 +151,7 @@ a:hover { text-decoration: underline; }
       <a href="#how">怎麼練</a>
       <a href="#system">系統</a>
       <a href="/zh/blog/onelift-system.html">完整教學</a>
-      <a href="/zh/blog/">文章</a>
+      <a href="/zh/blog/" class="mobile-blog">文章</a>
       <a href="/" class="lang-switch" onclick="try{localStorage.setItem('onelift_lang','en')}catch(e){}">English</a>
     </div>
   </div>

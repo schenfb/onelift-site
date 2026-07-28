@@ -151,7 +151,9 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid #D6D3D1;
 }
 @media (max-width: 640px) {
-  .nav-links a:not(.lang-switch) { display: none; }
+  .nav { padding: 0 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.lang-switch):not(.mobile-blog) { display: none; }
   .article-header { padding: 100px 20px 36px; }
   .article-body { padding: 36px 20px 60px; font-size: 16px; }
   .schedule { font-size: 13px; }
@@ -166,6 +168,7 @@ a:hover { text-decoration: underline; }
     <div class="nav-links">
       <a href="/zh/">首頁</a>
       <a href="/zh/blog/onelift-system.html">完整教學</a>
+      <a href="/zh/blog/" class="mobile-blog">文章</a>
       <a href="/blog/onelift-faq.html" class="lang-switch">English</a>
     </div>
   </div>
