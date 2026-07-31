@@ -105,6 +105,21 @@ a:hover { text-decoration: underline; }
 }
 .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
 .step-content p { font-size: 15px; color: #78716C; }
+
+.shots { padding: 80px 24px; background: #F7F3EC; }
+.shots-inner { max-width: 1060px; margin: 0 auto; }
+.shots-row {
+  display: flex; gap: 22px; overflow-x: auto; padding: 6px 4px 18px;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.shots-row::-webkit-scrollbar { height: 0; }
+.shot { flex: 0 0 auto; width: 228px; scroll-snap-align: center; }
+.shot img {
+  width: 100%; height: auto; display: block; border-radius: 24px;
+  border: 1px solid #E7E2D6; box-shadow: 0 10px 30px rgba(21,53,42,0.13);
+}
+.shot figcaption { text-align: center; font-size: 13px; color: #78716C; margin-top: 12px; }
+@media (min-width: 980px) { .shots-row { justify-content: center; overflow-x: visible; } }
 .exercise-links { list-style: none; margin: 12px 0 0; padding: 0; }
 .exercise-links li { display: flex; align-items: baseline; gap: 10px; padding: 7px 0; border-bottom: 1px solid #E7E5E4; }
 .exercise-links li:last-child { border-bottom: none; }
@@ -285,6 +300,19 @@ a:hover { text-decoration: underline; }
         <h3>撞牆？退回去重來</h3>
         <p>加到快做不動時，退回 4 週前的重量重新往上疊。你會超過上次的紀錄繼續前進。這就是週期：加重、退回、再疊上去。</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="shots" id="screenshots">
+  <div class="shots-inner">
+    <h2 class="section-title">實際畫面</h2>
+    <div class="shots-row">
+      <figure class="shot"><img src="/screenshots/zh/01-home.jpg" alt="今天的動作" loading="lazy"><figcaption>一天一個動作</figcaption></figure>
+      <figure class="shot"><img src="/screenshots/zh/02-workout.jpg" alt="記錄每組、自動休息計時" loading="lazy"><figcaption>一次一組,幫你計時</figcaption></figure>
+      <figure class="shot"><img src="/screenshots/zh/03-addweight.jpg" alt="自動加重" loading="lazy"><figcaption>次數到了自動加重</figcaption></figure>
+      <figure class="shot"><img src="/screenshots/zh/04-progress.jpg" alt="肌力成長曲線" loading="lazy"><figcaption>看見自己變強</figcaption></figure>
+      <figure class="shot"><img src="/screenshots/zh/05-sharecard.jpg" alt="分享圖卡" loading="lazy"><figcaption>分享今天的成果</figcaption></figure>
     </div>
   </div>
 </section>
