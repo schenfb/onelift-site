@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>加重的方法：怎麼加、什麼時候退</title>
+<meta name="description" content="漸進超負荷怎麼執行：從很輕開始留足加重跑道、等重組、小幅規律加重、在撞牆之前減量、退回幾週的進度。線性加重完整指南，附完整文獻。">
+<meta name="keywords" content="力量訓練, 漸進超負荷, 線性加重, 減量, deload, 週期化, 5RM, 等重組, Soliday">
+<meta property="og:title" content="加重的方法：怎麼加、什麼時候退">
+<meta property="og:description" content="漸進超負荷怎麼執行：從很輕開始留足加重跑道、等重組、小幅規律加重、在撞牆之前減量。線性加重完整指南。">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="zh_TW">
+<link rel="alternate" hreflang="zh-Hant" href="/zh/blog/onelift-progression.html">
+<link rel="alternate" hreflang="en" href="/blog/onelift-progression.html">
+<link rel="canonical" href="https://onelift.org/zh/blog/onelift-progression.html">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  color: #292524; background: #F7F3EC; line-height: 1.6;
+}
+a { color: #1B4332; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(247,243,236,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D6D3D1; padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 0.5px; }
+.nav-logo a { color: #1B4332; }
+.nav-logo a:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
+.lang-switch {
+  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
+  padding: 4px 12px; border-radius: 6px;
+}
+.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+
+.article-header {
+  padding: 120px 24px 48px;
+  text-align: center;
+  background: linear-gradient(180deg, #F7F3EC 0%, #EDF3EE 100%);
+}
+.article-header h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  line-height: 1.25;
+  max-width: 720px;
+  margin: 0 auto 16px;
+}
+.article-header h1 span { color: #1B4332; }
+.article-meta {
+  font-size: 14px;
+  color: #A8A29E;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.article-body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+  font-size: 17px;
+  line-height: 1.85;
+}
+.article-body p {
+  margin-bottom: 1.2em;
+}
+.article-body h2 {
+  font-size: clamp(22px, 3.5vw, 28px);
+  font-weight: 800;
+  margin: 2.5em 0 0.8em;
+  color: #1B4332;
+}
+.article-body h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1.8em 0 0.6em;
+}
+.article-body hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #74A89280, transparent);
+  margin: 3em 0;
+}
+.article-body ul, .article-body ol {
+  margin: 0.8em 0 1.2em 1.5em;
+}
+.article-body li {
+  margin-bottom: 0.4em;
+}
+.article-body strong {
+  font-weight: 700;
+}
+.exercise-list {
+  list-style: none;
+  margin: 1em 0 1.2em 0;
+  padding: 0;
+}
+.exercise-list li {
+  padding: 4px 0;
+}
+.log-example {
+  background: #fff;
+  border: 1px solid #D6D3D1;
+  border-radius: 8px;
+  padding: 16px 20px;
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 1em 0 1.5em;
+  color: #78716C;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.video-links {
+  list-style: none;
+  margin: 1em 0 1.5em 0;
+  padding: 0;
+}
+.video-links li {
+  padding: 8px 0;
+  border-bottom: 1px solid #D6D3D1;
+}
+.video-links li:last-child {
+  border-bottom: none;
+}
+.video-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+.video-links a::before {
+  content: "\25B6";
+  font-size: 12px;
+}
+.source-link {
+  margin-top: 3em;
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #D6D3D1;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 15px;
+  color: #78716C;
+  box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.source-link a {
+  font-weight: 600;
+}
+
+.footer {
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E;
+  border-top: 1px solid #D6D3D1;
+}
+@media (max-width: 640px) {
+  .nav { padding: 0 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.lang-switch):not(.mobile-blog) { display: none; }
+  .article-header { padding: 100px 20px 36px; }
+  .article-body { padding: 36px 20px 60px; font-size: 16px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="/zh/">Soliday</a></div>
+    <div class="nav-links">
+      <a href="/zh/">首頁</a>
+      <a href="/zh/blog/" class="mobile-blog">文章</a>
+      <a href="/blog/onelift-progression.html" class="lang-switch">English</a>
+    </div>
+  </div>
+</nav>
+
+<header class="article-header">
+  <h1><span>加重</span>的方法</h1>
+  <div class="article-meta">力量訓練科學 &middot; 系列第二篇</div>
+</header>
+
+<article class="article-body">
+
+<p>肌肉是青春的源泉。它是身體最大的血糖吸收器——吃進去的醣，大部分是被肌肉收走的；它也是一個會對全身發送訊號的內分泌器官；而且它直接寫在外觀上。一個人看起來是老態龍鐘還是年富力強，主要不是看臉，是看身上還留著多少肌肉、神經系統還能不能把力量使出來。</p>
+
+<p>這些東西不會自己留下來，只能練。而同樣花時間練，結果可以差非常多。選擇比努力重要，做錯選擇，努力全白費。</p>
+
+<p>對重訓而言，最關鍵的三個選擇是：動作 &gt; 次數 = 加重模式。一組最廣泛採用的、也是最推薦的長期健康選擇是：動作——3-5 個多關節大動作；次數——五下三組；加重——線性加重 + 週期化。一句話說完：挑三到五個多關節大動作，每次訓練做三組、每組五下，三組用同一個重量；下一次訓練再往上加一點點，等到接近極限，就把重量退回去、重新再疊一輪。</p>
+
+<p>上一篇〈<a href="/zh/blog/onelift-five-reps.html">5 下的科學</a>〉講完了次數——為什麼是 5 下，為什麼那對力量和抗老最有效。這一篇講第二件事：重量怎麼加、什麼時候該退。至於三個選擇裡最重要的動作，下一篇再談。</p>
+
+<p>大部分人是怎麼練的：走進健身房，隨便抓一個順手的重量，做個 10 下、20 下，做到燒、做到痠，一個動作做四五組，換下一個。下次來，一樣的重量、一樣的次數、一樣的痠。再下次，還是一樣。半年過去，重量沒變、次數沒變、身體也沒變。每次練完都很累、隔天都很痠，可是照鏡子什麼都沒發生。然後有一天，人就不去了——太累、太痠、又沒效果，誰撐得下去。這不是不夠努力，是沒有計畫。</p>
+
+<p>真正的訓練，是走進健身房之前，你就已經知道今天每個動作要用多少重量、做幾下、做幾組。那個數字不是當場憑感覺決定的，是上一次練完就算好的。而這套算法有生理學的依據，也被幾十年來無數教練和選手，在成千上萬人身上驗證過。這篇就是講那套算法。</p>
+
+<hr>
+
+<h2>為什麼非加重不可</h2>
+
+<p>上一篇說過，訓練是給身體發送一則訊息：「今天練了單腿蹲 90 公斤五下」，就是給身體發了個訊息：「我們有『單腿舉起 90 公斤五下』的需求，請適應此需求」。那如果每次都送同一則訊息呢？身體第一次會回應、會長；但同一個重量練上十次、二十次，它早就適應了，那則訊息就從「我需要變強」變成了「維持現狀就好」。你還是很累、還是很痠，但那些疲勞已經換不到東西——成本照付，收益歸零。</p>
+
+<p>所以進步的引擎，從來不是「練得多痛」，是「重量有沒有往上動」。這件事有個正式的名字，叫漸進超負荷：身體適應了，你就得把刺激往上推一格，它才會繼續往上長。一句話：不加重，就不會變強。</p>
+
+<hr>
+
+<h2>起點：留足加重的跑道</h2>
+
+<p>既然要一直加重，第一個問題就來了：從多重開始？答案跟直覺相反——從遠低於自己能力的地方開始。輕到你會懷疑「這樣有用嗎」「我這樣有練到嗎」，那你就對了。</p>
+
+<p>核心的道理是：你能進步多久，取決於還剩多長的「加重跑道」。從很輕開始，前面攤著幾個月的空間，可以一次加一點、穩穩往上疊很久；一開始就上到接近極限，等於一起步就把跑道用光。而跑道一開始就沒了，會同時帶來三個問題：容易受傷（重量貼著極限，容錯空間很小，動作稍微跑掉就得硬吃）；容易放棄（每次訓練都是一場硬仗，還沒進健身房就開始緊張，撐不了幾個月）；沒辦法加重（加個兩三次就卡死，然後變成經年累月練同一個重量、什麼也長不出來的那種人）。第三個最致命，因為它是無聲的——你以為自己很努力，其實引擎早就熄火了。</p>
+
+<p>舉一個具體的例子：從一個輕鬆得幾乎像在熱身的重量起步，接著每兩次訓練加約 2 公斤，兩三個月之後，同一個動作可能已經疊上二三十公斤，順利超過之前做過的最大重量。那多出來的重量，就是「跑道」換來的東西。如果當初把起點放在接近極限的地方，大概加個兩三次就卡住了。</p>
+
+<p>這裡也順便回答一個常見的擔心：「做 5 下不是很重、很危險嗎？」不是。因為在整個週期裡，絕大多數時間用的重量都遠低於極限。前面幾週輕鬆得像熱身，中段才慢慢有點感覺，真正接近極限的只有最後那一兩次——而一碰到，就退、就重來。所謂 5RM，是「只能做 5 下、做完就力竭」的那個重量，大約落在 1RM 的 85% 附近【4】。那是一個測驗，不是一種練法；實務上也是十二週以上才測一次，不必天天做。其實線性加重跑到卡關的那個地方，本身就已經告訴你 5RM 大概在哪——那個數字會自己浮出來。</p>
+
+<p>那實際上該怎麼挑這個起點？分兩種人：<strong>新手</strong>——直接用最輕的（空槓、最輕的那對啞鈴、器械最小的配重），不用估、不用算，先把動作學會，重量幾週後自然會追上來。<strong>老手</strong>——從自己現在的最大重量往回推，退掉大約 8-12 週份的加重幅度，那個數字就是起點。</p>
+
+<p>用這麼輕的重量，剛開始一定會覺得「好像沒練到」。這個感覺是真的，但不用擔心——成千上萬練力量的人都是這樣從「輕到沒感覺」一路練上來的。而且加重的速度比想像中快得多。一週加 2.5 公斤，五十二週就是 130 公斤。實際上中間一定會卡關、會退回去重跑，不可能一路直線疊上去；但就算把這個數字打對折、再打對折，一年後那個重量還是會讓現在的自己嚇一跳。真正的問題從來不是「加得夠不夠快」，是「能不能一直加下去」。</p>
+
+<p>從輕開始還有一個附帶好處：動作還不熟、剛回訓、或年紀大了關節需要時間適應的時候，輕重量讓人有餘裕把技術磨對、把該用的肌肉找到。等身體準備好了，重量自然接得上去。慢，是為了久。</p>
+
+<hr>
+
+<h2>一次訓練，一個重量</h2>
+
+<p>第二個原則，等重組：同一次訓練裡的每一組，用同一個重量。三組 5 下，就是三組都用那個重量。不要第一組輕、第二組加、第三組再加——那種金字塔式的做法看起來很專業，但它會讓你失去唯一的判準。</p>
+
+<p>因為「今天這個重量吃不吃得下」，正是決定下次要不要加重的依據。三組同重、三組都穩穩做完，代表這個重量已經消化了，下次可以往上；如果第三組開始歪、開始擠，代表還沒到。每組都換重量，就沒有這個乾淨的訊號，只能憑感覺猜。</p>
+
+<p>組數不必多。最新的 ACSM 訓練立場聲明整理了 137 篇系統性回顧的資料，對最大力量的建議是：負荷要夠重（80% 1RM 以上），一個動作 2 到 3 組就夠【1】。力量的劑量反應很快就到頂，第四、第五組帶來的額外好處很小，疲勞卻是實打實地累積。而且等重組還有兩個很實際的好處：不用一直換槓片，省時間；不用一直算數字，省腦力。注意力可以全部放在把動作做好上。</p>
+
+<hr>
+
+<h2>怎麼加：小幅、規律</h2>
+
+<p>加多少，分兩個階段。一開始重量還很輕、做起來幾乎沒感覺的時候，每次訓練都可以往上加一片，快速往上爬——這個階段只是在追回本來就有的能力，不用客氣。等到重量開始有份量、做完會覺得「有練到」，就要換檔了。傳統的線性課表大致是這樣抓的：下半身一週加約 4.5 公斤，上半身一週加約 2.3 公斤。</p>
+
+<p>但絕對數字不會自己縮放，所以更好用的是比例：一週的加重，大約不要超過目前重量的 5%。蹲 100 公斤：一週加 5 公斤，剛好；蹲 40 公斤：一週 2 公斤就到頂，所以 2.5 公斤要兩週才加一次；肩推 60 公斤：一週加 2.5 公斤，剛好；肩推 20 公斤：2.5 公斤已經是 12%，太多了。這個數字不必抓得太精準，容錯空間其實很大，只要不是離譜地快、也不是好幾個月都不動，身體大致都跟得上。</p>
+
+<p>不過體型小、力量還在起步的人（女生常常落在這一區）千萬不要照抄前面那兩個經典數字——不是加得比較差，是絕對值本來就該小。用同樣的比例往上疊，一年下來的相對進步完全一樣。</p>
+
+<p>這裡會碰到一個很實際的問題：健身房最小的槓片通常就是 1.25 公斤，一加就是槓上 2.5 公斤，對小重量來說太粗了。解法有兩個——買一對更小的微槓片（0.5 或 1 公斤一片，很便宜，自己帶去健身房就行）；或者不換器材，直接把加重的週期拉長，改成兩週加一次，等於把速度砍成一半。加得慢一點，永遠好過卡死。同一個道理也解釋了為什麼上肢要加得比下肢慢：上肢動作的重量本來就小，同樣加 2.5 公斤，對深蹲只是 2.5%，對肩推卻可能超過 6%。肩推通常是所有動作裡加得最慢的一個。</p>
+
+<p>判準很簡單：動作標準、做完三組還覺得有餘力，就加；如果上次做得勉強，就維持原重量再練一次。這次沒加不是問題，卡住了還硬加才是。一週練兩三次的話，就挑其中一次往上加，其他幾次維持同一個重量。進步不是靠一次加很多，是靠加一點點、加很多次。</p>
+
+<hr>
+
+<h2>什麼時候該退：在撞牆之前</h2>
+
+<p>一直加下去，總有一天加不動——這是必然，不是失敗。關鍵在於什麼時候退。大部分人是撞牆了才退：加到某個重量，做不完、失敗了、被壓在下面了，才想到該減重。這樣做的代價是，你在最危險的那一下才發現問題。</p>
+
+<p>判定其實只有兩種狀況，很好記：<strong>黃燈</strong>——做得完，但覺得再多 1 到 2 下就做不了了，這時候可以退，也可以再挑戰一次，看當天狀態、睡得好不好、身上還有沒有別的疲勞；<strong>紅燈</strong>——做不完了，某一組沒推上去，不要再試，直接退。黃燈就退，是最理想的；等到紅燈才退，代價已經付了一部分。另外幾個附帶訊號也值得留意：動作品質開始跑掉、速度明顯變慢、連續兩次加重都加不上去。</p>
+
+<p>這也是「留餘力」的真正意思。它不是叫人每一組都刻意保留——在週期的前中段，重量本來就遠低於極限，根本不需要刻意留。它是一個訊號：當餘力開始消失，就代表這一輪快到頂了，該退了。不要等到做不完才退。要的是見好就收，不是撞到牆才轉彎。</p>
+
+<hr>
+
+<h2>退多少：先小退，再大退</h2>
+
+<p>退，不是砍掉一半，也不是從零開始重來。經典課表給的答案很一致：退 10%。StrongLifts 5&times;5 的規則是同一個重量連續三次做不完，就把重量降 10%，再一片一片加回去；Starting Strength 的重置幅度是 8 到 10%；Wendler 的 5/3/1 卡關時，同樣是把訓練最大重量砍 10%。</p>
+
+<p>另一種更好用的算法：不看百分比，看「退回幾週的進度」。</p>
+
+<div class="log-example">
+撞牆 &rarr; 退 4 週 &rarr; 再往上疊<br>
+撞牆 &rarr; 退 4 週 &rarr; 再往上疊<br>
+撞牆 &rarr; 退 12 週 &rarr; 大重置，重跑一輪長的
+</div>
+
+<p>先用小退試著再往上頂一次，頂個兩三輪、還是撞同一道牆，才用大退徹底重置，重新跑一輪長的。有意思的是，兩種算法算出來的答案差不多——退 4 週的進度，往往剛好也是 8-10% 上下。殊途同歸。</p>
+
+<p>「退回幾週」這種算法會自己校準：加得快的人，四週的幅度自然大；加得慢的人，四週的幅度自然小，不必另外算。而且翻開紀錄就查得到，站在架子前不用心算。至於四週是幾次訓練，看訓練頻率。</p>
+
+<p>要退回四週前的重量，前提是你知道四週前用的是多少。所以一定要有紀錄——記下日期、動作、重量、組數次數。沒有紀錄，前面講的所有判斷都執行不了，因為人真的會忘。這正是 Soliday app 幫你做掉的事：它自動記錄每一組、算好你下一次該用的重量，也記得你幾週前舉了多少——所以該退的時候，它直接幫你退到對的重量。</p>
+
+<p>所以整條重量曲線不是一直線往上，是鋸齒往上：加、加、加，撞牆，退一點；再加、加、加，再撞牆，再退一點。整體趨勢向上，但一段一段地退、再疊上去。退完之後做什麼？一模一樣的事：一樣 5 下、一樣三組、一樣等重、一樣每次加一點點，唯一不同的是重量輕了，又有了跑道。而且第二輪爬回同一個重量的時候，通常會比第一輪輕鬆、穩得多——那個「同樣的重量變簡單了」的感覺，就是進步本身。</p>
+
+<p>那為什麼非退不可？不是為了讓肌肉「修復」。真正的原因是：疲勞的累積速度，超過了適應的速度。每次訓練都會留下一點疲勞，前期恢復得掉，後期累積起來，就吃掉了原本該有的表現。這時候不管多努力，數字就是上不去——因為擋在前面的不是力量不足，是疲勞太多。退掉重量，就是把那些疲勞卸掉，重新拿回加重的空間。這件事在力量圈是共識。一項針對 246 位競技力量與體格選手的調查發現，所有人都會安排減量 (deload)，最主要的理由就是管理疲勞；典型做法是大約每 5 到 6 週一次、持續約 6 天，而且多半是在表現卡關、或痠痛與關節不適增加的時候執行【2】。</p>
+
+<p>但有件事要講清楚：減量不等於停練。有一項隨機對照試驗讓受試者在九週課表的中間完全停練一週，結果下肢肌力反而略微變差，肌肉量也沒有比較好【3】。所以「卡了就退重量、繼續練」是有依據的；「累了就整週不練」是另一回事。</p>
+
+<hr>
+
+<h2>這不是誰的發明：證據與課表</h2>
+
+<p>「要加重」這件事本身沒有爭議，有爭議的是「該怎麼安排」。這裡有兩篇統合分析講得很清楚。<strong>有計畫，勝過沒計畫：</strong>一篇整合 18 篇研究的統合分析發現，有週期安排的重訓計畫，對最大力量的效果明顯優於沒有安排、一直用同樣方式練的計畫；而且未受訓的新手進步幅度最大，訓練頻率越高、持續越久，效果越好【5】。但<strong>「選哪一種安排」差別不大：</strong>另一篇整合 17 篇研究、510 人的統合分析，直接比較「線性」和「波動」兩種週期，結果對上肢和下肢的最大力量都沒有顯著差異【6】。兩篇合起來，訊息很清楚：重點不是你選線性還是波動，而是你有沒有計畫。線性只是其中最單純、最容易執行的一種，尤其適合新手和回訓的人。</p>
+
+<p>至於「每次加 2.5 公斤、卡三次退 10%」這種具體到公斤數的規則，老實說沒有專門的隨機對照試驗去驗證過。它是幾十年來教練在成千上萬人身上試出來的實務傳統——這也是為什麼前面說容錯空間很大。不過這個傳統相當一致，健身圈最多人在跑的課表，骨架幾乎長得一樣：<strong>新手線性</strong>——Rippetoe《Starting Strength》（三組五下，每次加重，卡關退 10%）、Mehdi《StrongLifts 5&times;5》（五組五下，每次加 2.5 公斤，連三次失敗退 10%）、Matthews《Bigger Leaner Stronger》（大重量、每組 4 到 6 下）；<strong>中階</strong>（線性跑完之後）——Texas Method、Wendler《5/3/1》、K. Black《Tactical Barbell》。這些中階計畫都需要對自己每個動作的最大力量有一定了解，而且都要用試算表去計算重量，不如新手線性簡單。但從新手到中階，核心是一樣的：一份能長期執行的計畫、慢慢加、卡了就退。</p>
+
+<hr>
+
+<h2>線性加重，最適合新動作與回訓</h2>
+
+<p>線性加重，正是最適合「新動作」和「回訓」的模式：從很低的地方開始，一次加一點，讓身體有時間跟上。當你在學一個新動作、或傷後回訓時，這種從輕到重、循序漸進的方式最安全。</p>
+
+<p>舉幾個原則性的例子。學新動作或回訓時，寧可從明顯偏輕的重量重新爬一遍，順便把技術磨熟。若某個動作做起來開始變難（例如負重引體加到某個重量吃力了），不要硬撐——當天就記下來、下次減重，從一個輕鬆的重量重新往上疊；退掉之後重新爬，往往兩週就回到原本的重量，而且做得比退之前更穩。若身體某處開始發出訊號（例如肩膀上方出現壓痛），還沒到受傷的程度也不要賭它會自己好——把相關動作退到很輕，一階一階慢慢往回爬，比硬練安全得多。</p>
+
+<p>年紀越大，越該這樣小心：覺得不對勁就退，不等真的傷了才處理。因為一次真正的受傷，換來的是好幾個月的中斷，那個代價遠比少練幾週高得多。退的邏輯在這些情況下完全一樣：卡關要退，身體發出訊號也要退，而且不必等到真的受傷。退到一個能穩穩做完、身體不抗議的地方，然後重新往上疊。</p>
+
+<p>另外兩個值得養成的原則：不閉氣、不用腰帶硬憋，隨時注意血壓，一般健康取向的訓練沒有必要去拚 1RM；組間休息用計時器抓，至少兩分鐘以上，慢慢做、不趕時間。訓練的目的是長期變強，不是今天把自己榨乾。</p>
+
+<div style="background: #EDF3EE; border: 1px solid #C9DCD1; border-radius: 12px; padding: 20px; margin: 24px 0;">
+<div style="font-size: 18px; font-weight: 700; color: #1B4332; margin-bottom: 8px;">📱 這套方法，已經做成現成的 app</div>
+<p style="color: #3E6B54; margin: 0;">如果你想要的不是原則，而是一份照著做就行的完整計畫，Soliday app 正是把這一整套方法做成了現成的：一天一個單側啞鈴動作、五下、線性加重加上定期減量。這篇講的每一條——從超輕開始、等重組、小幅加重、卡了就退、一定要記錄——它全都用上了，連下一次該用多少重量都算好。免費，不需要帳號。</p>
+</div>
+
+<hr>
+
+<h2>所以：有計畫地加，卡了就退</h2>
+
+<p>重訓最重要的三個選擇：動作、次數、加重模式。動作決定練不練得到，次數決定練的是哪一種能力，加重模式決定會不會一直進步下去。而次數和加重，其實是同一件事的兩面。只講「做 5 下」、不講怎麼加重，聽起來就像叫人一上來就扛極限重量。兩半合起來看，它其實長這樣：</p>
+
+<div class="log-example">
+從一個輕到好像沒做的重量開始<br>
+&rarr; 5 下三組，每組同重<br>
+&rarr; 每次加一點點，記下來<br>
+&rarr; 快到極限（開始沒有餘力）就退回去<br>
+&rarr; 重新往上疊一輪
+</div>
+
+<p>整個過程裡，絕大多數時間都待在安全、輕鬆、有餘力的區間。做 5 下並不危險，做更少怎麼會更危險呢？危險的是沒有準備就用靠近極限的重量訓練。</p>
+
+<p>那線性加重跑完了呢？當你退了幾輪、發現同一道牆一直在同一個地方，代表單純的線性已經榨不出東西了，這時候才輪到前面提的那些中階課表登場。但那是後面的事，等線性真的跑不動了再煩惱就好；大部分的人其實都還沒練到那邊。</p>
+
+<p>下一次走進健身房之前，你應該已經知道今天要用多少重量了。那個數字，是上一次練完就決定好的。下一篇談三個選擇裡最重要的那一個：<a href="/zh/blog/onelift-exercises.html">動作的選擇</a>。</p>
+
+<hr>
+
+<h2>參考文獻</h2>
+
+<p>【1】Currier BS, et al. "Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews." Med Sci Sports Exerc 58(4):851-872, 2026 — 137 篇回顧、三萬多人：最大力量需高負荷（80% 1RM 以上）、一個動作 2 到 3 組；肌肥大主要靠訓練量。</p>
+
+<p>【2】Rogerson D, et al. "Deloading Practices in Strength and Physique Sports: A Cross-sectional Survey." Sports Med Open 10(1):26, 2024 — 246 位選手全部都會減量，主因是管理疲勞；典型約每 5.6 週一次、持續約 6.4 天，多在卡關或痠痛、關節不適時執行。</p>
+
+<p>【3】Coleman M, et al. "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations." PeerJ 12:e16777, 2024 — 課表中間完全停練一週，對下肢肌力反而略有負面影響；減量不等於停練。</p>
+
+<p>【4】Nuzzo JL, et al. "Maximal Number of Repetitions at Percentages of the One Repetition Maximum." Sports Med 54(2):303-321, 2024 — 約 85% 1RM 平均可做 6 下，可完成次數因人、因動作而異。</p>
+
+<p>【5】Williams TD, et al. "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis." Sports Med 47(10):2083-2100, 2017 — 有週期安排的計畫對最大力量優於沒有安排的；新手進步最大，頻率越高、期間越長效果越好。</p>
+
+<p>【6】Harries SK, et al. "Systematic review and meta-analysis of linear and undulating periodized resistance training programs on muscular strength." J Strength Cond Res 29(4):1113-1125, 2015 — 線性與波動週期對上、下肢最大力量無顯著差異。</p>
+
+<div class="source-link">
+  <p>上一篇：〈<a href="/zh/blog/onelift-five-reps.html">5 下的科學</a>〉</p>
+  <p><a href="https://www.facebook.com/engineeringlongevity/posts/pfbid02RWjrz6E5TwNjaegXyiXCeva9Et5TVR5zyJmZTmuyppDWNYsB9Tyo1X3vHH2WChKel" target="_blank" rel="noopener">閱讀 Facebook 原文 &rarr;</a></p>
+</div>
+
+</article>
+
+<footer class="footer">
+  <p>&copy; 2026 Soliday &middot; One Lift a Day. All rights reserved.</p>
+</footer>
+
+<script>
+/* Remember reading position per-article: restore where you left off after
+   leaving and coming back, or after closing and reopening the app. */
+(function () {
+  var key = 'read-pos:' + location.pathname;
+  function restore() {
+    try {
+      var y = localStorage.getItem(key);
+      if (y !== null) window.scrollTo(0, parseInt(y, 10));
+    } catch (e) {}
+  }
+  restore();
+  window.addEventListener('load', restore);
+  var timer;
+  window.addEventListener('scroll', function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      try { localStorage.setItem(key, String(Math.round(window.scrollY))); } catch (e) {}
+    }, 150);
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

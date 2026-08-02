@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choosing Your Exercises: The First Decision in Strength Training</title>
+<meta name="description" content="Of the three choices in strength training, exercise selection comes first. Starting from three reasons people train — capability, attractiveness, and health — here is why compound movements should be the core, plus a rated exercise list for all five movement patterns.">
+<link rel="alternate" hreflang="zh-Hant" href="/zh/blog/onelift-exercises.html">
+<link rel="alternate" hreflang="en" href="/blog/onelift-exercises.html">
+<link rel="canonical" href="https://onelift.org/blog/onelift-exercises.html">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  color: #292524; background: #F7F3EC; line-height: 1.6;
+}
+a { color: #1B4332; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Nav */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(247,243,236,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D6D3D1; padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 0.5px; }
+.nav-logo a { color: inherit; }
+.nav-logo a:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
+.lang-switch {
+  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
+  padding: 4px 12px; border-radius: 6px;
+}
+.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+
+/* Article */
+.article {
+  max-width: 720px; margin: 0 auto; padding: 100px 24px 80px;
+}
+.article h1 {
+  font-size: clamp(28px, 5vw, 40px); font-weight: 800;
+  line-height: 1.2; margin-bottom: 12px;
+}
+.article-meta {
+  font-size: 14px; color: #A8A29E; margin-bottom: 40px;
+}
+.article h2 {
+  font-size: clamp(22px, 3.5vw, 28px); font-weight: 700;
+  margin: 48px 0 16px; line-height: 1.3;
+}
+.article h3 {
+  font-size: 18px; font-weight: 600;
+  margin: 28px 0 10px;
+}
+.article p {
+  font-size: 17px; line-height: 1.8; margin-bottom: 16px;
+  color: #292524;
+}
+.article .lead {
+  font-size: 20px; font-weight: 600; color: #292524;
+  line-height: 1.6; margin-bottom: 20px;
+}
+.article ul, .article ol {
+  margin: 0 0 16px 24px; font-size: 17px; line-height: 1.8; color: #292524;
+}
+.article li { margin-bottom: 6px; }
+.article hr {
+  border: none; border-top: 1px solid #D6D3D1;
+  margin: 48px 0;
+}
+.article .schedule {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px; background: #fff; border: 1px solid #D6D3D1;
+  border-radius: 12px; padding: 20px 24px; margin: 16px 0 20px;
+  line-height: 1.9; box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.article .log-example {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px; background: #fff; border: 1px solid #D6D3D1;
+  border-radius: 12px; padding: 20px 24px; margin: 16px 0 20px;
+  line-height: 1.9; box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.article .mapping {
+  font-size: 17px; line-height: 2; margin: 16px 0 20px;
+}
+.article .highlight {
+  background: #F9EFE8; border-left: 4px solid #C86B4A;
+  padding: 16px 20px; border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+.article .highlight p { margin-bottom: 0; }
+.exercise-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 15px; font-weight: 500;
+}
+.exercise-link::after {
+  content: ' \2197'; font-size: 13px;
+}
+
+/* Back link */
+.back-home {
+  max-width: 720px; margin: 0 auto; padding: 0 24px 60px;
+  text-align: center;
+}
+.back-home a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600;
+  border: 2px solid #D6D3D1; color: #292524;
+}
+.back-home a:hover { border-color: #1B4332; text-decoration: none; }
+
+/* Footer */
+.footer {
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E;
+  border-top: 1px solid #D6D3D1;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .nav { padding: 0 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.lang-switch):not(.mobile-blog) { display: none; }
+  .article { padding: 80px 20px 60px; }
+  .article h2 { margin-top: 36px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="/">Soliday</a></div>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#how">How It Works</a>
+      <a href="/#system">The System</a>
+      <a href="/blog/" class="mobile-blog">Blog</a>
+      <a href="/zh/blog/onelift-exercises.html" class="lang-switch">中文</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
+
+<h1>Choosing Your Exercises: The First Decision in Strength Training</h1>
+<div class="article-meta">By the developer &middot; Part 3 of 3 (final)</div>
+
+<p>Two people walk into a gym. Equally serious, equally consistent, both training for three full years. The first one goes all out, hitting every body part with several exercises: chest with bench press, incline press, and pec-deck flyes; shoulders with lateral and front raises; arms with barbell curls, concentration curls, tricep pushdowns, and overhead extensions &mdash; all concentrated on the front of the body, the muscles visible in the mirror, with legs and back barely trained. Lots of exercises, a complex and fragmented program, sets and reps piled high, every gym session eating up an hour or two of grinding to exhaustion. The second person does the opposite: only the squat, deadlift, bench press, overhead press, and pull-up &mdash; five exercises, one exercise a day, three sets of five, finished in a flash, recording the weight and slowly adding to it.</p>
+
+<p>Three years later. The first person has a strong pair of arms, but thin legs and a collapsed back; their physique has barely changed in three years, and their strength has plateaued. The second person squats double their bodyweight, hauls heavy objects off the ground, and climbs the pull-up bar &mdash; upright, solid, powerful. The first person didn't lose on effort; they probably trained harder and suffered more. They lost at the very beginning, by choosing the wrong exercises.</p>
+
+<p>Of the three choices in strength training (exercise, reps, and progression), exercise selection comes first. Choose the wrong rep range and at worst you build something other than what you most wanted; choose the wrong progression and at worst you improve a bit slower. But choose the wrong exercises and no matter how well you do the other two, you're building on a bad foundation &mdash; the harder you work, the further you may drift from your goal. This is Part 3 of the series. The first two parts covered <a href="/blog/onelift-five-reps.html">reps (around five)</a> and <a href="/blog/onelift-progression.html">progression (linear, deload when you stall)</a>. This part covers the choice that comes first: the exercises. So how should you choose them? That starts with a more fundamental question.</p>
+
+<p>Why do people exercise at all? The "exercise" discussed here means training done to condition the body &mdash; not sports. Playing ball, hiking, surfing &mdash; activities done for fun or competition &mdash; are not the subject here. On the narrow matter of deliberately conditioning the body, distilling the reasons down eventually converges on three. One, capability: being able to carry things, run, catch yourself when you stumble, and still stand up on your own in old age. Two, attractiveness: people want to be appealing to potential mates &mdash; evolution wrote this into our genes. Three, health: living long, and living well, rather than spending the last decade or more of life bedridden. Capability, attractiveness, health &mdash; when most people sweat through years of running and lifting, it ultimately comes down to these three things. What kind of training is best for all three? The answer: compound, multi-joint movements. Best for capability, best for attractiveness, and best for health too.</p>
+
+<hr>
+
+<h2>Capability: The Body Is Shaped by Movements</h2>
+
+<p>The human body isn't a collection of independent muscles bolted together &mdash; it's a system that works in coordination. Every strenuous thing you do in the real world &mdash; lifting luggage into a car, picking up a child, hauling a case of water off the floor, catching yourself before a fall &mdash; involves several joints and several muscle groups firing together. The human body grew into its present form in order to perform a handful of basic movements. Strength coaches organize these into a few "fundamental human movements": the squat (standing up, sitting down, crouching to pick something up); the hip hinge (bending to pull a heavy object off the ground); the horizontal press (pushing something away in front of you); the vertical press (lifting something overhead, placing it up high); and the pull (pulling something toward you, pulling yourself up). These five movements are like a "basis" in linear algebra: most of the strenuous things humans do can be expressed as a linear combination of these five.</p>
+
+<p>Train the squat and you build the capability to stand up and crouch down; train the pull and you build the capability to pull yourself up and draw things toward you. These capabilities transfer directly into daily life &mdash; that is what "functional" truly means. It isn't only muscular adaptation; it also includes the capability of the nervous system and other tissues.</p>
+
+<p>Isolation exercises have value in shoring up weak points that compound movements don't stimulate enough, and they are used heavily in rehab. But for someone with limited time whose goal is overall capability and health, their return on investment is far lower than that of multi-joint movements: the biceps built by a curl don't correspond to any single movement you actually perform in life &mdash; they grow the volume of a muscle, not a usable capability. And even if you only want bigger arms, compound movements are usually enough: in a study on untrained subjects, one group did only lat pulldowns and bench press, another group added biceps and triceps isolation work, and after ten weeks there was no significant difference in elbow-flexor thickness gains between the two groups [1]. So isolation work is a side dish at most &mdash; it shouldn't take up the bulk of the program.</p>
+
+<p>So how do you choose among compound movements? There are these trade-offs: <strong>a high weight ceiling</strong> (the movement should recruit a large amount of muscle and neural drive together; every fundamental human movement has a "king of load": the king of the squat is the back squat, the king of the hip hinge is the deadlift, the king of the horizontal press is the bench press, the king of the vertical press is the overhead press, and the king of the pull is the weighted pull-up); <strong>easy to learn and control</strong> (the "king" isn't necessarily easy to learn &mdash; the back squat handles the most load but is very hard to learn, and there's the fear of getting stuck at the bottom under a heavy load; a movement you can't learn or that leaves you anxious may not be worth choosing even if it's theoretically the most effective); <strong>safe enough, with a good risk-to-reward ratio</strong> (the capability a movement builds should justify its injury risk &mdash; the power clean, for example, is very comprehensive but carries high injury risk, which isn't worth it for people who recover slowly; a kettlebell swing can be substituted); and <strong>convenient enough</strong> (whether you can actually do it where you'll actually go &mdash; for someone with no room for a barbell at home who rarely goes to a gym, even the best barbell movement effectively doesn't exist).</p>
+
+<hr>
+
+<h2>Attractiveness: The Opposite Sex Detects Athletic Capability</h2>
+
+<p>A 2017 study showed people a set of photos of men's bodies with the faces obscured. One group rated "how strong this person looks," another rated "how attractive." The two sets of scores almost completely overlapped &mdash; the single variable of "apparent upper-body strength" accounted for roughly 70% of the variance in men's bodily attractiveness [2]. And it was linear: the stronger, the higher the rating. The body evolved this preference because the essence of mate choice is finding a high-quality partner who can pass on genes. In the ancestral environment &mdash; no hospitals, no supermarkets, survival depending on hunting and protection &mdash; a strong partner who could exert force, win fights, and carry loads directly affected whether offspring survived. So individuals who accurately selected "strong mates" left more descendants, and this detection ability was written into our genes.</p>
+
+<p>What people prefer seems not to be sheer size devoid of any sense of power, but visual signals that convey strength, leanness, and "formidability." When researchers isolated "extra body weight unrelated to strength," that portion counted against attractiveness. In other words, what's preferred is the look of "being able to exert force," not simply being big. And this judgment isn't only about a static physique &mdash; it's about how you move: one study used motion capture to record how men walk and found that both men and women could accurately judge strength from gait alone, and that women rated men with a "strong gait" as more attractive [3]; this result was replicated across three cultures &mdash; Chile, Germany, and Russia [4]. It shows up in real reproductive data too: a paper synthesizing cross-cultural evidence noted that in some traditional societies, winners of wrestling matches and men with strong hunting ability had higher social status and reproductive success [5]. Wrestling, hunting, carrying game &mdash; all of these are athletic capabilities of "the whole body exerting force in coordination."</p>
+
+<p>Back to training: if a large part of attractiveness comes from "looking strong, lean, and physically capable," then making compound movements that genuinely raise whole-body strength your core focus is the direction to pursue.</p>
+
+<p>Grip strength is the best microcosm of this. It's one of the most reliable single indicators of whole-body strength and function, and research has found it can predict physique, movement quality, and even perceived attractiveness [6]. A person who can pull themselves up onto a bar and a person with big biceps who can't pull themselves up send two completely different signals with their bodies: one has capability, the other only volume.</p>
+
+<hr>
+
+<h2>Health: Strength Is the Brake on Aging</h2>
+
+<p>What aging takes first isn't the size of your muscles &mdash; it's the muscles' ability to exert force, especially the fast-twitch fibers responsible for power and for saving your life. Strength is lost earlier and faster than muscle mass, and what predicts whether an older person will become disabled &mdash; or even die prematurely &mdash; is strength, not muscle girth (this is covered in detail in <a href="/blog/onelift-five-reps.html">"The Science of Five Reps"</a>). And preserving strength depends precisely on compound, multi-joint movements with heavy enough loads &mdash; the very capabilities these movements build are exactly the ones aging comes to take away. Isolation exercises help little here: building big biceps in isolation contributes far less to being able to care for yourself in old age than leg strength, grip strength, and overall movement capability. What determines late-life quality of life is the overall function those few big movements sustain.</p>
+
+<hr>
+
+<h2>Legs: You Must Train Them</h2>
+
+<p>If health is your reason for training, then one muscle group is important enough to single out: the legs. Legs happen to be where the most people slack off &mdash; almost everyone who trains the "mirror muscles" skips legs, because legs are hidden in your pants, out of everyday sight, and training them is exhausting and leaves you gasping. But if you knew what recent research on leg strength says, you probably wouldn't dare skip them again.</p>
+
+<p><strong>First, leg strength is directly linked to how long you live.</strong> A cohort study tracking thousands of older adults found that people with weaker quadriceps had a significantly higher risk of death over the following years; and after adjusting for "muscle mass" specifically, what determined mortality risk was strength, not muscle size [7]. Be careful about causation here: leg strength may not be the sole cause &mdash; it may also reflect overall activity level, neural function, and physiological reserve. But whether as a cause or as an indicator, the direction is consistent, and the reasons are practical: people with weak legs have more trouble standing up, going up and down stairs, and regaining balance after a stumble.</p>
+
+<p><strong>Second, this matters just as much &mdash; if not more &mdash; for women.</strong> A 2026 study following more than five thousand women aged 63 to 99 over eight years found that those with the strongest grip and the fastest "repeated stand-ups from a chair" had roughly a 30% lower risk of death; most importantly, this protective effect was independent of aerobic exercise volume &mdash; even those who didn't meet recommended aerobic activity levels still had lower mortality as long as their strength was sufficient [8]. For a long time everyone placed the emphasis of "exercise to fight aging" on cardio, but the evidence of recent years keeps pointing to the same thing: strength is the badly underestimated half.</p>
+
+<p><strong>Third, what leg strength preserves may be more than lifespan &mdash; possibly the brain too.</strong> A King's College London study that followed more than three hundred female twins over ten years found leg power to be one of the strongest predictors of cognitive aging: the stronger the legs, the less cognitive decline ten years later and the more brain gray matter retained. Most tellingly, it used identical twins &mdash; genetically identical, raised in the same environment &mdash; and the twin with stronger legs still had better brain performance and greater brain volume than her sister [9]. This alone can't prove that "training legs prevents dementia," but seeing a gap even between twins who share genes and early environment makes leg strength more credible as an indicator of healthy aging.</p>
+
+<p>Living long, staying self-sufficient, and keeping a clear mind &mdash; all three are tied to leg strength, and legs are the body part the most people slack off on. So if you could keep just one physical capability for the long term, leg strength probably comes first, and the squat is the movement you can least afford to skip.</p>
+
+<hr>
+
+<h2>Train Your Back, Not Just the Front</h2>
+
+<p>Many people train only what they can see in the mirror &mdash; the chest, the biceps, the front of the shoulders, all the muscles on the front of the body that stand out when you look in the mirror. But you're not training for the mirror. Other people aren't standing in front staring at your chest; they're walking beside you, seeing your posture, your back, the way you walk. What truly determines whether someone looks upright or hunched, vigorous or aged, is the back and the legs, not those few muscles on the front. And nearly everyone today has some degree of rounded shoulders and slouching, from staring down at phones and hunching over keyboards all day. Slouching has many causes, but a program that presses without ever pulling &mdash; neglecting the upper back and shoulder blades &mdash; can well make an existing imbalance more pronounced. So whether from the standpoint of appearance or function, back training volume should be no less than pressing volume: build up the upper back, pair it with adequate mobility, and it's usually easier to maintain an upright, stable upper-body posture. Training your back makes you upright, training your legs fights aging &mdash; these two things you can't see are exactly what's most worth investing in.</p>
+
+<hr>
+
+<h2>Why the Strongest People All Train with Barbells</h2>
+
+<p>Why do the strongest people in the gym all train with barbells? <strong>First, the barbell has an enormous loading range.</strong> Keep adding plates to both ends of a bar and you can go from under 1 kg to several hundred kilograms, adding in very small increments each time. This maps exactly onto "the ceiling has to be high enough." <strong>Second, the barbell forces whole-body coordination.</strong> Its path is free &mdash; there's no track fixing it in place, so you have to stabilize and control it with your entire body, and that "stabilizing and controlling" is itself part of the training: it develops precisely the capability of the whole system exerting force together.</p>
+
+<p>What about machines? Machines aren't bad. Their path is fixed &mdash; you sit down and push or pull, no need to worry about balance &mdash; beginner-friendly and safe, and done well they build muscle and strength just fine. The latest sports-science reviews also note that, for building muscle, free weights and machines differ little [10]. The real difference between machines and barbells is the "stability demand": machines outsource stabilization and coordination for you &mdash; the upside is simplicity and safety, the cost is that you train that part less. And when humans exert force in the real world, it's never on a fixed track, so for "athletic capability," free weights train you more completely. The barbell is the tool with the highest ceiling and the greatest completeness, but it has a practical problem that makes it impractical for many people.</p>
+
+<hr>
+
+<h2>Dumbbells: Why They're the Answer for Most People</h2>
+
+<p>The barbell is great, but for most people it has very practical barriers: no room at home (a bar, a full set of plates, and a squat rack too); hard to learn and injury-prone (squats and deadlifts can hurt you if the form isn't right); and intimidation at the gym (the equipment area is often crowded, and beginners fear looking foolish, being watched, or getting hurt). These are all real sources of friction. And the most important thing about training is being able to keep doing it long-term: a program you keep putting off starting, or start and then abandon, is useless no matter how high its ceiling. Dumbbells solve most of these problems: a pair of adjustable dumbbells fits in a corner at home, the movements are easy to learn, and training at home means facing no one. They have just one drawback: you can't load them very heavy &mdash; do a squat holding a dumbbell in each hand and you'll get stuck just trying to get two heavy dumbbells into position. But this drawback has a very elegant solution.</p>
+
+<hr>
+
+<h2>Single-Arm/Leg Dumbbell Work: The Underrated Best Answer</h2>
+
+<p>The solution is to train just one side at a time. Single-arm bench press, single-arm overhead press, single-arm row, single-leg deadlift, Bulgarian split squat &mdash; these unilateral movements load all the weight onto one arm or one leg. A weight that's "half" for you can give that one side a nearly complete stimulus, sidestepping the problem that dumbbells can't be loaded heavy. And the benefits of unilateral work go far beyond just solving the weight issue:</p>
+
+<p><strong>It's easier to design a safe way to fail.</strong> A barbell bench press pinning you to the chest is one of the most dangerous accidents in the gym; a single-arm dumbbell bench press has no bar across your chest, and when you can't complete a rep the other hand can help control the weight; when you lose balance in a Bulgarian split squat, the back foot or the free hand can usually steady you, and there's none of the back squat's fear of being "pinned and unable to stand." (That said, getting heavy dumbbells into and out of position still has to be learned, and unilateral movements demand more trunk stability &mdash; they're not entirely without risk.)</p>
+
+<p><strong>It adds a load to the core at the same time.</strong> When the weight hangs on only one side of the body, the trunk must work hard to resist the force trying to "twist you and pull you off-axis." An EMG study compared seated versus standing and two-arm versus single-arm dumbbell overhead presses: doing it seated, the two-arm version activated the rectus abdominis about 49% less and the external obliques about 81% less than the single-arm version; standing, the two-arm version also activated the external obliques about 68% less than the single-arm version (with no significant difference in the rectus abdominis); the same study also found that standing recruited the core more overall than sitting [11]. For someone who just wants general health and function, this greatly reduces the need to program a whole separate batch of core exercises.</p>
+
+<p><strong>It flushes out and corrects the weak side.</strong> When both sides work together, the strong side quietly takes on more of the load and hides the weak side, producing a left-right imbalance over time. Unilateral movements make each side face the weight on its own &mdash; the weak side has nowhere to hide. And research has found that training only one side raises the strength of the other side somewhat too; this is called the cross-education effect [12].</p>
+
+<p><strong>No space, not much weight, and no rack needed.</strong> A pair of dumbbells, a bench, and a corner &mdash; that's all it takes.</p>
+
+<p>Put these points together and single-arm/leg dumbbell work isn't a "cheap substitute for the barbell" &mdash; it's a different trade-off: with a smaller external weight, it lets one limb bear enough intensity while preserving the stabilization and control that free weights require, and it also trains balance and flushes out the weak side, all doable at home. Its ceiling is usually lower than the barbell's, and getting heavy dumbbells into and out of position may become the limiting factor first; but for most people who aren't chasing competitive maximal strength, it strikes a very elegant balance among effectiveness, safety, space, and long-term adherence.</p>
+
+<div class="highlight">
+<p><strong>Soliday: this method, made into a ready-to-follow program.</strong> The Soliday app is exactly the method described in this article: five unilateral dumbbell movements &mdash; one for each of the five movement patterns &mdash; one a day, five reps, linear progression. Its exercise choices follow precisely the selection principles laid out here: a high enough weight ceiling, easy to learn and control, safe enough, and doable at home. Free, no account required.</p>
+</div>
+
+<hr>
+
+<h2>The Exercise List, Rated</h2>
+
+<p>The five movement patterns, each with a few good options. The stars mainly combine two things &mdash; "the ceiling for adding weight" and "long-term sustainability" &mdash; not a pure scientific ranking; what matters is the note after each exercise. (One principle: you don't need to pick many options for every pattern. Choosing one sustainable movement each for press, pull, and squat is already a complete full-body program. For more completeness, add the hip hinge.)</p>
+
+<h3>Squat</h3>
+<ul>
+  <li><strong>1. Barbell Back Squat &starf;&starf;&starf;&starf;&starf;</strong> &mdash; the highest-ceiling, most classic lower-body movement; you can keep adding weight forever. Downsides: it has to be learned, needs a rack, and takes a bit of courage.</li>
+  <li><strong>2. Zercher Split Squat &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; a single-leg squat with the bar cradled in the crook of the elbows; the weight rests on the body rather than depending on grip, so the leg is the true limiter. Higher ceiling than the dumbbell version.</li>
+  <li><strong>3. Bulgarian Split Squat &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; primarily single-leg, with one leg taking most of the load, so you don't need very heavy dumbbells to feel it. Safe and easy to do at home. Requires a bit of grip and balance.</li>
+  <li><strong>4. Hack Squat &starf;&starf;&starf;&#9734;&#9734;</strong> &mdash; if you must use a machine to train the squat, this one's path of motion is closest to a real squat: back against the pad, feet pushing out in front, and it handles heavy loads, making it closer to a free-weight squat than the seated leg press. Fixed track, easy to pick up, and safe; the cost is training less stability and coordination, with a ceiling limited by the machine.</li>
+</ul>
+
+<h3>Hip Hinge</h3>
+<ul>
+  <li><strong>1. Barbell Deadlift &starf;&starf;&starf;&starf;&starf;</strong> &mdash; pull the weight off the ground; it trains the entire posterior chain and has an extremely high ceiling.</li>
+  <li><strong>2. Single-Leg Dumbbell Deadlift &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; standing on one leg to lower the dumbbell, training the posterior chain, balance, and proprioception at once. With one leg bearing the load, you don't need much weight to feel it.</li>
+  <li><strong>3. Back Extension &starf;&starf;&starf;&#9734;&#9734;</strong> &mdash; relies on bodyweight (a single plate at most); low barrier, easy to adjust the load, and when done as a hip-extension-focused movement it effectively trains the glutes, hamstrings, and spinal erectors &mdash; easier for many people to pick up than a floor deadlift (but avoid repeatedly over-extending the lumbar spine).</li>
+</ul>
+
+<p><strong>A view: the hip hinge doesn't have to be done separately.</strong> The "squat" and the "deadlift" are really two ends of the same spectrum, differing only in the ratio of hip to knee drive: the squat is more knee-dominant, the deadlift more hip-dominant, but the two overlap heavily in the muscles used, and squatting deep and heavy trains the posterior chain just as well. So for someone truly short on time, first master a deep, stable squat; but if you want a more complete posterior chain, care about running and jumping ability, or want to be good at "lifting a heavy object off the ground," it's still worth adding one of the deadlift, RDL, single-leg deadlift, or kettlebell swing.</p>
+
+<h3>Horizontal Press</h3>
+<ul>
+  <li><strong>1. Barbell Bench Press &starf;&starf;&starf;&starf;&starf;</strong> &mdash; the highest-ceiling horizontal press; you can load it and train heavy. Use a spotter.</li>
+  <li><strong>2. Single-Arm Dumbbell Bench Press &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; the top choice at home; when you fail, the other hand can more easily assist, and it trains the core as a bonus. You can't go too heavy, but it lasts most people a long time.</li>
+  <li><strong>3. Chest Press Machine &starf;&starf;&starf;&#9734;&#9734;</strong> &mdash; stable track, easy to pick up, no worry about dropping a bar on yourself; good for beginners. The cost is losing the stabilization training you'd do yourself.</li>
+</ul>
+
+<h3>Vertical (Overhead) Press</h3>
+<ul>
+  <li><strong>1. Barbell Overhead Press &starf;&starf;&starf;&starf;&starf;</strong> &mdash; pressing weight overhead trains the shoulders and the bracing of the entire upper back; very comprehensive, and the closest to the everyday movement of "placing something up high."</li>
+  <li><strong>2. Single-Arm Dumbbell Overhead Press &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; the top choice at home, with especially high core involvement (the EMG study above tested exactly this movement).</li>
+  <li><strong>3. Shoulder Press Machine &starf;&starf;&starf;&#9734;&#9734;</strong> &mdash; fixed track, press from a seated position, beginner-friendly, and also suitable for shoulders that need stable support. Ceiling limited by the machine.</li>
+</ul>
+
+<h3>Pull</h3>
+<ul>
+  <li><strong>1. Weighted Pull-Up &starf;&starf;&starf;&starf;&starf;</strong> &mdash; the highest-ceiling pull; it trains the back, biceps, grip, and core in one full chain. From bodyweight to added load, the ceiling is high. If you can't do one, use an assisted machine or a resistance band.</li>
+  <li><strong>2. Single-Arm Dumbbell Row &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; the top choice at home; safe, easy to control, with one hand braced so the lower back isn't loaded.</li>
+  <li><strong>3. Lat Pulldown / Seated Row &starf;&starf;&starf;&starf;&#9734;</strong> &mdash; rare high scorers among machines. The lat pulldown is the best substitute when you can't yet do a pull-up, and the seated row is safe and easy to learn. Stable track, easy to pick up, well suited to beginners, and the ceiling isn't low either.</li>
+</ul>
+
+<p>The top score in every pattern goes to the barbell: for building maximal free-weight strength, for tracking progression over the long term, and for training whole-body coordination, the barbell usually has the edge, and the genuinely strong almost all do these barbell movements. Second is single-arm/leg dumbbell work, which has two advantages the barbell can't offer: one, a smaller weight can give that side enough intensity, solving the problem that dumbbells can't load heavy; two, like the barbell, it's a free weight, so it also requires you to stabilize and control it yourself. Add safety, convenience, and the ability to train at home, and that's why for most people the recommendation is to start with single-arm/leg dumbbell work. It isn't a cheap barbell substitute &mdash; it's a smart balance between "the ceiling" and "actually being able to keep doing it."</p>
+
+<hr>
+
+<h2>So: Choose the Right Exercises and You're Halfway There</h2>
+
+<p>Back to the beginning: people exercise for only three things &mdash; capability, attractiveness, and health. And all three point to the same answer: compound, multi-joint movements loaded heavily enough. To summarize: most people who deliberately condition their bodies have core goals that distill down to capability, attractiveness, and health, and all three should be built on multi-joint movements you can progressively load over the long term, with a small amount of isolation work added as needed; choose movements by four criteria that pull against one another &mdash; can be loaded heavy, easy to learn and control, safe enough (good risk-to-reward), and convenient enough; the five basic movement patterns are squat, hip hinge, horizontal press, vertical press, and pull, and picking one each of press, pull, and squat is already complete training, with the hip hinge added for more completeness; legs must be trained (tied to how long you live, whether you can care for yourself in old age, and even whether your brain declines); back training volume should be no less than pressing; isolation work is a side dish, not the main course; the barbell has the highest ceiling, but single-arm/leg dumbbell work is the smarter answer for most people.</p>
+
+<p>With these three parts, the exercises, reps, and progression scheme are all in place: choose the right exercises, use about five reps for three sets, start very light and add weight linearly, and deload when you stall. That's a complete method you can safely do for many years, stacking strength up bit by bit. It's also the one line running through this entire series from start to finish: choice matters more than effort, and the exercise is the most important of the three choices. The two people at the start who trained for three years didn't differ in effort &mdash; they differed in which exercises they chose at the beginning. Strength is capability, it's the foundation of attractiveness, and it's the first thing aging takes away. Choose the right method, and leave the rest to time.</p>
+
+<hr>
+
+<h2>References</h2>
+
+<p>[1] Gentil P, et al. "Effect of adding single-joint exercises to a multi-joint exercise resistance-training program on strength and hypertrophy in untrained subjects." Appl Physiol Nutr Metab 38(3):341-344, 2013 &mdash; in untrained men over ten weeks of training, doing only compound movements versus compound plus isolation movements produced no significant difference in elbow-flexor thickness gains.</p>
+
+<p>[2] Sell A, et al. "Cues of upper body strength account for most of the variance in men's bodily attractiveness." Proc Biol Sci 284(1869):20171819, 2017 &mdash; in photos of men's bodies with faces obscured, rated upper-body strength explained about 70% of the variance in attractiveness, in a linear relationship.</p>
+
+<p>[3] Fink B, et al. "Sex difference in attractiveness perceptions of strong and weak male walkers." Am J Hum Biol 28(6):913-917, 2016 &mdash; both men and women rated a strong gait as stronger, but only women found it more attractive.</p>
+
+<p>[4] Fink B, et al. "Cross-Cultural Investigation of Male Gait Perception in Relation to Physical Strength and Speed." Front Psychol 8:1427, 2017 &mdash; across Chile, Germany, and Russia, a strong gait was consistently rated as both stronger and more attractive.</p>
+
+<p>[5] Lombardo MP. "On the Evolution of Sport." Evol Psychol 10(1):1-28, 2012 &mdash; cross-cultural evidence: winners of athletic and physical contests often have higher social status and reproductive success.</p>
+
+<p>[6] Gallup AC, Fink B. "Handgrip Strength as a Darwinian Fitness Indicator in Men." Front Psychol 9:439, 2018 &mdash; in men, grip strength is a reliable indicator of overall strength and function, predicting physique, movement quality, and perceived attractiveness.</p>
+
+<p>[7] Newman AB, et al. "Strength, but not muscle mass, is associated with mortality in the health, aging and body composition study cohort." J Gerontol A Biol Sci Med Sci 61(1):72-77, 2006 &mdash; quadriceps and grip strength were strongly associated with mortality, and the association held virtually unchanged after adjusting for muscle mass.</p>
+
+<p>[8] LaMonte MJ, et al. "Muscular Strength and Mortality in Women Aged 63 to 99 Years." JAMA Netw Open 9(2):e2559367, 2026 &mdash; following 5,472 older women for 8.4 years, those with the highest grip strength and sit-to-stand speed had roughly a 30% lower risk of death, independent of aerobic activity level.</p>
+
+<p>[9] Steves CJ, et al. "Kicking Back Cognitive Ageing: Leg Power Predicts Cognitive Ageing after Ten Years in Older Female Twins." Gerontology 62(2):138-149, 2016 &mdash; following 324 female twins for 10 years, leg power was one of the strongest predictors of cognitive aging; among identical twins, the one with stronger legs had more brain gray matter.</p>
+
+<p>[10] Currier BS, et al. "American College of Sports Medicine Position Stand. Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews." Med Sci Sports Exerc 58(4):851-872, 2026 &mdash; for hypertrophy, free weights and machines differ little in effectiveness, and exercise selection is more flexible than commonly assumed.</p>
+
+<p>[11] Saeterbakken AH, Fimland MS. "Muscle activity of the core during bilateral, unilateral, seated and standing resistance exercise." Eur J Appl Physiol 112(5):1671-1678, 2012 &mdash; dumbbell overhead press: standing recruited the core more than seated, and single-arm more than two-arm.</p>
+
+<p>[12] Manca A, et al. "Cross-education of muscular strength following unilateral resistance training: a meta-analysis." Eur J Appl Physiol 117(11):2335-2354, 2017 &mdash; unilateral resistance training significantly increased the strength of the untrained opposite limb (about 11.9%) &mdash; the cross-education effect.</p>
+
+<div class="back-home" style="padding-bottom: 0;">
+</div>
+
+<div style="max-width: 720px; margin: 3em auto 0; padding: 24px; background: #fff; border: 1px solid #D6D3D1; border-radius: 12px; text-align: center; font-size: 15px; color: #78716C; box-shadow: 0 1px 4px rgba(120,90,50,0.08);">
+  <p style="margin-bottom: 12px;">Previous: <a href="/blog/onelift-progression.html" style="font-weight: 600;">How to Add Weight &rarr;</a></p>
+  <p style="margin-bottom: 0;"><a href="https://www.facebook.com/engineeringlongevity/posts/pfbid0rHqepsAGBxKCnKWkJkx7458DnEU6efWHxvj7DJndiSV9zBWNfHxxj1yK6tGH7R6Ml" target="_blank" rel="noopener" style="font-weight: 600;">Read the original on Facebook &rarr;</a></p>
+</div>
+
+</article>
+
+<div class="back-home">
+  <a href="/">&larr; Back to onelift.org</a>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 Soliday &middot; One Lift a Day. All rights reserved.</p>
+</footer>
+
+<script>
+/* Remember reading position per-article: restore where you left off after
+   leaving and coming back, or after closing and reopening the app. */
+(function () {
+  var key = 'read-pos:' + location.pathname;
+  function restore() {
+    try {
+      var y = localStorage.getItem(key);
+      if (y !== null) window.scrollTo(0, parseInt(y, 10));
+    } catch (e) {}
+  }
+  restore();
+  window.addEventListener('load', restore);
+  var timer;
+  window.addEventListener('scroll', function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      try { localStorage.setItem(key, String(Math.round(window.scrollY))); } catch (e) {}
+    }, 150);
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>

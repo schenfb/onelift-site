@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Add Weight: Progression and Deload</title>
+<meta name="description" content="How to actually run progressive overload: start very light to bank a long runway, use same-weight sets, add small and regular, and deload before you hit the wall by going back N weeks. A complete guide to linear progression, with full references.">
+<link rel="alternate" hreflang="zh-Hant" href="/zh/blog/onelift-progression.html">
+<link rel="alternate" hreflang="en" href="/blog/onelift-progression.html">
+<link rel="canonical" href="https://onelift.org/blog/onelift-progression.html">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+  color: #292524; background: #F7F3EC; line-height: 1.6;
+}
+a { color: #1B4332; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Nav */
+.nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(247,243,236,0.95); backdrop-filter: blur(12px);
+  border-bottom: 1px solid #D6D3D1; padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1080px; margin: 0 auto; height: 60px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 0.5px; }
+.nav-logo a { color: inherit; }
+.nav-logo a:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
+.lang-switch {
+  font-size: 13px; color: #A8A29E; border: 1px solid #D6D3D1;
+  padding: 4px 12px; border-radius: 6px;
+}
+.lang-switch:hover { border-color: #1B4332; color: #1B4332; text-decoration: none; }
+
+/* Article */
+.article {
+  max-width: 720px; margin: 0 auto; padding: 100px 24px 80px;
+}
+.article h1 {
+  font-size: clamp(28px, 5vw, 40px); font-weight: 800;
+  line-height: 1.2; margin-bottom: 12px;
+}
+.article-meta {
+  font-size: 14px; color: #A8A29E; margin-bottom: 40px;
+}
+.article h2 {
+  font-size: clamp(22px, 3.5vw, 28px); font-weight: 700;
+  margin: 48px 0 16px; line-height: 1.3;
+}
+.article h3 {
+  font-size: 18px; font-weight: 600;
+  margin: 28px 0 10px;
+}
+.article p {
+  font-size: 17px; line-height: 1.8; margin-bottom: 16px;
+  color: #292524;
+}
+.article .lead {
+  font-size: 20px; font-weight: 600; color: #292524;
+  line-height: 1.6; margin-bottom: 20px;
+}
+.article ul, .article ol {
+  margin: 0 0 16px 24px; font-size: 17px; line-height: 1.8; color: #292524;
+}
+.article li { margin-bottom: 6px; }
+.article hr {
+  border: none; border-top: 1px solid #D6D3D1;
+  margin: 48px 0;
+}
+.article .schedule {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px; background: #fff; border: 1px solid #D6D3D1;
+  border-radius: 12px; padding: 20px 24px; margin: 16px 0 20px;
+  line-height: 1.9; box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.article .log-example {
+  font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 15px; background: #fff; border: 1px solid #D6D3D1;
+  border-radius: 12px; padding: 20px 24px; margin: 16px 0 20px;
+  line-height: 1.9; box-shadow: 0 1px 4px rgba(120,90,50,0.08);
+}
+.article .mapping {
+  font-size: 17px; line-height: 2; margin: 16px 0 20px;
+}
+.article .highlight {
+  background: #F9EFE8; border-left: 4px solid #C86B4A;
+  padding: 16px 20px; border-radius: 0 8px 8px 0;
+  margin: 20px 0;
+}
+.article .highlight p { margin-bottom: 0; }
+.exercise-link {
+  display: inline-flex; align-items: center; gap: 4px;
+  font-size: 15px; font-weight: 500;
+}
+.exercise-link::after {
+  content: ' \2197'; font-size: 13px;
+}
+
+/* Back link */
+.back-home {
+  max-width: 720px; margin: 0 auto; padding: 0 24px 60px;
+  text-align: center;
+}
+.back-home a {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600;
+  border: 2px solid #D6D3D1; color: #292524;
+}
+.back-home a:hover { border-color: #1B4332; text-decoration: none; }
+
+/* Footer */
+.footer {
+  padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E;
+  border-top: 1px solid #D6D3D1;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .nav { padding: 0 16px; }
+  .nav-links { gap: 14px; }
+  .nav-links a:not(.lang-switch):not(.mobile-blog) { display: none; }
+  .article { padding: 80px 20px 60px; }
+  .article h2 { margin-top: 36px; }
+}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="/">Soliday</a></div>
+    <div class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#how">How It Works</a>
+      <a href="/#system">The System</a>
+      <a href="/blog/" class="mobile-blog">Blog</a>
+      <a href="/zh/blog/onelift-progression.html" class="lang-switch">中文</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
+
+<h1>How to Add Weight</h1>
+<div class="article-meta">By the developer &middot; Part 2 of the series</div>
+
+<p>Muscle is the fountain of youth. It's the body's largest glucose sink &mdash; most of the carbohydrate you eat is taken up by muscle; it's also an endocrine organ that signals to the entire body; and it's written directly on your appearance. Whether someone looks decrepit or vigorous is mostly not about the face &mdash; it's about how much muscle is still on the frame, and whether the nervous system can still put force into it.</p>
+
+<p>None of this stays on its own. It can only be trained. And for the same time invested, the results can differ enormously. Choices matter more than effort &mdash; make the wrong choice and the effort is wasted.</p>
+
+<p>For strength training, the three most important choices are: exercise &gt; reps = loading scheme. One of the most widely adopted and most recommended choices for long-term health is: exercises &mdash; 3&ndash;5 multi-joint compound movements; reps &mdash; three sets of five; loading &mdash; linear progression plus periodization. In one sentence: pick three to five compound movements, do three sets of five each session at the same weight; next session add a little; when you approach your limit, drop the weight back and build up again.</p>
+
+<p>Part 1, <a href="/blog/onelift-five-reps.html">The Science of Five Reps</a>, covered the reps &mdash; why five, and why that's most effective for strength and for aging. This piece covers the second thing: how to add weight, and when to back off. The most important of the three choices &mdash; the exercises &mdash; comes in the next piece.</p>
+
+<p>Here's how most people train: walk into the gym, grab whatever weight feels handy, do 10 or 20 reps, chase the burn and the soreness, four or five sets of one exercise, then move to the next. Next time: same weight, same reps, same soreness. The time after that: same again. Six months pass and the weight hasn't changed, the reps haven't changed, the body hasn't changed. Every session leaves you tired, every next day leaves you sore, and yet the mirror shows nothing. Then one day, they just stop going &mdash; too tired, too sore, no results. Who can keep that up? This isn't a lack of effort. It's a lack of a plan.</p>
+
+<p>Real training means that before you walk into the gym, you already know exactly how much weight, how many reps, and how many sets you'll do for each exercise today. That number isn't decided on the spot by feel &mdash; it was worked out the last time you trained. And this method has a physiological basis, validated over decades by countless coaches and athletes on thousands of people. This article is about that method.</p>
+
+<hr>
+
+<h2>Why Adding Weight Is Non-Negotiable</h2>
+
+<p>As Part 1 explained, training sends the body a message. "Today I did a single-leg squat, 90 kg for five reps" is a message: "We have a demand for lifting 90 kg on one leg for five &mdash; please adapt to it." So what happens if you send the same message every time? The body responds the first time and grows; but do the same weight ten, twenty times and it has long since adapted. The message shifts from "I need to get stronger" to "just maintain the status quo." You're still tired, still sore, but that fatigue no longer buys anything &mdash; you pay the cost, the return is zero.</p>
+
+<p>So the engine of progress was never "how much it hurts." It's whether the weight is moving up. This has a formal name: progressive overload. The body adapts, so you push the stimulus up a notch, and it keeps growing. In one sentence: no added weight, no added strength.</p>
+
+<hr>
+
+<h2>The Starting Point: Bank a Long Runway</h2>
+
+<p>Since you're going to keep adding weight, the first question is: how heavy do you start? The answer is counterintuitive &mdash; start well below your ability. Light enough that you wonder "does this even do anything?" and "am I actually training?" If so, you've got it right.</p>
+
+<p>The core idea: how long you can progress depends on how much "loading runway" you have left. Start very light and months of room lie ahead &mdash; you can add a little at a time and climb steadily for a long time. Start near your limit and you've burned the runway on the very first step. And running out of runway at the start creates three problems at once: you get hurt easily (the weight hugs your limit, error margins are tiny, and any small breakdown in form means grinding it out); you quit easily (every session is a battle, you're tense before you even arrive, and you won't last a few months); and you can't add weight (you jam up after two or three increments and become the kind of person who trains the same weight year after year and grows nothing). The third is the most fatal because it's silent &mdash; you think you're working hard, but the engine died long ago.</p>
+
+<p>A concrete illustration: start from a weight so light it feels almost like a warm-up, then add about 2 kg every two sessions. Two or three months later, the same movement may be stacked twenty or thirty kilos higher, comfortably past any previous best. That extra weight is what the runway bought. Had the starting point been set near the limit, it would have stalled after two or three increments.</p>
+
+<p>This also answers a common worry: "Isn't doing five reps heavy and dangerous?" No. Because across the whole cycle, the weight used is far below your limit the vast majority of the time. The first several weeks feel like a warm-up, the middle starts to bite a little, and only the last session or two get truly close to the limit &mdash; and the moment you touch it, you back off and start over. A 5RM is the weight you can do for exactly five reps before failing, roughly 85% of your 1RM 【4】. That's a test, not a training method; in practice it's tested once every twelve weeks or more, not daily. In fact, the point where linear progression stalls already tells you roughly where your 5RM is &mdash; that number surfaces on its own.</p>
+
+<p>So how do you actually pick the starting point? Two cases. <strong>Beginners</strong> &mdash; just use the lightest available (empty handle, the lightest pair of dumbbells, the smallest stack on a machine). Don't estimate, don't calculate; learn the movement first, and the weight will catch up within a few weeks. <strong>Experienced lifters</strong> &mdash; work backward from your current best, subtracting about 8&ndash;12 weeks' worth of increments; that number is your start.</p>
+
+<p>With a weight this light, it will feel like "nothing's happening" at first. That feeling is real, but don't worry &mdash; thousands of lifters have climbed all the way up from "too light to feel." And the rate of adding is much faster than you'd expect. Add 2.5 kg a week and that's 130 kg over fifty-two weeks. In reality you'll stall along the way and drop back to rebuild &mdash; you can't climb in a straight line &mdash; but even halve that number, then halve it again, and a year later the weight will still startle your present self. The real question was never "am I adding fast enough?" It's "can I keep adding at all?"</p>
+
+<p>Starting light has one more side benefit: when a movement is still unfamiliar, when you're returning after a break, or when older joints need time to adapt, a light weight gives you the room to groove the technique and find the right muscles. When the body is ready, the weight follows naturally. Slow is for the sake of lasting.</p>
+
+<hr>
+
+<h2>One Session, One Weight</h2>
+
+<p>The second principle &mdash; same-weight sets: every set in a session uses the same weight. Three sets of five means all three at that one weight. Don't go light on the first set, heavier on the second, heavier again on the third &mdash; that pyramid approach looks professional, but it robs you of your one clear signal.</p>
+
+<p>Because "can I handle this weight today?" is precisely what decides whether you add next time. Three sets at the same weight, all completed cleanly, means the weight is digested &mdash; next time you go up. If the third set starts to tilt and grind, you're not there yet. Change the weight every set and you lose that clean signal; you're left guessing by feel.</p>
+
+<p>You don't need many sets. The latest ACSM position statement, synthesizing 137 systematic reviews, recommends for maximal strength: load heavy enough (above 80% 1RM), and 2 to 3 sets per exercise is enough 【1】. The dose-response for strength tops out quickly; the fourth and fifth sets add little while fatigue accumulates in full. Same-weight sets also have two very practical upsides: you don't keep swapping plates (saves time), and you don't keep computing numbers (saves mental effort). All your attention can go to doing the movement well.</p>
+
+<hr>
+
+<h2>How to Add: Small and Regular</h2>
+
+<p>How much to add comes in two phases. Early on, while the weight is still light and feels like almost nothing, you can add a plate every session and climb fast &mdash; this phase is just reclaiming ability you already had, so don't hold back. Once the weight has some heft and a session leaves you feeling worked, it's time to shift gears. Traditional linear programs roughly aim for: about 4.5 kg per week for lower body, about 2.3 kg per week for upper body.</p>
+
+<p>But absolute numbers don't scale themselves, so a percentage is more useful: a week's increase should stay under about 5% of the current weight. Squatting 100 kg: 5 kg a week, just right. Squatting 40 kg: 2 kg a week is the cap, so 2.5 kg means adding once every two weeks. Shoulder press at 60 kg: 2.5 kg a week, just right. Shoulder press at 20 kg: 2.5 kg is already 12%, too much. You don't need to nail this precisely &mdash; the margin for error is actually large. As long as you're not adding absurdly fast, and not sitting stuck for months, the body generally keeps up.</p>
+
+<p>That said, smaller or newer lifters (women often fall in this range) should absolutely not copy those two classic numbers &mdash; not because they progress worse, but because the absolute values should simply be smaller. Stack up at the same percentage and the relative progress over a year is exactly the same.</p>
+
+<p>Here you'll hit a very practical problem: the smallest plate in most gyms is 1.25 kg, which means each increment is 2.5 kg on the bar &mdash; too coarse for light weights. Two fixes: buy a pair of smaller micro plates (0.5 or 1 kg each, inexpensive, just bring them to the gym), or don't change equipment and instead stretch the increment cycle to once every two weeks, effectively halving the rate. Adding slowly always beats stalling out. The same logic explains why the upper body should be loaded slower than the lower: upper-body movements are lighter to begin with, so the same 2.5 kg is only 2.5% on a squat but can exceed 6% on a shoulder press. The shoulder press is usually the slowest-progressing movement of all.</p>
+
+<p>The criterion is simple: if your form is clean and you still have something left after three sets, add; if last time was a struggle, hold the weight and train it once more. Not adding this time is not a problem &mdash; adding anyway while stuck is. If you train two or three times a week, pick one of those sessions to go up and keep the others at the same weight. Progress doesn't come from adding a lot once; it comes from adding a little, many times.</p>
+
+<hr>
+
+<h2>When to Back Off: Before You Hit the Wall</h2>
+
+<p>Keep adding and one day you can't add anymore &mdash; that's inevitable, not a failure. The key is when to back off. Most people back off only after hitting the wall: they load up to a weight, fail to finish, get stuck under the bar, and only then think about deloading. The cost of that is discovering the problem on the single most dangerous rep.</p>
+
+<p>There are really only two situations, easy to remember. <strong>Yellow light</strong> &mdash; you finish, but you feel like one or two more reps would be impossible. Here you can either back off or take one more shot, depending on how you feel that day, how you slept, and whether other fatigue is lingering. <strong>Red light</strong> &mdash; you can't finish; a set didn't go up. Don't try again &mdash; back off immediately. Backing off at the yellow light is ideal; wait for the red light and you've already paid part of the cost. A few secondary signals are also worth watching: form starting to break down, bar speed noticeably slowing, or failing to add weight on two attempts in a row.</p>
+
+<p>This is also what "leaving reps in reserve" really means. It doesn't mean deliberately holding back on every set &mdash; during the early and middle parts of a cycle the weight is well below your limit, so there's no need to hold back at all. It's a signal: when your reserve starts to vanish, this round is nearly topped out and it's time to back off. Don't wait until you can't finish. The goal is to quit while ahead, not to turn only after hitting the wall.</p>
+
+<hr>
+
+<h2>How Much to Drop: Small First, Then Big</h2>
+
+<p>Backing off isn't cutting in half, and it isn't starting over from zero. The classic programs are remarkably consistent: drop 10%. The StrongLifts 5&times;5 rule is to lower the weight 10% after failing the same weight three sessions in a row, then add it back a plate at a time; Starting Strength resets by 8 to 10%; and when Wendler's 5/3/1 stalls, you likewise cut the training max by 10%.</p>
+
+<p>A more useful method: forget percentages and think in terms of "going back N weeks of progress."</p>
+
+<div class="schedule">
+Hit the wall &rarr; go back 4 weeks &rarr; build back up<br>
+Hit the wall &rarr; go back 4 weeks &rarr; build back up<br>
+Hit the wall &rarr; go back 12 weeks &rarr; big reset, run a long cycle again
+</div>
+
+<p>Use the small drop to try pushing through again; if you hit the same wall after two or three rounds, use the big drop for a full reset and run a long cycle from scratch. Interestingly, both methods land on about the same answer &mdash; four weeks of progress often works out to roughly 8&ndash;10%. Different roads, same destination.</p>
+
+<p>The "go back N weeks" method self-calibrates: someone who adds fast naturally covers a bigger four-week drop; someone who adds slowly, a smaller one &mdash; no separate math required. And you can just look it up in your records; no mental arithmetic standing in front of the rack. How many sessions four weeks is depends on your training frequency.</p>
+
+<p>To go back to the weight you used four weeks ago, you have to know what that weight was. So you must keep records &mdash; date, exercise, weight, sets, and reps. Without records, none of the judgments above can be executed, because people really do forget. This is exactly what the Soliday app does for you: it logs every set automatically, works out the weight you should use next time, and remembers what you lifted weeks ago &mdash; so when it's time to back off, it deloads you to the right weight itself.</p>
+
+<p>So the weight curve isn't a straight line up &mdash; it's a sawtooth climb: add, add, add, hit the wall, drop a bit; add, add, add, hit the wall again, drop again. The overall trend is upward, but you back off and rebuild in segments. And what do you do after backing off? Exactly the same thing: same five reps, same three sets, same weight across sets, same small increment each time &mdash; the only difference is the weight is lighter and you've got runway again. And when you climb back to the same weight the second time, it's usually easier and steadier than the first &mdash; that feeling of "the same weight got easy" is progress itself.</p>
+
+<p>So why is backing off necessary? Not to let the muscle "repair." The real reason is that fatigue accumulates faster than adaptation. Every session leaves a little fatigue behind; early on it clears, but later it piles up and eats into the performance you should have. At that point, no matter how hard you try, the numbers won't move &mdash; because what's blocking you isn't a lack of strength, it's too much fatigue. Dropping the weight sheds that fatigue and recovers your room to add. This is a consensus in the strength world. A survey of 246 competitive strength and physique athletes found that all of them program deloads, and the leading reason is managing fatigue; the typical practice is roughly every 5 to 6 weeks, lasting about 6 days, and most often triggered when performance stalls or when soreness and joint discomfort increase 【2】.</p>
+
+<p>But one thing must be clear: a deload is not stopping training. A randomized controlled trial had subjects completely stop training for one week in the middle of a nine-week program; the result was that lower-body strength actually declined slightly, with no benefit to muscle mass 【3】. So "when you stall, drop the weight and keep training" is well supported; "when you're tired, take a full week off" is a different matter.</p>
+
+<hr>
+
+<h2>Nobody Invented This: Evidence and Programs</h2>
+
+<p>That you must add weight isn't controversial; what's debated is how to arrange it. Two meta-analyses make this clear. <strong>A plan beats no plan:</strong> a meta-analysis of 18 studies found that periodized resistance programs are clearly better for maximal strength than unstructured programs that keep training the same way; and untrained beginners gain the most, with higher frequency and longer duration producing better results 【5】. But <strong>which arrangement you pick barely matters:</strong> another meta-analysis of 17 studies and 510 people directly compared "linear" versus "undulating" periodization and found no significant difference in maximal strength for either upper or lower body 【6】. Together, the message is clear: what matters isn't whether you choose linear or undulating &mdash; it's whether you have a plan at all. Linear is simply the simplest and easiest to execute, and especially suited to beginners and those returning to training.</p>
+
+<p>As for the rules specified down to the kilogram &mdash; "add 2.5 kg each time, drop 10% after three stalls" &mdash; honestly, no dedicated randomized controlled trial has validated them. They're a practical tradition that coaches worked out over decades on thousands of people, which is exactly why the margin for error is so large. Still, the tradition is quite consistent: the most widely followed programs in the fitness world share almost the same skeleton. <strong>Beginner linear</strong> &mdash; Rippetoe's <em>Starting Strength</em> (three sets of five, add every session, drop 10% when stalled), Mehdi's <em>StrongLifts 5&times;5</em> (five sets of five, add 2.5 kg each session, drop 10% after three failures), Matthews' <em>Bigger Leaner Stronger</em> (heavy weight, 4 to 6 reps per set). <strong>Intermediate</strong> (after linear runs out) &mdash; the Texas Method, Wendler's <em>5/3/1</em>, K. Black's <em>Tactical Barbell</em>. These intermediate programs all require a decent knowledge of your maximal strength for each movement, and all require a spreadsheet to calculate weights &mdash; not as simple as beginner linear. But from beginner to intermediate, the core is the same: a plan you can execute long-term, add slowly, and back off when you stall.</p>
+
+<hr>
+
+<h2>Linear Progression Suits New Movements and Returning Best</h2>
+
+<p>Linear progression is exactly the right mode for new movements and for returning to training: start from a very low point, add a little at a time, and give the body time to catch up. When you're learning a new movement or coming back after injury, this light-to-heavy, gradual approach is the safest.</p>
+
+<p>A few illustrations of the principle. When learning a new movement or returning, prefer to climb from a clearly light weight and groove the technique along the way. If a movement starts getting hard (for example, a weighted pull-up becomes a struggle at a certain load), don't grind it out &mdash; note it that day, reduce the weight next time, and rebuild from an easy weight; after backing off and climbing again, you'll often be back to the original weight within two weeks and steadier than before you dropped. If some part of the body starts to signal (for example, tenderness developing over the top of the shoulder), don't gamble that it'll heal on its own even before it becomes an injury &mdash; drop the relevant movements to very light and climb back up step by step, which is far safer than grinding through.</p>
+
+<p>The older you are, the more you should err this way: back off the moment something feels off, rather than waiting until you're truly hurt. Because a real injury costs you months of interruption &mdash; a price far higher than a few missed weeks. The logic of backing off is identical across all these cases: back off when you stall, back off when the body signals, and don't wait until you're actually injured. Retreat to a weight you can finish cleanly and the body doesn't protest, then build back up.</p>
+
+<p>Two more habits worth building: don't hold your breath or brace against a belt for grinding lifts &mdash; keep an eye on blood pressure, and there's no need to chase a 1RM in general health-oriented training; time your rest between sets with a timer, at least two minutes, and go slowly without rushing. The goal of training is to get stronger over the long term, not to wring yourself dry today.</p>
+
+<div style="background: #EDF3EE; border: 1px solid #C9DCD1; border-radius: 12px; padding: 20px; margin: 24px 0;">
+<div style="font-size: 18px; font-weight: 700; color: #1B4332; margin-bottom: 8px;">📱 This method, already built into an app</div>
+<p style="color: #3E6B54; margin: 0;">If what you want isn't the principles but a ready-made plan you can just follow, the Soliday app <em>is</em> this whole method packaged: one unilateral dumbbell movement a day, five reps, linear progression plus periodic deload. Every point in this article &mdash; start ultra-light, same-weight sets, small increments, back off when you stall, always log &mdash; is built in, right down to computing exactly what weight to use next time. Free, no account required.</p>
+</div>
+
+<hr>
+
+<h2>So: Add With a Plan, Back Off When You Stall</h2>
+
+<p>The three most important choices in strength training: the exercises, the reps, the loading scheme. The exercises decide whether you train the target at all; the reps decide which quality you build; the loading scheme decides whether you keep progressing. And reps and loading are really two sides of the same thing. Saying "do five reps" without saying how to add weight sounds like telling someone to shoulder a limit weight from day one. Put the two halves together and it looks like this:</p>
+
+<div class="schedule">
+Start from a weight so light it feels like nothing<br>
+&rarr; three sets of five, same weight across sets<br>
+&rarr; add a little each time, and log it<br>
+&rarr; approaching the limit (reserve running out)? back off<br>
+&rarr; build up again for another round
+</div>
+
+<p>Across the whole process, the vast majority of the time is spent in a safe, easy zone with reps in reserve. Doing five reps isn't dangerous &mdash; how could doing fewer be more dangerous? What's dangerous is training near your limit without preparation.</p>
+
+<p>And what happens when linear progression runs out? When you've backed off several rounds and find the same wall in the same place, it means plain linear has stopped yielding, and only then do the intermediate programs mentioned above come into play. But that's later &mdash; worry about it when linear truly stops working; most people, in fact, never train that far.</p>
+
+<p>Before you walk into the gym next time, you should already know how much weight you'll use today. That number was decided the last time you trained. The next piece covers the most important of the three choices: <a href="/blog/onelift-exercises.html">choosing the exercises</a>.</p>
+
+<hr>
+
+<h2>References</h2>
+
+<p>【1】Currier BS, et al. "Resistance Training Prescription for Muscle Function, Hypertrophy, and Physical Performance in Healthy Adults: An Overview of Reviews." Med Sci Sports Exerc 58(4):851-872, 2026 &mdash; 137 reviews, over 30,000 people: maximal strength needs high loads (above 80% 1RM) and 2 to 3 sets per exercise; hypertrophy is driven mainly by volume.</p>
+
+<p>【2】Rogerson D, et al. "Deloading Practices in Strength and Physique Sports: A Cross-sectional Survey." Sports Med Open 10(1):26, 2024 &mdash; all 246 athletes deload, the main reason being fatigue management; typically about every 5.6 weeks, lasting around 6.4 days, most often when stalled or when soreness and joint discomfort increase.</p>
+
+<p>【3】Coleman M, et al. "Gaining more from doing less? The effects of a one-week deload period during supervised resistance training on muscular adaptations." PeerJ 12:e16777, 2024 &mdash; a full week off in the middle of a program had a slightly negative effect on lower-body strength; a deload is not the same as stopping.</p>
+
+<p>【4】Nuzzo JL, et al. "Maximal Number of Repetitions at Percentages of the One Repetition Maximum." Sports Med 54(2):303-321, 2024 &mdash; at about 85% 1RM people average 6 reps, with the achievable number varying by individual and by movement.</p>
+
+<p>【5】Williams TD, et al. "Comparison of Periodized and Non-Periodized Resistance Training on Maximal Strength: A Meta-Analysis." Sports Med 47(10):2083-2100, 2017 &mdash; periodized programs beat non-periodized ones for maximal strength; beginners gain the most, and higher frequency and longer duration produce better results.</p>
+
+<p>【6】Harries SK, et al. "Systematic review and meta-analysis of linear and undulating periodized resistance training programs on muscular strength." J Strength Cond Res 29(4):1113-1125, 2015 &mdash; linear and undulating periodization show no significant difference in upper- or lower-body maximal strength.</p>
+
+<div class="source-link" style="margin-top: 3em; padding: 24px; background: #fff; border: 1px solid #D6D3D1; border-radius: 12px; text-align: center; font-size: 15px; color: #78716C; box-shadow: 0 1px 4px rgba(120,90,50,0.08);">
+  <p>Previous: <a href="/blog/onelift-five-reps.html" style="font-weight: 600;">The Science of Five Reps</a></p>
+  <p><a href="https://www.facebook.com/engineeringlongevity/posts/pfbid02RWjrz6E5TwNjaegXyiXCeva9Et5TVR5zyJmZTmuyppDWNYsB9Tyo1X3vHH2WChKel" target="_blank" rel="noopener" style="font-weight: 600;">Read the original on Facebook &rarr;</a></p>
+</div>
+
+</article>
+
+<div class="back-home">
+  <a href="/">&larr; Back to onelift.org</a>
+</div>
+
+<footer class="footer">
+  <p>&copy; 2026 Soliday &middot; One Lift a Day. All rights reserved.</p>
+</footer>
+
+<script>
+/* Remember reading position per-article: restore where you left off after
+   leaving and coming back, or after closing and reopening the app. */
+(function () {
+  var key = 'read-pos:' + location.pathname;
+  function restore() {
+    try {
+      var y = localStorage.getItem(key);
+      if (y !== null) window.scrollTo(0, parseInt(y, 10));
+    } catch (e) {}
+  }
+  restore();
+  window.addEventListener('load', restore);
+  var timer;
+  window.addEventListener('scroll', function () {
+    clearTimeout(timer);
+    timer = setTimeout(function () {
+      try { localStorage.setItem(key, String(Math.round(window.scrollY))); } catch (e) {}
+    }, 150);
+  }, { passive: true });
+})();
+</script>
+</body>
+</html>
