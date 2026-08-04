@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>矽谷工程師的抗衰老實驗室</title>
+    <link>https://onelift.org/podcast/</link>
+    <language>zh-Hant</language>
+    <copyright>© 2026 矽谷工程師的抗衰老實驗室</copyright>
+    <description>一個矽谷工程師 Scott 和共同主持 Emma，用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
+    <itunes:subtitle>用工程師的邏輯，把長壽科學拆給你聽</itunes:subtitle>
+    <itunes:summary>一個矽谷工程師 Scott 和共同主持 Emma，用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</itunes:summary>
+    <itunes:author>Scott</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://onelift.org/podcast/cover.jpg"/>
+    <itunes:owner>
+      <itunes:name>Scott</itunes:name>
+      <itunes:email>cy.scott.chen@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Health &amp; Fitness">
+      <itunes:category text="Medicine"/>
+    </itunes:category>
+    <image>
+      <url>https://onelift.org/podcast/cover.jpg</url>
+      <title>矽谷工程師的抗衰老實驗室</title>
+      <link>https://onelift.org/podcast/</link>
+    </image>
+    <item>
+      <title>EP1 糖的科學：葡萄糖分子在你身體裡的完整旅程</title>
+      <description>你身邊有沒有那種「戒糖教」的朋友？這集我們不灌雞湯，直接從第一性原理出發，像 debug 程式碼一樣，把葡萄糖和果糖的底層差異、糖進身體之後怎麼跑、為什麼吃糖會變胖、為什麼會升壞膽固醇、脂肪肝是怎麼來的，一條一條講清楚。聽完你以後看任何飲食法，大腦裡都會有一個超清晰的骨架。</description>
+      <itunes:summary>你身邊有沒有那種「戒糖教」的朋友？這集我們不灌雞湯，直接從第一性原理出發，像 debug 程式碼一樣，把葡萄糖和果糖的底層差異、糖進身體之後怎麼跑、為什麼吃糖會變胖、為什麼會升壞膽固醇、脂肪肝是怎麼來的，一條一條講清楚。聽完你以後看任何飲食法，大腦裡都會有一個超清晰的骨架。</itunes:summary>
+      <enclosure url="https://onelift.org/podcast/episodes/sugar_pod_ep1.mp3" length="29221197" type="audio/mpeg"/>
+      <guid isPermaLink="false">sugar_pod_ep1.mp3</guid>
+      <pubDate>Tue, 04 Aug 2026 09:00:00 +0800</pubDate>
+      <itunes:duration>00:37:57</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
