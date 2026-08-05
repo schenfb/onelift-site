@@ -13,7 +13,7 @@
     <itunes:author>Scott</itunes:author>
     <itunes:type>episodic</itunes:type>
     <itunes:explicit>false</itunes:explicit>
-    <itunes:image href="https://onelift.org/podcast/cover.jpg"/>
+    <itunes:image href="https://onelift.org/podcast/cover-v2.jpg"/>
     <itunes:owner>
       <itunes:name>Scott</itunes:name>
       <itunes:email>cy.scott.chen@gmail.com</itunes:email>
@@ -22,7 +22,7 @@
       <itunes:category text="Medicine"/>
     </itunes:category>
     <image>
-      <url>https://onelift.org/podcast/cover.jpg</url>
+      <url>https://onelift.org/podcast/cover-v2.jpg</url>
       <title>抗老工程學</title>
       <link>https://onelift.org/podcast/</link>
     </image>
