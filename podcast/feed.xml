@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 06 Aug 2026 18:14:36 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 07 Aug 2026 17:53:58 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -31,10 +31,10 @@
       <title>EP1 糖的科學：葡萄糖分子在你身體裡的完整旅程</title>
       <description>你身邊有沒有那種「戒糖教」的朋友？這集我們不灌雞湯，直接從第一性原理出發，像 debug 程式碼一樣，把葡萄糖和果糖的底層差異、糖進身體之後怎麼跑、為什麼吃糖會變胖、為什麼會升壞膽固醇、脂肪肝是怎麼來的，一條一條講清楚。聽完你以後看任何飲食法，大腦裡都會有一個超清晰的骨架。</description>
       <itunes:summary>你身邊有沒有那種「戒糖教」的朋友？這集我們不灌雞湯，直接從第一性原理出發，像 debug 程式碼一樣，把葡萄糖和果糖的底層差異、糖進身體之後怎麼跑、為什麼吃糖會變胖、為什麼會升壞膽固醇、脂肪肝是怎麼來的，一條一條講清楚。聽完你以後看任何飲食法，大腦裡都會有一個超清晰的骨架。</itunes:summary>
-      <enclosure url="https://onelift.org/podcast/episodes/sugar_pod_ep1_v5.mp3" length="30642549" type="audio/mpeg"/>
+      <enclosure url="https://onelift.org/podcast/episodes/sugar_pod_ep1_v6.mp3" length="30356685" type="audio/mpeg"/>
       <guid isPermaLink="false">sugar_pod_ep1.mp3</guid>
-      <pubDate>Thu, 06 Aug 2026 18:14:36 -0700</pubDate>
-      <itunes:duration>00:39:56</itunes:duration>
+      <pubDate>Fri, 07 Aug 2026 17:53:58 -0700</pubDate>
+      <itunes:duration>00:39:41</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
