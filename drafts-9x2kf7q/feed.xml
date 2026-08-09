@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>抗老工程學（草稿試聽）</title>
+    <link>https://onelift.org/drafts-9x2kf7q/</link>
+    <language>zh-Hant</language>
+    <lastBuildDate>Sun, 09 Aug 2026 13:10:12 -0700</lastBuildDate>
+    <copyright>© 2026 抗老工程學</copyright>
+    <description>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</description>
+    <itunes:subtitle>上架前的私人試聽</itunes:subtitle>
+    <itunes:summary>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</itunes:summary>
+    <itunes:author>Scott</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://onelift.org/drafts-9x2kf7q/cover.jpg"/>
+    <itunes:owner>
+      <itunes:name>Scott</itunes:name>
+      <itunes:email>cy.scott.chen@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Health &amp; Fitness">
+      <itunes:category text="Medicine"/>
+    </itunes:category>
+    <image>
+      <url>https://onelift.org/drafts-9x2kf7q/cover.jpg</url>
+      <title>抗老工程學（草稿試聽）</title>
+      <link>https://onelift.org/drafts-9x2kf7q/</link>
+    </image>
+    <item>
+      <title>【草稿】EP2 你臉上的皺紋（29.8 分）</title>
+      <description>上架前試聽版。糖化反應/AGE/膠原蛋白，已修科學硬傷、過反向 QA。</description>
+      <itunes:summary>上架前試聽版。糖化反應/AGE/膠原蛋白，已修科學硬傷、過反向 QA。</itunes:summary>
+      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/wrinkle_pod_ep1.mp3" length="22413549" type="audio/mpeg"/>
+      <guid isPermaLink="false">draft-wrinkle-ep2</guid>
+      <pubDate>Sun, 09 Aug 2026 13:10:12 -0700</pubDate>
+      <itunes:duration>00:29:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
