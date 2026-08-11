@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Fri, 07 Aug 2026 17:53:58 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 20:16:06 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -35,6 +35,16 @@
       <guid isPermaLink="false">sugar_pod_ep1.mp3</guid>
       <pubDate>Fri, 07 Aug 2026 17:53:58 -0700</pubDate>
       <itunes:duration>00:39:41</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
+      <title>EP2 你臉上的皺紋：過去十年的血糖帳單</title>
+      <description>你臉上的皺紋、血管硬化、糖尿病腎病、視網膜病變——其實是同一個化學反應（糖化／AGE）在不同器官演的劇本。這集用工程師的邏輯，把血糖怎麼一步一步把你的膠原蛋白焊死講清楚。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。</description>
+      <itunes:summary>你臉上的皺紋、血管硬化、糖尿病腎病、視網膜病變——其實是同一個化學反應（糖化／AGE）在不同器官演的劇本。這集用工程師的邏輯，把血糖怎麼一步一步把你的膠原蛋白焊死講清楚。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。</itunes:summary>
+      <enclosure url="https://op3.dev/e/onelift.org/podcast/episodes/wrinkle_pod_ep2_v1.mp3" length="22413141" type="audio/mpeg"/>
+      <guid isPermaLink="false">wrinkle-ep2</guid>
+      <pubDate>Mon, 10 Aug 2026 20:16:06 -0700</pubDate>
+      <itunes:duration>00:29:49</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
   </channel>
