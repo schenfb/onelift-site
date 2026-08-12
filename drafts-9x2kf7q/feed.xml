@@ -6,7 +6,7 @@
     <title>抗老工程學（草稿試聽）</title>
     <link>https://onelift.org/drafts-9x2kf7q/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Mon, 10 Aug 2026 14:26:12 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 11 Aug 2026 17:30:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</description>
     <itunes:subtitle>上架前的私人試聽</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學（草稿試聽）</title>
       <link>https://onelift.org/drafts-9x2kf7q/</link>
     </image>
+    <item>
+      <title>[DRAFT] Cholesterol: The Half-Century Misunderstanding (EN, 34 min)</title>
+      <description>English Acquired-style test — Scott &amp; Jaggu. Cholesterol apoB mechanism, statins, the 5-step atherosclerosis cascade. Reviewed by Codex+Grok, science overclaims softened, passed reverse-transcript QA. Feedback welcome (esp. voice/pacing).</description>
+      <itunes:summary>English Acquired-style test — Scott &amp; Jaggu. Cholesterol apoB mechanism, statins, the 5-step atherosclerosis cascade. Reviewed by Codex+Grok, science overclaims softened, passed reverse-transcript QA. Feedback welcome (esp. voice/pacing).</itunes:summary>
+      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/cholesterol_en_ep1.mp3" length="29022861" type="audio/mpeg"/>
+      <guid isPermaLink="false">draft-cholesterol-en-ep1</guid>
+      <pubDate>Tue, 11 Aug 2026 17:30:00 -0700</pubDate>
+      <itunes:duration>00:34:11</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>【草稿】EP2 你臉上的皺紋（29.8 分）</title>
       <description>試聽版（含「量→涼」發音修正）。糖化反應/AGE/膠原蛋白，已修科學硬傷、過反向 QA。歡迎給我 feedback。</description>
