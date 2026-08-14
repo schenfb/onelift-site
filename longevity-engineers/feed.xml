@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Longevity Engineers</title>
+    <link>https://onelift.org/longevity-engineers/</link>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Aug 2026 19:10:00 -0700</lastBuildDate>
+    <copyright>© 2026 The Longevity Engineers</copyright>
+    <description>Silicon Valley engineers Scott and Jaggu take one longevity-science topic per episode — cholesterol, blood sugar, fiber, strength, skin aging — and reason it from first principles, the way you'd debug a system. No hype, no supplements to sell: just the core mechanisms so you can judge for yourself. English companion to the Mandarin show 抗老工程學.</description>
+    <itunes:subtitle>Two engineers debug the biology of living longer.</itunes:subtitle>
+    <itunes:summary>Silicon Valley engineers Scott and Jaggu take one longevity-science topic per episode — cholesterol, blood sugar, fiber, strength, skin aging — and reason it from first principles, the way you'd debug a system. No hype, no supplements to sell: just the core mechanisms so you can judge for yourself. English companion to the Mandarin show 抗老工程學.</itunes:summary>
+    <itunes:author>Scott &amp; Jaggu</itunes:author>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://onelift.org/longevity-engineers/cover.jpg"/>
+    <itunes:owner>
+      <itunes:name>Scott</itunes:name>
+      <itunes:email>cy.scott.chen@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Health &amp; Fitness">
+      <itunes:category text="Medicine"/>
+    </itunes:category>
+    <image>
+      <url>https://onelift.org/longevity-engineers/cover.jpg</url>
+      <title>The Longevity Engineers</title>
+      <link>https://onelift.org/longevity-engineers/</link>
+    </image>
+    <item>
+      <title>1 · Cholesterol: The Half-Century Misunderstanding</title>
+      <description>The most misunderstood molecule in modern health. Scott and Jaggu rebuild cholesterol from first principles: why every cell makes its own, why apo-B particle count — not 'good vs bad' — is the real crime scene, the five-step atherosclerosis cascade, statins, and what actually lowers your risk. General information, not medical advice.</description>
+      <itunes:summary>The most misunderstood molecule in modern health. Scott and Jaggu rebuild cholesterol from first principles: why every cell makes its own, why apo-B particle count — not 'good vs bad' — is the real crime scene, the five-step atherosclerosis cascade, statins, and what actually lowers your risk. General information, not medical advice.</itunes:summary>
+      <enclosure url="https://onelift.org/longevity-engineers/episodes/cholesterol_en_ep1_v2.mp3" length="29376213" type="audio/mpeg"/>
+      <guid isPermaLink="false">le-ep1-cholesterol</guid>
+      <pubDate>Thu, 13 Aug 2026 19:10:00 -0700</pubDate>
+      <itunes:duration>00:36:48</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>
