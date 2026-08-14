@@ -1,66 +1,83 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>腎臟不是嬌貴的過濾器，是一座高功率的化工廠｜矽谷工程師的抗衰老實驗室</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>腎臟不是嬌貴的過濾器，是一座高功率的化工廠</title>
 <meta name="description" content="我的 eGFR 曾經被算到 58——照公式，這叫慢性腎病。我的家庭醫師看著這份報告，開始一輪一輪追蹤。但實際量下來，我的腎完全正常：那個數字是被我的肌肉騙的。這張報告的故事我最後會講完；要懂它為什麼誤判，得先把腎臟本身弄清楚。">
+<link rel="canonical" href="https://onelift.org/zh/blog/kidney.html">
 <meta property="og:title" content="腎臟不是嬌貴的過濾器，是一座高功率的化工廠">
 <meta property="og:description" content="我的 eGFR 曾經被算到 58——照公式，這叫慢性腎病。我的家庭醫師看著這份報告，開始一輪一輪追蹤。但實際量下來，我的腎完全正常：那個數字是被我的肌肉騙的。這張報告的故事我最後會講完；要懂它為什麼誤判，得先把腎臟本身弄清楚。">
-<meta property="og:image" content="https://onelift.org/blog/zh/kidney_cover.png">
+<meta property="og:image" content="https://onelift.org/zh/blog/kidney_cover.png">
 <meta property="og:type" content="article">
 <style>
-:root{--bg:#0b0d0e;--line:#1e2729;--line2:#26312f;--ink:#e9efee;--ink2:#aab4b3;--mut:#727d7c;--teal:#2fe6c6;--teal-dim:#1c9d88;--warn:#ffcf6b;--warn-bg:#211a0d;--maxw:40rem}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"PingFang TC","Noto Sans TC","Heiti TC","Microsoft JhengHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.95;font-size:17px;letter-spacing:.01em}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:clamp(1.4rem,4vw,3rem) 1.3rem 5rem}
-.kicker{display:flex;gap:.6rem;align-items:center;color:var(--teal);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;font-weight:700;margin-bottom:1.2rem}
-.kicker a{color:inherit;text-decoration:none}
-.kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--teal);box-shadow:0 0 10px var(--teal)}
-h1{font-size:clamp(1.9rem,5.5vw,2.7rem);line-height:1.3;font-weight:800;text-wrap:balance;margin:.2rem 0 1.6rem}
-h2{display:flex;gap:.85rem;align-items:baseline;margin:2.8rem 0 1rem;font-size:1.32rem;font-weight:800;line-height:1.4;text-wrap:balance}
-h2 .cno{flex:none;font-family:ui-monospace,"SF Mono",Menlo,monospace;font-size:.85rem;font-weight:700;color:var(--teal);border:1px solid var(--teal-dim);border-radius:6px;padding:.15rem .45rem;transform:translateY(-2px)}
-p{margin:0 0 1.1rem}
-.warn{position:relative;background:var(--warn-bg);border:1px solid #4a3a12;border-radius:10px;padding:.9rem 1rem .9rem 2.6rem;color:#f0e2c2}
-.warn::before{content:"⚠";position:absolute;left:.9rem;top:.85rem;color:var(--warn)}
-ul.ticks{list-style:none;padding:0;margin:0 0 1.2rem;display:flex;flex-direction:column;gap:.65rem}
-ul.ticks li{position:relative;padding-left:1.4rem}
-ul.ticks li::before{content:"▸";position:absolute;left:0;top:0;color:var(--teal);font-weight:700}
-hr{border:0}
-hr.major{margin:2.6rem auto;display:flex;justify-content:center}
-hr.major::before{content:"◆ ◆ ◆";color:var(--teal-dim);letter-spacing:.8em;font-size:.6rem;opacity:.8;text-indent:.8em}
-hr.minor{margin:1.9rem auto}
-hr.minor::before{content:"· · ·";color:var(--mut);letter-spacing:.5em;font-size:1rem;display:block;text-align:center}
-.refs h2{font-size:1.1rem;color:var(--ink2);border-top:1px solid var(--line);padding-top:2rem}
-ol.reflist{list-style:none;padding:0;margin:1.4rem 0 0;display:flex;flex-direction:column;gap:1rem}
-ol.reflist li{display:flex;gap:.8rem;font-size:.86rem;line-height:1.7}
-.rn{flex:none;font-family:ui-monospace,monospace;font-size:.72rem;color:var(--teal);border:1px solid var(--line2);border-radius:5px;padding:.05rem .4rem;height:fit-content;transform:translateY(3px)}
-.cite{color:var(--ink2);display:block}.note{color:var(--mut);display:block;margin-top:.25rem}
-.tags{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:2.4rem;padding-top:1.6rem;border-top:1px solid var(--line)}
-.tags span{font-size:.74rem;color:var(--teal-dim);border:1px solid var(--line2);border-radius:100px;padding:.2rem .7rem}
-.dgm{font-family:ui-monospace,"SF Mono",Menlo,monospace;background:#0e1416;border:1px solid var(--line2);border-left:2px solid var(--teal-dim);border-radius:8px;padding:1rem 1.1rem;margin:0 0 1.2rem;overflow-x:auto;font-size:.82rem;line-height:1.7;color:var(--ink2);white-space:pre}
-.foot{margin-top:3rem;color:var(--mut);font-size:.8rem;border-top:1px solid var(--line);padding-top:1.2rem}
-.foot a{color:var(--teal-dim)}
-::selection{background:rgba(47,230,198,.28);color:#fff}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif; color: #292524; background: #F7F3EC; line-height: 1.6; }
+a { color: #1B4332; text-decoration: none; }
+a:hover { text-decoration: underline; }
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(247,243,236,0.95); backdrop-filter: blur(12px); border-bottom: 1px solid #D6D3D1; padding: 0 24px; }
+.nav-inner { max-width: 1080px; margin: 0 auto; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+.nav-logo { font-size: 20px; font-weight: 800; color: #1B4332; letter-spacing: 3px; }
+.nav-logo a { color: inherit; }
+.nav-logo a:hover { text-decoration: none; }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a { color: #78716C; font-size: 15px; font-weight: 500; }
+.nav-links a:hover { color: #292524; text-decoration: none; }
+.lang-switch { font-size: 14px; color: #1B4332; font-weight: 600; border: 1.5px solid #1B4332; padding: 5px 14px; border-radius: 999px; }
+.lang-switch:hover { background: #1B4332; color: #fff; text-decoration: none; }
+.article { max-width: 720px; margin: 0 auto; padding: 100px 24px 80px; }
+.article h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; line-height: 1.35; margin-bottom: 12px; }
+.article-meta { font-size: 14px; color: #A8A29E; margin-bottom: 40px; }
+.article h2 { font-size: clamp(22px, 3.5vw, 28px); font-weight: 700; margin: 48px 0 16px; line-height: 1.4; }
+.article h2 .no { color: #C86B4A; font-family: 'SF Mono','Menlo',monospace; font-size: 0.75em; margin-right: 10px; font-weight: 600; }
+.article p { font-size: 17px; line-height: 1.9; margin-bottom: 16px; color: #292524; }
+.article ul { margin: 0 0 16px 24px; font-size: 17px; line-height: 1.9; color: #292524; }
+.article li { margin-bottom: 8px; }
+.article hr { border: none; border-top: 1px solid #D6D3D1; margin: 48px 0; }
+.article hr.minor { margin: 32px auto; width: 120px; }
+.article .diagram { font-family: 'SF Mono','Menlo','Consolas',monospace; font-size: 14px; background: #fff; border: 1px solid #D6D3D1; border-radius: 12px; padding: 20px 24px; margin: 16px 0 20px; line-height: 1.9; box-shadow: 0 1px 4px rgba(120,90,50,0.08); overflow-x: auto; white-space: pre; }
+.article .highlight { background: #F9EFE8; border-left: 4px solid #C86B4A; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 20px 0; }
+.article .highlight p { margin-bottom: 0; }
+.refs { max-width: 720px; margin: 0 auto; padding: 0 24px 40px; }
+.refs h2 { font-size: 20px; font-weight: 700; border-top: 1px solid #D6D3D1; padding-top: 40px; margin-bottom: 20px; }
+.refs ol { list-style: none; }
+.refs li { display: flex; gap: 12px; font-size: 14px; line-height: 1.7; margin-bottom: 14px; color: #57534E; }
+.refs .rn { flex: none; font-family: 'SF Mono','Menlo',monospace; font-size: 12px; color: #C86B4A; border: 1px solid #E7E5E4; border-radius: 5px; padding: 1px 7px; height: fit-content; margin-top: 3px; background: #fff; }
+.refs .note { display: block; color: #A8A29E; margin-top: 3px; }
+.back-home { max-width: 720px; margin: 0 auto; padding: 0 24px 60px; text-align: center; }
+.back-home a { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border-radius: 10px; font-size: 15px; font-weight: 600; border: 2px solid #D6D3D1; color: #292524; }
+.back-home a:hover { border-color: #1B4332; text-decoration: none; }
+.footer { padding: 40px 24px; text-align: center; font-size: 13px; color: #A8A29E; }
 </style>
 </head>
 <body>
-<article class="wrap">
-<div class="kicker"><span class="dot"></span><a href="/blog/zh/">矽谷工程師的抗衰老實驗室</a></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-logo"><a href="/zh/">Soliday</a></div>
+    <div class="nav-links">
+      <a href="/zh/">首頁</a>
+      <a href="/zh/blog/" class="mobile-blog">文章</a>
+    </div>
+  </div>
+</nav>
+
+<article class="article">
 <h1>腎臟不是嬌貴的過濾器，是一座高功率的化工廠</h1>
+<div class="article-meta">矽谷工程師的抗衰老實驗室 · 2026-08-13</div>
 <p>我的 eGFR 曾經被算到 58——照公式，這叫慢性腎病。我的家庭醫師看著這份報告，開始一輪一輪追蹤。但實際量下來，我的腎完全正常：那個數字是被我的肌肉騙的。這張報告的故事我最後會講完；要懂它為什麼誤判，得先把腎臟本身弄清楚。</p>
 <p>你大概聽過一大堆關於腎的說法：它很嬌貴、高蛋白會洗腎、要多喝水排毒、這個傷腎那個傷腎，連打手槍都能「腎虧」。但現實裡，洗腎的人口，跟重訓、吃蛋白粉的人口，並沒有高度重疊。</p>
 <p>我對腎的在意，有一個很個人的理由：我母親洗腎多年之後離世。我在旁邊看了很多年洗腎的痛苦，老實說，我自己很怕走上那條路——也因此對她的腎到底是怎麼壞的，一直很想弄懂。印象中是從一場重感冒之後開始，中間她也吃過草藥；但這些是我後來讀了資料，才回頭去猜的，不是診斷，我也沒有她的病歷、不可能百分之百確定。文章後段我會回到她，用學到的東西試著理解。</p>
 <p>我們照這個粉專的老規矩：講腎到底在幹嘛、沒它會怎樣、它怎麼運作、它會不會自己修、真正弄壞它的是什麼，最後再一個一個檢視所有腎臟謠言，一個一個踢爆，並給你一份實用的護腎指南。</p>
-<hr class="major">
-<h2><span class="cno">01</span><span>腎在幹嘛，沒它你會怎樣</span></h2>
+<hr>
+<h2><span class="no">01</span>腎在幹嘛，沒它你會怎樣</h2>
 <p>大多數人以為腎就是個濾網，把尿濾出來——但那只是它其中一個功能。這是把一座化工廠看成一個濾水器。腎真正的工作至少六件，件件要命：排廢（清掉蛋白質代謝的含氮廢物）、調水與電解質、維持酸鹼平衡（把身體每天產生的酸排掉）、管血壓（透過腎素與血管收縮素系統，也就是 RAAS）、造血（分泌紅血球生成素 EPO，命令骨髓造紅血球）、活化維生素 D（把半成品做最後一步活化）。</p>
 <p>其中兩件安全帶最窄：血鉀只要飄高一點，心臟就會亂跳、甚至停掉；血液太酸，全身的酵素都會出問題。腎是那個時時刻刻把血鉀和酸度壓在窄窄安全帶裡的守門員。</p>
 <p>腎不是濾水器，是一座同時管廢棄物、水電、酸鹼、血壓、造血、內分泌的中央工廠。這也是為什麼腎衰竭到末期會全身垮——尿毒素累積、血鉀致命、酸中毒、嚴重貧血、骨頭壞掉、血壓失控。洗腎，本質上是用機器勉強頂替這座工廠的一小部分。</p>
 <hr class="minor">
-<h2><span class="cno">02</span><span>它怎麼工作：一座燒錢的鈉回收廠</span></h2>
+<h2><span class="no">02</span>它怎麼工作：一座燒錢的鈉回收廠</h2>
 <p>腎的基本單位叫腎元，一顆腎約有上百萬個。每個腎元前段是一個腎小球（負責濾），後面接一長條腎小管（負責把好東西撿回來）。看一個驚人的數字：</p>
-<pre class="dgm">　血液進來
+<div class="diagram">　血液進來
 　　　│
 　　　▼
 　第一段〔腎小球〕粗濾網：水和小分子先漏出去 → 180 公升
@@ -70,40 +87,40 @@ ol.reflist li{display:flex;gap:.8rem;font-size:.86rem;line-height:1.7}
 　　　　　　（鈉幫浦在這段，燒掉全腎約八成能量）
 　　　│
 　　　▼
-　排出 1～2 公升</pre>
+　排出 1～2 公升</div>
 <p>腎花最多力氣的事，不是「製造尿」，是「把東西搬回來」。濾過幾乎免費——靠心臟打出的血壓被動把水和小分子擠過濾膜。真正燒錢的是後面：把好東西逆著濃度梯度一個一個搬回血液，每一步都要拆 ATP。核心引擎叫 Na⁺/K⁺-ATPase，鈉鉀幫浦，光是它就吃掉腎臟大部分的能量——文獻常說腎耗氧的八成以上都用在鈉的運輸上。而葡萄糖、胺基酸、磷酸幾乎都搭這台鈉泵的便車：靠它建立的鈉梯度順勢被拉回。鈉梯度，是整個再吸收經濟體的通用貨幣。</p>
 <p>這台機器有多耗電？給你一個尺度感：兩顆腎加起來才約 300 公克、佔體重不到 0.5%，卻吃掉全身大約 7 到 8% 的氧氣——論單位重量的耗氧，它是身體第二耗能的器官，只輸給心臟。</p>
 <p>這個高功率設計有一個代價：腎裡有一段組織長期踩在缺氧邊緣。負責回收的腎小管最燒錢、靠燒脂肪酸供能，而其中位在「外髓質」那一段（血流被刻意設計得稀薄、氧氣張力本來就低）等於在鋼索上工作——最需要氧，拿到的氧卻最少。這一段最禁不起額外的負擔，是後面講「一旦壞就回不去」的關鍵。</p>
 <p>健康的腎是有餘裕的，這叫腎功能儲備。你吃一頓高蛋白餐，濾過率會暫時往上頂，這是「還有力氣」的正常反應，不是喊救命。問題不在短暫加班，在長期、日夜不停的超載。</p>
 <hr class="minor">
-<h2><span class="cno">03</span><span>那個補不回來的細胞：足細胞</span></h2>
+<h2><span class="no">03</span>那個補不回來的細胞：足細胞</h2>
 <p>先把零件的關係擺清楚，因為這是最多人混的地方。一個腎元有兩段：前段的腎小球是過濾器（一團微血管球），後段的腎小管是回收管。腎小球的濾網上，趴著今天的主角——足細胞；而【02】那台鈉幫浦，是在後段腎小管的細胞裡。足細胞是這張濾網最關鍵、也最脆弱的細胞：很多腎小球的病，最後都走到「足細胞流失、腎小球硬化」這個共同終點（雖然內皮、系膜也可能先壞）。而「腎壞掉」，就是這一百萬個腎元一個一個報廢——有的從濾網端壞（腎小球，像糖尿病、免疫性腎炎），有的從回收管端壞（腎小管／間質，像缺氧、毒素、反覆脫水）。兩端最後都會拖垮整個腎元。</p>
 <p>回到那張濾網。腎小球的濾膜最外層，趴著一種形狀像章魚的細胞：足細胞。它伸出無數隻「足突」，一隻插進另一隻的縫，像拉鍊的齒一樣交錯，齒縫間拉著一層叫裂孔隔膜的分子篩：</p>
-<pre class="dgm">　　血液（蛋白質要留在這邊）
+<div class="diagram">　　血液（蛋白質要留在這邊）
 　┃┃┃┃┃┃┃┃┃┃┃┃　← 足突，像拉鍊的齒互相交錯
 　╪╪╪╪╪╪╪╪╪╪╪　← 齒縫間拉著裂孔隔膜（分子篩）
 　　↓　　↓　　↓　　　　← 只放水和小分子通過
-　　　濾液（往尿液走）</pre>
+　　　濾液（往尿液走）</div>
 <p>足細胞有一個要命的特性：它幾乎不能再生。原因藏在構造裡。它把自己特化到極致，靠一套精緻的骨架撐開足突、跟鄰居交錯成拉鍊；而細胞要分裂，得先把這套骨架拆掉重排。它一旦被逼進細胞週期，往往連分裂都完成不了（醫學上叫有絲分裂災難），結果是自己從濾網上脫落、死掉。所以足細胞是拿「幾乎不能再生」換「濾網不破」，這是一筆演化替它做好的、不可回頭的交易。神經元、心肌細胞跟它同一掛：終末分化，死一個少一個。（能修的是肝臟和腎小管，不是心臟。）</p>
 <p>有一件事不能混為一談：足突「攤平」和足細胞「脫落」是兩回事。足突攤平（足突消失）常常是可逆的——像微病變腎病，蛋白尿爆表、電鏡下足突消失殆盡，類固醇一打，濾網就回去了，足細胞大多沒死。真正不可逆的，是足細胞一顆一顆剝落、數量掉下去。蛋白尿是警報，不是判決。動物模型（Wiggins 那條線）顯示，足細胞流失一旦超過大約兩成，就進入失代償的危險區——剩下的得撐起更大面積、更容易繼續剝落，到大約流失四成就穩穩走向腎小球硬化。那才是回不去的地方。（腎小球裡有一種壁層上皮細胞可能有限度地補充足細胞，這領域還在研究，但遠不足以抵銷持續的流失。）</p>
 <p>濾網被磨損是一條死路，腎小管被缺氧和纖維化吞掉是另一條，兩條會互相加速——後面【05】會看到。</p>
-<hr class="major">
+<hr>
 <p>真正弄壞腎的，是血糖、血壓、血脂。但不能只丟三個名詞就沒頭沒尾，一個一個講清楚它們「怎麼」動手。</p>
-<hr class="major">
-<h2><span class="cno">04</span><span>血糖、血壓、血脂：三種打法，同一個現場</span></h2>
+<hr>
+<h2><span class="no">04</span>血糖、血壓、血脂：三種打法，同一個現場</h2>
 <p>它們最後都收斂到腎小球那個濾網，但用三種不同的手段。</p>
-<ul class="ticks"><li>高血糖——化學腐蝕加泡爛地基，而且日夜不停</li></ul>
+<ul><li>高血糖——化學腐蝕加泡爛地基，而且日夜不停</li></ul>
 <p>這是頭號兇手：糖尿病是末期腎病最常見的單一病因，約佔新發個案的四到五成。血糖一高，過多的葡萄糖大量湧進腎小球的細胞，點燃一整套高糖毒性。最好記的畫面是「地基攻擊」：糖跟蛋白質黏成「糖化終產物」（AGEs），把濾網腳下那層基底膜交聯、變厚變硬，足細胞踩的地板變質、抓不住，就更容易剝落；同時高血糖逼腎小球長期高濾過、內壓升高，再補一道力學傷害。（底下還有氧化壓力、發炎等好幾條線，這裡不全列。）全年無休、雙管齊下，這就是它坐頭號的原因。而且你不必等一張糖尿病診斷書：血糖沒有魔法閾值，它是一把連續的刀，糖尿病只是刀工最重的那一端；診斷線以下的長期偏高、餐後飆高，磨你濾網的速度輕得多、慢得多，但方向一樣。</p>
-<ul class="ticks"><li>高血壓——主刑是力學，但有個同案犯</li></ul>
+<ul><li>高血壓——主刑是力學，但有個同案犯</li></ul>
 <p>腎小球是一團嬌嫩的微血管球，怕壓力。身體本來有保護：入球小動脈像水龍頭，會自己收縮，把血壓的波動擋在腎小球外面（這個自我調節有效範圍大約在平均動脈壓 80 到 180 mmHg）。長期高血壓會讓這條小動脈的調節變鈍、管壁玻璃樣硬化——結果是有些腎元擋不住壓力、被系統血壓一下一下砸在足突上撐裂，有些則走向狹窄、缺血。主刑是力學沒錯，不是什麼食物毒素；但別把它想成純力學，因為 RAAS 的血管收縮素（Ang II）本身就能直接毒害足細胞、逼它凋亡。這也解釋了臨床上的一個事實：降血壓能卸掉當下的機械力，而擋住 RAAS 的藥（像 ACEI、ARB）在降壓之外還能多卸一刀。</p>
-<ul class="ticks"><li>高血脂（ApoB）——脂毒性，血管那套劇本換到腎小球</li></ul>
+<ul><li>高血脂（ApoB）——脂毒性，血管那套劇本換到腎小球</li></ul>
 <p>一個長期放大器。帶著膽固醇的 ApoB 顆粒滲進腎小球後被氧化成 ox-LDL，對足細胞和系膜細胞產生脂毒性，能逼細胞凋亡、刺激系膜增生——跟 ApoB 鑽進血管壁造成動脈硬化幾乎同一個腳本，只是現場換到腎小球。位階要老實講：降血壓、降血糖對延緩腎病有大型試驗撐腰；降血脂在腎臟的主要價值在保護心血管，對延緩腎病惡化本身的證據較弱——弱，但不是無關。所以 ApoB 是幫兇，不是跟糖、壓同級的元兇。</p>
 <p>血糖是化學加地基的主犯，血壓是力學的主犯，血脂是幫兇。它們最後都在磨損那個補不回來的足細胞。</p>
 <hr class="minor">
-<h2><span class="cno">05</span><span>為什麼一旦慢性壞掉，就往下滾</span></h2>
+<h2><span class="no">05</span>為什麼一旦慢性壞掉，就往下滾</h2>
 <p>腎受傷後修不修得回來，看部位。腎小管很能修——急性傷害打死一批細胞後，旁邊活下來的會去分化、增殖、補上缺口（這就是為什麼很多急性腎損傷，及時移除傷害源後能大幅恢復）。但腎小球那邊，尤其足細胞，就是【03】那筆不可回頭的交易。修復能力是不對稱的：管子能修，濾網幾乎不能。（嚴重的急性腎損傷常會留下永久的腎元損失，本身還是日後慢性腎病的危險因子。）</p>
 <p>而慢性一旦啟動，會沿著一個經典的惡性循環往下滾（Brenner 的高濾過假說）：</p>
-<pre class="dgm">　腎元開始流失
+<div class="diagram">　腎元開始流失
 　　　　│
 　　　　▼
 　存活的腎元被迫加班（各自濾過更多、搬更多鈉）
@@ -114,47 +131,47 @@ ol.reflist li{display:flex;gap:.8rem;font-size:.86rem;line-height:1.7}
 　　　　▼
 　缺氧啟動纖維化 → 更多腎元死亡
 　　　　│
-　　　　└──►　回到最上面，而且越滾越快</pre>
+　　　　└──►　回到最上面，而且越滾越快</div>
 <p>02 講過：正常腎的引擎燒的是脂肪酸、踩在缺氧鋼索上。一旦生病，腎小管細胞的脂肪酸氧化能力會下降，被迫改燒效率低得多的糖解——一篇 2015 年 Nature Medicine 的研究（Kang）指出，這個「換上劣質燃料」的燃料切換，是腎纖維化的關鍵環節之一。引擎一邊被加重負擔、一邊被換爛油，這就是下坡越走越快的分子原因。</p>
 <p>有人會問：那台鈉幫浦本身會不會用久了壞掉？不會——幫浦是一個蛋白質，細胞會不斷汰換、補新的，它不會像機械零件那樣磨損。真正會出事的是它的「電」：腎小管細胞一旦缺氧、或被迫改燒爛燃料，ATP 不夠，幫浦就抽不動，鈉漏回去、細胞腫脹、甚至死掉。不是幫浦壞，是斷電。</p>
 <p>兩個現實：一是這是風險不是宿命，人的病程差異很大；二是你出生時每顆腎的腎元數差異其實很大（從二十幾萬到兩百多萬，平均約一百萬），且隨年齡自然流失，到七十幾歲可能只剩一半。這個循環的入口，並不是所有腎病都從糖壓脂來（免疫性腎炎、多囊腎、阻塞、遺傳都不是），但你靠生活方式能擋下的那些入口，幾乎就是血糖和血壓。</p>
 <hr class="minor">
-<h2><span class="cno">06</span><span>洗腎的人，都是怎麼來的</span></h2>
+<h2><span class="no">06</span>洗腎的人，都是怎麼來的</h2>
 <p>把鏡頭拉遠，看整個洗腎人口是怎麼組成的。美國的末期腎病，頭號原因是糖尿病（約四成半），第二是高血壓（約三成）——這兩個加起來大約三分之二；第三名是腎絲球腎炎（約一成多）。台灣不完全一樣：糖尿病同樣是壓倒性的第一，但第二名常是腎絲球腎炎，高血壓的登錄佔比明顯低——這裡有一部分是「同一顆壞腎，各國歸類習慣不同」造成的，不能直接讀成台灣人比較不死於高血壓。剩下是多囊腎、自體免疫、和一大塊「其他／不明」。</p>
 <p>不管怎麼切，有一件事共通：糖尿病是全球洗腎的頭號原因，而它跟高血壓這兩個「你管得動」的因子，撐起了可預防的那一大半——這就是為什麼【04】把血糖、血壓放在最前面。但這份名單也藏了一類該單獨拉出來的東西：藥與毒素。它常常沒有自己的欄位，被丟進「不明」。</p>
-<ul class="ticks"><li>第四個該怕的：藥與毒素</li></ul>
+<ul><li>第四個該怕的：藥與毒素</li></ul>
 <p>在台灣，這一類特別該警惕，主角是含馬兜鈴酸的中草藥。健保資料顯示，光是 1997 到 2003 幾年，就有大約三分之一的台灣人（約八百萬人次）被開立過含馬兜鈴酸的中藥。要講清楚：「被開過」不等於「吃到中毒劑量」，真正高風險的是長期、大量累積的人。但反過來想更嚇人——這麼多人暴露過，官方的洗腎病因裡卻幾乎看不到這一欄，不是它不存在，是被藏進了「不明」。馬兜鈴酸造成的是腎小管間質的快速纖維化、停藥後往往還繼續惡化，同時它是強致癌物：台灣的上泌尿道上皮癌發生率世界第一，研究已證實跟這些草藥有清楚的劑量關係。（相關藥材 2003 年起已陸續禁用，所以現在的風險主要是過去大暴露的長尾、來路不明的產品和誤摻，不是診所今天還在批量開。比利時也曾有一整批減肥的年輕女性，因草藥被誤摻馬兜鈴酸集體走向腎衰竭。）</p>
 <p>止痛藥是同一類的另一半。長期、大量吃複方止痛藥，在 1970 年代的澳洲、瑞典曾佔了末期腎病的兩成；後來那個致病成分（非那西汀）下市，比例才大幅萎縮。今天單純長期大量吃 NSAID（像布洛芬）仍跟腎功能下降有關，只是量級不如當年。</p>
 <p>所以除了血糖、血壓、血脂，「藥」是實實在在的第四個原因——而且是最冤枉、最可以避免的一個。</p>
-<ul class="ticks"><li>從哪一端壞，早期線索不一樣</li></ul>
+<ul><li>從哪一端壞，早期線索不一樣</li></ul>
 <p>腎元有兩段（濾網＋回收管），病從哪一端起頭，早期的線索常常不一樣。從濾網端（腎小球）起頭的，招牌是「漏」——蛋白尿（尿泡泡變多）、有時血尿、嚴重會全身水腫；糖尿病、免疫性腎炎走這條。從回收管端（腎小管間質）起頭的，濾網沒怎麼大漏，壞的是功能——尿濃縮不了（夜尿多）、電解質和酸鹼失衡、貧血來得早；馬兜鈴酸、止痛藥、缺氧走這條。這些是線索、不是鐵板分類（兩端表現會重疊），但方向上幫得上忙。</p>
 <p>而這裡有個殘酷的匯流：腎元是一個整體單位，不管從哪一端起頭，只要拖成慢性，就會把另一端也拖垮——回收管的纖維化讓周圍微血管消失、造成缺氧，把同一顆腎小球一起悶死；反過來也一樣。所以各種病因的末期腎臟，長得都差不多。到那個點，不是治好，是盡量拖慢。</p>
-<ul class="ticks"><li>回到我母親</li></ul>
+<ul><li>回到我母親</li></ul>
 <p>開頭說過，她從一場重感冒之後開始壞，中間也吃過草藥。我沒有她的病歷，下面純粹是我後來讀了這些資料、回頭替她拼的一個「可能的故事」，不是診斷，我也永遠不會確定：也許是感染在濾網端點起了免疫性腎炎，也許草藥又從回收管端補了一刀，兩條路在慢性化裡匯流。我之所以這麼想弄懂，是因為我害怕自己有一天也會洗腎。而弄懂之後最深的一個感想是——真正該躲的東西，常常正好被包裝成在幫你：她吃那帖草藥，是為了把自己治好。</p>
-<hr class="major">
-<h2><span class="cno">07</span><span>那些傷腎謠言，一個一個踢爆</span></h2>
+<hr>
+<h2><span class="no">07</span>那些傷腎謠言，一個一個踢爆</h2>
 <p>關於腎的江湖傳說特別多，因為它神秘、又被綁在「精力」上。注意，最後一個「謠言」其實是真的。</p>
-<ul class="ticks"><li>高蛋白會洗腎——假的。</li></ul>
+<ul><li>高蛋白會洗腎——假的。</li></ul>
 <p>蛋白質會讓濾過率短暫上升，那是【02】說的「腎功能儲備」被叫出來加班，跟高血糖那種持續腐蝕是完全不同性質的事。這條謠言真正的錯，是把「腎病患者的飲食處方」整包貼到健康人身上——對已經有腎病的人限蛋白有道理，對健康腎沒這回事。2018 年一篇統合分析（Devries）比較健康成人吃高蛋白與一般蛋白，腎功能變化沒有差異。要分清「蛋白質分子」和「高蛋白飲食型態」：雞胸、魚、蛋、乳清、豆腐配大量蔬菜是一回事；頓頓加工肉、香腸培根、醃製品是另一回事。這裡有個關鍵對照——真正被證實會經由血壓傷腎的是「高鈉」，不是「高蛋白」，而加工肉、醃製品的問題有一大半就是鹽。所以真正該盯的是鈉，不是那塊雞胸。這裡值得把層次分清楚：高蛋白確實讓腎多做工——它把【02】那台鈉泵的電費調高了（濾過率上升，加上更多胺基酸要靠鈉一起搬回來）。但「多做工」不等於「被弄壞」：健康的腎元夠多、有餘裕，這點加班付得起；只有當腎元已經在超載（也就是已經有腎病）時，這份工作量才變成壓垮的帳單——這正是「限蛋白」是給腎病患者、不是給健康人的原因。而高鈉是另一回事：它走的是血壓那條已經定罪的路，真的去拆濾網。同一盤香腸，主嫌是鹽和加工，不是那塊肉。（誠實邊界：健康人的高蛋白研究多是中短期、看替代指標，不能無限外推。）</p>
-<ul class="ticks"><li>打手槍會腎虧、縱慾傷腎——假的。</li></ul>
+<ul><li>打手槍會腎虧、縱慾傷腎——假的。</li></ul>
 <p>這是把兩個不同的「腎」搞混了。中醫講的「腎」是一套功能概念（藏精、主生殖、主骨、主納氣），跟西醫那座濾血兼分泌的器官不是同一個東西。射精流失的是精液——主要是水，加上精囊來的果糖、前列腺來的鋅和蛋白酶，跟濾血的腎功能毫無關係。沒有任何證據顯示射精頻率會改變 eGFR、傷害腎元或造成持續性、腎源性的蛋白尿。你自慰再勤，濾網一個都不會少。（腰痠疲倦是真的會有的感覺，但鑑別診斷裡輪不到那兩顆腎。）</p>
-<ul class="ticks"><li>吃腰子補腎、以形補形——假的。</li></ul>
+<ul><li>吃腰子補腎、以形補形——假的。</li></ul>
 <p>腰子的成分就是蛋白質、膽固醇，還有偏高的普林——普林代謝成尿酸，吃多反而可能升尿酸。它不會變成你的腎元、不會修你的足細胞。至於「顧腎茶、護腎保健品」，多數只是沒有能重建腎元的成分（腎元不可再生，沒有一種茶能逆轉）；但有少數更糟，是真的有腎毒性——含馬兜鈴酸那類草藥，【06】講過，是實打實把人吃到洗腎的。</p>
-<ul class="ticks"><li>藍莓、魚油是「護腎食物」——好食物，但「護腎」這頂帽子扣得太針對性。</li></ul>
+<ul><li>藍莓、魚油是「護腎食物」——好食物，但「護腎」這頂帽子扣得太針對性。</li></ul>
 <p>先說清楚：藍莓、魚油本身都是好東西，該吃就吃。問題只在「護腎」這兩個字——它們並沒有專門針對腎的保護作用。藍莓上「腎臟友善」清單的真正原因很務實：它低鉀、低磷，適合「已經在洗腎、要控鉀控磷」的病人吃，那是對受損腎的飲食友善，被讀成保護健康腎。魚油有降三酸甘油酯、降發炎的好處，蹭到了真正的槓桿，但對延緩一般腎病的硬證據很弱：糖尿病族群的大型試驗（VITAL-DKD）裡，魚油對五年 eGFR 沒有比安慰劑好。所以：好食物、值得吃，只是別為了「護腎」而吃，它們沒有這個針對性。</p>
-<ul class="ticks"><li>忘記喝水傷腎、要一直補水——多半是假的。</li></ul>
+<ul><li>忘記喝水傷腎、要一直補水——多半是假的。</li></ul>
 <p>腎的本職就是省水：缺一點，它把尿濃縮、把水留下來，你只是尿變黃，這是它正常工作、不是受傷。偶爾忘記喝、渴了再補，對健康腎的損害趨近於零。反過來也一樣——想靠多喝水護腎，證據不支持：針對慢性腎病患者增加飲水量的隨機試驗（CKD-WIT）並沒有延緩 eGFR 下降。渴了就喝、尿色淡即可。（真正傷腎的是另一種情況，見最後一條。）</p>
-<ul class="ticks"><li>憋尿傷腎——大多是假的，但有例外。</li></ul>
+<ul><li>憋尿傷腎——大多是假的，但有例外。</li></ul>
 <p>偶爾憋一兩個小時，腎照樣造尿存進膀胱，不會因此受損。憋尿真正的壞處在下泌尿道：尿待太久、細菌有時間繁殖，尿路感染風險上升；而感染反覆往上蔓延到腎（腎盂腎炎），才是它「傷腎」的間接路徑。只有長期病態的憋尿、或本身有阻塞/攝護腺肥大造成尿液逆流、腎積水，才會直接傷到腎。想尿就去尿，主要是防感染。</p>
-<ul class="ticks"><li>反過來的真相：真正該防的，是止痛藥加脫水。</li></ul>
+<ul><li>反過來的真相：真正該防的，是止痛藥加脫水。</li></ul>
 <p>謠言常把無害的講得很可怕，卻漏掉真正該防的。這裡講的是非類固醇止痛藥（NSAID，像布洛芬），不是所有止痛藥——它會削掉腎的保護性血流，在脫水、心衰、年長、已有腎病、或同時吃利尿劑和血壓藥時尤其危險。一個重訓族跑完馬拉松、脫水，再吞一顆布洛芬，對腎的威脅，比前面那一整排謠言加起來都真實得多。而反覆的嚴重脫水本身也是真的會傷腎——高溫下的體力勞動者長期不補水，是「熱應力腎病」這類慢性腎病的主流假說之一。（低劑量阿斯匹靈是心血管用藥，別自行停；顯影劑則主要在腎功能已經不好、脫水的高風險情境才需要擔心。）</p>
-<hr class="major">
-<h2><span class="cno">08</span><span>一個正在改寫腎臟醫學的工具</span></h2>
+<hr>
+<h2><span class="no">08</span>一個正在改寫腎臟醫學的工具</h2>
 <p>有一種原本用來降血糖的糖尿病藥，在一群「根本沒有糖尿病」的腎病患者身上，硬生生改變了腎臟的走向——這幾年撼動了整個腎臟科。它叫 SGLT2 抑制劑。你要帶走的重點不是藥名，是那個槓桿：它抑制近曲小管的糖鈉再吸收，透過「管球回饋」讓入球小動脈收縮，把單一腎元的濾過率和腎小球內壓降下來，等於把腎小球從【04】那條高壓紅線拉回安全區。兩個大型試驗（DAPA-CKD、EMPA-KIDNEY）證明它在非糖尿病腎病也有效，說明保護不靠降糖。機制是多重的（也牽涉減少缺氧、抗發炎），不是單一機制的神藥。健康人目前沒有這個適應症，我把它當值得關注的前沿、不是建議——但它從側面印證了整篇的框架：護腎的關鍵，是別讓腎小球長期在高壓、超載下工作。</p>
-<hr class="major">
-<h2><span class="cno">09</span><span>那張差點把我判成「腎病」的報告</span></h2>
+<hr>
+<h2><span class="no">09</span>那張差點把我判成「腎病」的報告</h2>
 <p>回到開頭那個 58。我是一個長期高蛋白、規律重訓、又補肌酸的人，肌肉量在同齡偏高端。這幾年我的血中肌酐反覆偏高（1.25 到 1.47），換算的 eGFR 掉到 58 到 71。我的家庭醫師看到就一路追蹤——照指引這不算做錯（其實單一次 eGFR 58 還構不成慢性腎病，要持續三個月、或加上蛋白尿才算）；出問題的不是他追，是那把尺量錯了人。</p>
-<pre class="dgm">　抽血看肌酐 → eGFR 只有 58
+<div class="diagram">　抽血看肌酐 → eGFR 只有 58
 　　　　→ 公式判定：往「慢性腎病」想
 　　　　　（但我肌肉多、又補肌酸，肌酐天生就偏高）
 　　　　│
@@ -163,54 +180,59 @@ ol.reflist li{display:flex;gap:.8rem;font-size:.86rem;line-height:1.7}
 　　　　（正常 70～130，穩穩落在正常）
 　　　　│
 　　　　▼
-　真相：腎功能正常，那個 eGFR 低估了將近五成</pre>
+　真相：腎功能正常，那個 eGFR 低估了將近五成</div>
 <p>問題出在 eGFR 這個公式。它是拿血中肌酐去「反推」腎功能，前提假設是你的肌酐產量跟一般人差不多。但肌酐本來就是肌肉代謝的廢物，我肌肉多、又每天補肌酸，肌酐產量天生就高——公式看到高肌酐，就誤以為是腎排不掉，把腎功能算低了。這不是我的腎在漏，是尺量錯了人。（肌酐和肌酸只差一個字卻是兩回事：我補的是肌酸，被誤讀的是肌酐，這在肌酸那篇也寫過。）</p>
 <p>所以我沒接受那個標紅，換了不被肌肉和肌酸騙的尺。我每個月測 Cystatin C——這個指標不看肌肉、不受補肌酸影響——結果大多落在參考範圍的低標之下（低是好事），換算的 eGFR 破百，是完全健康的數字；而同期用血肌酐算的公式，卻一直把我標成腎病。（那次 24 小時清除率 113 也支持同一結論——嚴格說，清除率會因腎小管也分泌一點肌酐而略微高估真值，所以 Cystatin C 才是我真正的王牌。）更適合我的幾把尺一致指向同一件事：公式判我有病，校準過的尺說我沒有。</p>
 <p>這就是為什麼我一點都不擔心蛋白質。我擔心的是【04】那兩三個真兇，所以把資源全砸在把血糖、血壓、血脂按在地上。至於腎，我不看那個會被肌肉騙到的單次 eGFR，我看趨勢線有沒有異常變陡，追 UACR 確認濾網沒漏。不是吃得多養生，是量對了東西、盯對了指標，不被一個算錯的數字嚇著自己去做錯的事。</p>
-<hr class="major">
-<h2><span class="cno">10</span><span>實用護腎指南</span></h2>
+<hr>
+<h2><span class="no">10</span>實用護腎指南</h2>
 <p>把整篇收成一張可執行的清單。核心只有一句：護腎不是找一個英雄食物，是把「控血糖、控血壓」做到底，再配一套樸素的吃法。</p>
-<ul class="ticks"><li>兩個最大的槓桿：血糖和血壓。這是【04】的頭兩名兇手，壓在正常範圍，護腎效益遠大於任何飲食微調。血壓尤其直接，降下來、濾網當下就輕鬆。第三順位順手壓低 ApoB（對腎是加分，對心血管是硬道理）。</li></ul>
-<ul class="ticks"><li>吃法看「型態」，不是找超級食物：地中海／DASH 那類飲食，跟較低的慢性腎病發生率有關（觀察性證據，不是保證）。原則很無聊：蔬果多、少加工肉、少鈉、糖穩。（多吃蔬果還有個附帶好處：還記得【01】說腎每天要把身體代謝產生的酸排掉嗎？蔬果偏鹼，能幫它分擔一點這個工作——但健康人不必為此刻意少吃肉，多補蔬果去平衡就好。）沒有護腎超級食物，藍莓魚油都不是。</li></ul>
-<ul class="ticks"><li>蛋白質不用為了顧腎刻意少吃：維持肌肉、控好血糖的整體效益，遠大於那點暫時的濾過上升。已有腎病者例外，聽醫囑。</li></ul>
-<ul class="ticks"><li>水：渴了就喝、尿色淡即可。不必灌、灌了也不護腎；但別讓自己反覆嚴重脫水，尤其高溫、運動、生病時。</li></ul>
-<ul class="ticks"><li>真正要避的：長期天天吞止痛藥（NSAID），特別是脫水時；來路不明的草藥補品（馬兜鈴酸那種是真的傷腎）。</li></ul>
-<ul class="ticks"><li>監測，只要三樣：eGFR 的「趨勢」而非單次數值（每年微降約 1 mL/min 是正常，明顯變陡才追）；尿液白蛋白對肌酐比值（UACR），它往往在 eGFR 還正常時就先亮燈；還有——如果你像我一樣肌肉量高或有補肌酸，別信會被肌肉騙的公式，用含 Cystatin C 的估算或直接量清除率。</li></ul>
-<hr class="major">
-<h2><span class="cno">11</span><span>把靶看對</span></h2>
+<ul><li>兩個最大的槓桿：血糖和血壓。這是【04】的頭兩名兇手，壓在正常範圍，護腎效益遠大於任何飲食微調。血壓尤其直接，降下來、濾網當下就輕鬆。第三順位順手壓低 ApoB（對腎是加分，對心血管是硬道理）。</li></ul>
+<ul><li>吃法看「型態」，不是找超級食物：地中海／DASH 那類飲食，跟較低的慢性腎病發生率有關（觀察性證據，不是保證）。原則很無聊：蔬果多、少加工肉、少鈉、糖穩。（多吃蔬果還有個附帶好處：還記得【01】說腎每天要把身體代謝產生的酸排掉嗎？蔬果偏鹼，能幫它分擔一點這個工作——但健康人不必為此刻意少吃肉，多補蔬果去平衡就好。）沒有護腎超級食物，藍莓魚油都不是。</li></ul>
+<ul><li>蛋白質不用為了顧腎刻意少吃：維持肌肉、控好血糖的整體效益，遠大於那點暫時的濾過上升。已有腎病者例外，聽醫囑。</li></ul>
+<ul><li>水：渴了就喝、尿色淡即可。不必灌、灌了也不護腎；但別讓自己反覆嚴重脫水，尤其高溫、運動、生病時。</li></ul>
+<ul><li>真正要避的：長期天天吞止痛藥（NSAID），特別是脫水時；來路不明的草藥補品（馬兜鈴酸那種是真的傷腎）。</li></ul>
+<ul><li>監測，只要三樣：eGFR 的「趨勢」而非單次數值（每年微降約 1 mL/min 是正常，明顯變陡才追）；尿液白蛋白對肌酐比值（UACR），它往往在 eGFR 還正常時就先亮燈；還有——如果你像我一樣肌肉量高或有補肌酸，別信會被肌肉騙的公式，用含 Cystatin C 的估算或直接量清除率。</li></ul>
+<hr>
+<h2><span class="no">11</span>把靶看對</h2>
 <p>腎不是一張嬌貴的濾網，它是一座高功率的化工廠，靠一個幾乎不能再生的濾網和一台踩在缺氧邊緣的鈉泵在撐。它其實很耐操——耐得住一頓大餐、一次加班那種短期波動；耐不住的，是多年失控的血糖和血壓那種日夜不停的施工。</p>
 <p>真正在拆你濾網的，是高血糖、是高血壓，加上長期的血管壓力；同樣這幾個，也是弄壞你心臟、血管、大腦的元兇。腎只是它們的又一個犯罪現場。護腎這件事，最後跟這個粉專講過的每一篇都收束到同一句話：你怕錯了對象，就會做錯了努力。把血糖和血壓封死、用對的尺去量它，你的腎會陪你走很久。</p>
-<hr class="major">
-<section class="refs"><h2>參考文獻</h2><ol class="reflist"><li><span class="rn">1</span><div><span class="cite">Bhargava P, Schnellmann RG. Mitochondrial energetics in the kidney. Nature Reviews Nephrology. 2017;13(10):629-646.</span><span class="note">腎臟為高耗能器官、鈉運輸主導其耗氧與 ATP 消耗、近曲小管以脂肪酸為主要燃料的能量學總綱。</span></div></li>
-<li><span class="rn">2</span><div><span class="cite">Console L, Scalise M, Giangregorio N, et al. Fatty Acid Oxidation in Kidney Diseases. Frontiers in Pharmacology. 2022;13:805281.</span><span class="note">脂肪酸氧化是近曲小管的首選能量來源，其缺陷與腎病相關。</span></div></li>
-<li><span class="rn">3</span><div><span class="cite">DeFronzo RA, Reeves WB, Awad AS. Pathophysiology of diabetic kidney disease and SGLT2 inhibition. Nature Reviews Nephrology. 2017;13(1):11-26.</span><span class="note">葡萄糖每日濾過約 180 g、正常經 SGLT2/SGLT1 全數再吸收、超過運輸上限才出現尿糖的原始依據。</span></div></li>
-<li><span class="rn">4</span><div><span class="cite">Wiggins RC. The spectrum of podocytopathies: a unifying view of glomerular diseases. Kidney International. 2007;71(12):1205-1214.</span><span class="note">足細胞為終末分化、再生能力極有限，流失超過約兩成即自我放大走向腎小球硬化。</span></div></li>
-<li><span class="rn">5</span><div><span class="cite">Tryggvason K, Patrakka J, Wartiovaara J. Hereditary proteinuria syndromes and mechanisms of proteinuria. New England Journal of Medicine. 2006;354(13):1387-1401.</span><span class="note">裂孔隔膜由 nephrin、podocin 等構成分子篩，受損導致足突消失與蛋白尿。</span></div></li>
-<li><span class="rn">6</span><div><span class="cite">Nishad R, Meshram P, Singh AK, et al. Mechanisms of podocyte injury and implications for diabetic nephropathy. Clinical Science. 2022;136(7):493-520.</span><span class="note">高血糖經氧化壓力、AGEs、基底膜改變與足細胞胰島素阻抗等多重途徑損傷足細胞的機制回顧。</span></div></li>
-<li><span class="rn">7</span><div><span class="cite">Ruan XZ, Varghese Z, Moorhead JF. An update on the lipid nephrotoxicity hypothesis. Nature Reviews Nephrology. 2009;5(12):713-721.</span><span class="note">氧化 LDL 進入腎小球造成脂毒性；惟降脂對延緩腎病硬結局的直接證據弱於降糖降壓，主要價值在心血管保護。</span></div></li>
-<li><span class="rn">8</span><div><span class="cite">Bidani AK, Griffin KA. Pathophysiology of hypertensive renal damage: implications for therapy. Hypertension. 2004;44(5):595-601.</span><span class="note">自我調節受損時系統血壓被動傳入腎小球造成力學損傷的模型。</span></div></li>
-<li><span class="rn">9</span><div><span class="cite">Carlström M, Wilcox CS, Arendshorst WJ. Renal autoregulation in health and disease. Physiological Reviews. 2015;95(2):405-511.</span><span class="note">腎血流與濾過在灌注壓約 80 至 180 mmHg 維持恆定的自我調節機制。</span></div></li>
-<li><span class="rn">10</span><div><span class="cite">Cortinovis M, Perico N, Ruggenenti P, Remuzzi G. Glomerular hyperfiltration. Nature Reviews Nephrology. 2022;18(7):435-451.</span><span class="note">高蛋白餐後入球小動脈擴張造成暫時性高濾過（腎功能儲備）的機制與其長期意義的討論。</span></div></li>
-<li><span class="rn">11</span><div><span class="cite">Devries MC, Sithamparapillai A, Brimble KS, et al. Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis. Journal of Nutrition. 2018;148(11):1760-1775.</span><span class="note">健康成人吃高蛋白與一般蛋白，腎功能變化無差異的統合分析（多為中短期替代指標）。</span></div></li>
-<li><span class="rn">12</span><div><span class="cite">Humphreys BD, Valerius MT, Kobayashi A, et al. Intrinsic epithelial cells repair the kidney after injury. Cell Stem Cell. 2008;2(3):284-291.</span><span class="note">基因命運追蹤證明急性損傷後由存活的腎小管上皮細胞增殖修復，即腎小管的再生能力。</span></div></li>
-<li><span class="rn">13</span><div><span class="cite">Hostetter TH, Olson JL, Rennke HG, Venkatachalam MA, Brenner BM. Hyperfiltration in remnant nephrons: a potentially adverse response to renal ablation. American Journal of Physiology. 1981;241(1):F85-F93.</span><span class="note">殘餘腎元高濾過造成腎小球高壓損傷、自我放大流失的高濾過假說原始文獻。</span></div></li>
-<li><span class="rn">14</span><div><span class="cite">Nangaku M. Chronic hypoxia and tubulointerstitial injury: a final common pathway to end-stage renal failure. Journal of the American Society of Nephrology. 2006;17(1):17-25.</span><span class="note">腎小管間質慢性缺氧作為各病因 CKD 通向纖維化的最終共同路徑。</span></div></li>
-<li><span class="rn">15</span><div><span class="cite">Kang HM, Ahn SH, Choi P, et al. Defective fatty acid oxidation in renal tubular epithelial cells has a key role in kidney fibrosis development. Nature Medicine. 2015;21(1):37-46.</span><span class="note">CKD 進展中腎小管脂肪酸氧化衰退、改走糖解，是腎纖維化的關鍵環節之一。</span></div></li>
-<li><span class="rn">16</span><div><span class="cite">Denic A, Lieske JC, Chakkera HA, et al. The substantial loss of nephrons in healthy human kidneys with aging. Journal of the American Society of Nephrology. 2017;28(1):313-320.</span><span class="note">健康人無硬化腎元由青年約 99 萬降至七十餘歲約 52 萬，腎元隨老化自然流失的實證。</span></div></li>
-<li><span class="rn">17</span><div><span class="cite">Heerspink HJL, Stefánsson BV, Correa-Rotter R, et al. Dapagliflozin in Patients with Chronic Kidney Disease. New England Journal of Medicine. 2020;383(15):1436-1446.</span><span class="note">DAPA-CKD 試驗，含非糖尿病 CKD 患者，SGLT2 抑制劑顯著延緩腎功能惡化。</span></div></li>
-<li><span class="rn">18</span><div><span class="cite">The EMPA-KIDNEY Collaborative Group. Empagliflozin in Patients with Chronic Kidney Disease. New England Journal of Medicine. 2023;388(2):117-127.</span><span class="note">EMPA-KIDNEY 試驗，逾半為非糖尿病，證實 SGLT2 抑制劑的腎臟保護獨立於降糖。</span></div></li>
-<li><span class="rn">19</span><div><span class="cite">Vallon V, Verma S. Effects of SGLT2 Inhibitors on Kidney and Cardiovascular Function. Annual Review of Physiology. 2021;83:503-528.</span><span class="note">SGLT2 抑制經管球回饋降低單一腎元濾過與腎小球內壓的機制權威綜述。</span></div></li>
-<li><span class="rn">20</span><div><span class="cite">Clark WF, Sontrop JM, Huang SH, et al. Effect of Coaching to Increase Water Intake on Kidney Function Decline in Adults With Chronic Kidney Disease: The CKD WIT Randomized Clinical Trial. JAMA. 2018;319(18):1870-1879.</span><span class="note">對第 3 期 CKD 增加飲水量一年，並未延緩 eGFR 下降，反駁「多喝水護腎」。</span></div></li>
-<li><span class="rn">21</span><div><span class="cite">de Boer IH, Zelnick LR, Ruzinski J, et al. Effect of Vitamin D and Omega-3 Fatty Acid Supplementation on Kidney Function in Patients With Type 2 Diabetes. JAMA. 2019;322(19):1899-1909.</span><span class="note">VITAL-DKD 子研究，Omega-3 對五年 eGFR 變化與安慰劑無顯著差異。</span></div></li>
-<li><span class="rn">22</span><div><span class="cite">Bach KE, Kelly JT, Palmer SC, et al. Healthy Dietary Patterns and Incidence of CKD: A Meta-Analysis of Cohort Studies. Clinical Journal of the American Society of Nephrology. 2019;14(10):1441-1449.</span><span class="note">地中海／DASH 等健康飲食型態與較低慢性腎病發生率相關（觀察性）。</span></div></li>
-<li><span class="rn">23</span><div><span class="cite">Goraya N, Simoni J, Jo CH, Wesson DE. A comparison of treating metabolic acidosis in CKD stage 4 hypertensive kidney disease with fruits and vegetables or sodium bicarbonate. Clinical Journal of the American Society of Nephrology. 2013;8(3):371-381.</span><span class="note">以蔬果降飲食酸負荷可改善 CKD 腎損傷指標，且不致高鉀。</span></div></li>
-<li><span class="rn">24</span><div><span class="cite">Glaser J, Lemery J, Rajagopalan B, et al. Climate Change and the Emergent Epidemic of CKD from Heat Stress in Rural Communities. Clinical Journal of the American Society of Nephrology. 2016;11(8):1472-1483.</span><span class="note">反覆熱應力與脫水作為農業社區不明原因慢性腎病的主流假說。</span></div></li>
-<li><span class="rn">25</span><div><span class="cite">United States Renal Data System. USRDS Annual Data Report: Epidemiology of Kidney Disease in the United States. NIDDK, NIH.</span><span class="note">美國末期腎病病因佔比：糖尿病約 44%、高血壓約 24 至 29%、腎絲球腎炎約 12 至 15%，糖尿病加高血壓合計約三分之二。</span></div></li>
-<li><span class="rn">26</span><div><span class="cite">Hsu SP, et al. Trends in the incidence and prevalence of end-stage kidney disease requiring dialysis in Taiwan. Journal of the Formosan Medical Association. 2021.</span><span class="note">台灣透析登錄趨勢，糖尿病居冠（約四至五成）、慢性腎絲球腎炎第二（約兩成半），台灣透析發生率長年居世界前列。</span></div></li>
-<li><span class="rn">27</span><div><span class="cite">Chen CH, Dickman KG, Moriya M, et al. Aristolochic acid-associated urothelial cancer in Taiwan. Proceedings of the National Academy of Sciences. 2012;109(21):8241-8246.</span><span class="note">健保資料顯示 1997 至 2003 約三分之一台灣人（約八百萬）曾服用含馬兜鈴酸中藥，並與台灣全球最高的上泌尿道上皮癌發生率相關。</span></div></li>
-<li><span class="rn">28</span><div><span class="cite">Lai MN, Wang SM, Chen PC, et al. Population-based case-control study of Chinese herbal products containing aristolochic acid and urinary tract cancer risk. Journal of the National Cancer Institute. 2010;102(3):179-186.</span><span class="note">服用含馬兜鈴酸草藥與泌尿道癌呈劑量反應關係，佐證馬兜鈴酸的腎與泌尿道毒性。</span></div></li>
-<li><span class="rn">29</span><div><span class="cite">Analgesic Nephropathy. StatPearls. NCBI Bookshelf, NBK541101.</span><span class="note">含非那西汀的複方止痛藥長期大量使用曾佔澳洲、瑞典末期腎病約兩成，該成分下市後大幅萎縮；長期大量 NSAID 仍與腎功能下降相關。</span></div></li></ol><div class="tags"><span>#腎臟</span><span>#腎絲球</span><span>#足細胞</span><span>#podocyte</span><span>#CKD</span><span>#慢性腎病</span><span>#eGFR</span><span>#CystatinC</span><span>#高蛋白</span><span>#蛋白質</span><span>#腎虧</span><span>#憋尿</span><span>#護腎</span><span>#ApoB</span><span>#血壓</span><span>#血糖</span><span>#肌酸</span><span>#SGLT2抑制劑</span><span>#抗衰老</span><span>#矽谷工程師的抗衰老實驗室</span></div></section>
-<div class="foot"><a href="/blog/zh/">← 更多文章</a>　·　<a href="/">Soliday</a></div>
+<hr>
 </article>
+<section class="refs"><h2>參考文獻</h2><ol><li><span class="rn">1</span><div>Bhargava P, Schnellmann RG. Mitochondrial energetics in the kidney. Nature Reviews Nephrology. 2017;13(10):629-646.<span class="note">腎臟為高耗能器官、鈉運輸主導其耗氧與 ATP 消耗、近曲小管以脂肪酸為主要燃料的能量學總綱。</span></div></li>
+<li><span class="rn">2</span><div>Console L, Scalise M, Giangregorio N, et al. Fatty Acid Oxidation in Kidney Diseases. Frontiers in Pharmacology. 2022;13:805281.<span class="note">脂肪酸氧化是近曲小管的首選能量來源，其缺陷與腎病相關。</span></div></li>
+<li><span class="rn">3</span><div>DeFronzo RA, Reeves WB, Awad AS. Pathophysiology of diabetic kidney disease and SGLT2 inhibition. Nature Reviews Nephrology. 2017;13(1):11-26.<span class="note">葡萄糖每日濾過約 180 g、正常經 SGLT2/SGLT1 全數再吸收、超過運輸上限才出現尿糖的原始依據。</span></div></li>
+<li><span class="rn">4</span><div>Wiggins RC. The spectrum of podocytopathies: a unifying view of glomerular diseases. Kidney International. 2007;71(12):1205-1214.<span class="note">足細胞為終末分化、再生能力極有限，流失超過約兩成即自我放大走向腎小球硬化。</span></div></li>
+<li><span class="rn">5</span><div>Tryggvason K, Patrakka J, Wartiovaara J. Hereditary proteinuria syndromes and mechanisms of proteinuria. New England Journal of Medicine. 2006;354(13):1387-1401.<span class="note">裂孔隔膜由 nephrin、podocin 等構成分子篩，受損導致足突消失與蛋白尿。</span></div></li>
+<li><span class="rn">6</span><div>Nishad R, Meshram P, Singh AK, et al. Mechanisms of podocyte injury and implications for diabetic nephropathy. Clinical Science. 2022;136(7):493-520.<span class="note">高血糖經氧化壓力、AGEs、基底膜改變與足細胞胰島素阻抗等多重途徑損傷足細胞的機制回顧。</span></div></li>
+<li><span class="rn">7</span><div>Ruan XZ, Varghese Z, Moorhead JF. An update on the lipid nephrotoxicity hypothesis. Nature Reviews Nephrology. 2009;5(12):713-721.<span class="note">氧化 LDL 進入腎小球造成脂毒性；惟降脂對延緩腎病硬結局的直接證據弱於降糖降壓，主要價值在心血管保護。</span></div></li>
+<li><span class="rn">8</span><div>Bidani AK, Griffin KA. Pathophysiology of hypertensive renal damage: implications for therapy. Hypertension. 2004;44(5):595-601.<span class="note">自我調節受損時系統血壓被動傳入腎小球造成力學損傷的模型。</span></div></li>
+<li><span class="rn">9</span><div>Carlström M, Wilcox CS, Arendshorst WJ. Renal autoregulation in health and disease. Physiological Reviews. 2015;95(2):405-511.<span class="note">腎血流與濾過在灌注壓約 80 至 180 mmHg 維持恆定的自我調節機制。</span></div></li>
+<li><span class="rn">10</span><div>Cortinovis M, Perico N, Ruggenenti P, Remuzzi G. Glomerular hyperfiltration. Nature Reviews Nephrology. 2022;18(7):435-451.<span class="note">高蛋白餐後入球小動脈擴張造成暫時性高濾過（腎功能儲備）的機制與其長期意義的討論。</span></div></li>
+<li><span class="rn">11</span><div>Devries MC, Sithamparapillai A, Brimble KS, et al. Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis. Journal of Nutrition. 2018;148(11):1760-1775.<span class="note">健康成人吃高蛋白與一般蛋白，腎功能變化無差異的統合分析（多為中短期替代指標）。</span></div></li>
+<li><span class="rn">12</span><div>Humphreys BD, Valerius MT, Kobayashi A, et al. Intrinsic epithelial cells repair the kidney after injury. Cell Stem Cell. 2008;2(3):284-291.<span class="note">基因命運追蹤證明急性損傷後由存活的腎小管上皮細胞增殖修復，即腎小管的再生能力。</span></div></li>
+<li><span class="rn">13</span><div>Hostetter TH, Olson JL, Rennke HG, Venkatachalam MA, Brenner BM. Hyperfiltration in remnant nephrons: a potentially adverse response to renal ablation. American Journal of Physiology. 1981;241(1):F85-F93.<span class="note">殘餘腎元高濾過造成腎小球高壓損傷、自我放大流失的高濾過假說原始文獻。</span></div></li>
+<li><span class="rn">14</span><div>Nangaku M. Chronic hypoxia and tubulointerstitial injury: a final common pathway to end-stage renal failure. Journal of the American Society of Nephrology. 2006;17(1):17-25.<span class="note">腎小管間質慢性缺氧作為各病因 CKD 通向纖維化的最終共同路徑。</span></div></li>
+<li><span class="rn">15</span><div>Kang HM, Ahn SH, Choi P, et al. Defective fatty acid oxidation in renal tubular epithelial cells has a key role in kidney fibrosis development. Nature Medicine. 2015;21(1):37-46.<span class="note">CKD 進展中腎小管脂肪酸氧化衰退、改走糖解，是腎纖維化的關鍵環節之一。</span></div></li>
+<li><span class="rn">16</span><div>Denic A, Lieske JC, Chakkera HA, et al. The substantial loss of nephrons in healthy human kidneys with aging. Journal of the American Society of Nephrology. 2017;28(1):313-320.<span class="note">健康人無硬化腎元由青年約 99 萬降至七十餘歲約 52 萬，腎元隨老化自然流失的實證。</span></div></li>
+<li><span class="rn">17</span><div>Heerspink HJL, Stefánsson BV, Correa-Rotter R, et al. Dapagliflozin in Patients with Chronic Kidney Disease. New England Journal of Medicine. 2020;383(15):1436-1446.<span class="note">DAPA-CKD 試驗，含非糖尿病 CKD 患者，SGLT2 抑制劑顯著延緩腎功能惡化。</span></div></li>
+<li><span class="rn">18</span><div>The EMPA-KIDNEY Collaborative Group. Empagliflozin in Patients with Chronic Kidney Disease. New England Journal of Medicine. 2023;388(2):117-127.<span class="note">EMPA-KIDNEY 試驗，逾半為非糖尿病，證實 SGLT2 抑制劑的腎臟保護獨立於降糖。</span></div></li>
+<li><span class="rn">19</span><div>Vallon V, Verma S. Effects of SGLT2 Inhibitors on Kidney and Cardiovascular Function. Annual Review of Physiology. 2021;83:503-528.<span class="note">SGLT2 抑制經管球回饋降低單一腎元濾過與腎小球內壓的機制權威綜述。</span></div></li>
+<li><span class="rn">20</span><div>Clark WF, Sontrop JM, Huang SH, et al. Effect of Coaching to Increase Water Intake on Kidney Function Decline in Adults With Chronic Kidney Disease: The CKD WIT Randomized Clinical Trial. JAMA. 2018;319(18):1870-1879.<span class="note">對第 3 期 CKD 增加飲水量一年，並未延緩 eGFR 下降，反駁「多喝水護腎」。</span></div></li>
+<li><span class="rn">21</span><div>de Boer IH, Zelnick LR, Ruzinski J, et al. Effect of Vitamin D and Omega-3 Fatty Acid Supplementation on Kidney Function in Patients With Type 2 Diabetes. JAMA. 2019;322(19):1899-1909.<span class="note">VITAL-DKD 子研究，Omega-3 對五年 eGFR 變化與安慰劑無顯著差異。</span></div></li>
+<li><span class="rn">22</span><div>Bach KE, Kelly JT, Palmer SC, et al. Healthy Dietary Patterns and Incidence of CKD: A Meta-Analysis of Cohort Studies. Clinical Journal of the American Society of Nephrology. 2019;14(10):1441-1449.<span class="note">地中海／DASH 等健康飲食型態與較低慢性腎病發生率相關（觀察性）。</span></div></li>
+<li><span class="rn">23</span><div>Goraya N, Simoni J, Jo CH, Wesson DE. A comparison of treating metabolic acidosis in CKD stage 4 hypertensive kidney disease with fruits and vegetables or sodium bicarbonate. Clinical Journal of the American Society of Nephrology. 2013;8(3):371-381.<span class="note">以蔬果降飲食酸負荷可改善 CKD 腎損傷指標，且不致高鉀。</span></div></li>
+<li><span class="rn">24</span><div>Glaser J, Lemery J, Rajagopalan B, et al. Climate Change and the Emergent Epidemic of CKD from Heat Stress in Rural Communities. Clinical Journal of the American Society of Nephrology. 2016;11(8):1472-1483.<span class="note">反覆熱應力與脫水作為農業社區不明原因慢性腎病的主流假說。</span></div></li>
+<li><span class="rn">25</span><div>United States Renal Data System. USRDS Annual Data Report: Epidemiology of Kidney Disease in the United States. NIDDK, NIH.<span class="note">美國末期腎病病因佔比：糖尿病約 44%、高血壓約 24 至 29%、腎絲球腎炎約 12 至 15%，糖尿病加高血壓合計約三分之二。</span></div></li>
+<li><span class="rn">26</span><div>Hsu SP, et al. Trends in the incidence and prevalence of end-stage kidney disease requiring dialysis in Taiwan. Journal of the Formosan Medical Association. 2021.<span class="note">台灣透析登錄趨勢，糖尿病居冠（約四至五成）、慢性腎絲球腎炎第二（約兩成半），台灣透析發生率長年居世界前列。</span></div></li>
+<li><span class="rn">27</span><div>Chen CH, Dickman KG, Moriya M, et al. Aristolochic acid-associated urothelial cancer in Taiwan. Proceedings of the National Academy of Sciences. 2012;109(21):8241-8246.<span class="note">健保資料顯示 1997 至 2003 約三分之一台灣人（約八百萬）曾服用含馬兜鈴酸中藥，並與台灣全球最高的上泌尿道上皮癌發生率相關。</span></div></li>
+<li><span class="rn">28</span><div>Lai MN, Wang SM, Chen PC, et al. Population-based case-control study of Chinese herbal products containing aristolochic acid and urinary tract cancer risk. Journal of the National Cancer Institute. 2010;102(3):179-186.<span class="note">服用含馬兜鈴酸草藥與泌尿道癌呈劑量反應關係，佐證馬兜鈴酸的腎與泌尿道毒性。</span></div></li>
+<li><span class="rn">29</span><div>Analgesic Nephropathy. StatPearls. NCBI Bookshelf, NBK541101.<span class="note">含非那西汀的複方止痛藥長期大量使用曾佔澳洲、瑞典末期腎病約兩成，該成分下市後大幅萎縮；長期大量 NSAID 仍與腎功能下降相關。</span></div></li></ol></section>
+<div class="back-home"><a href="/zh/blog/">← 更多文章</a></div>
+
+<footer class="footer">
+  <p>&copy; 2026 Soliday &middot; One Lift a Day. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
