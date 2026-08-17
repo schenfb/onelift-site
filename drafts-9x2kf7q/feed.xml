@@ -6,7 +6,7 @@
     <title>抗老工程學（草稿試聽）</title>
     <link>https://onelift.org/drafts-9x2kf7q/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Fri, 14 Aug 2026 14:31:00 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 09:30:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</description>
     <itunes:subtitle>上架前的私人試聽</itunes:subtitle>
@@ -28,13 +28,13 @@
       <link>https://onelift.org/drafts-9x2kf7q/</link>
     </image>
     <item>
-      <title>【草稿】EP3 胰島素阻抗 · 能量飛輪（26.7 分）</title>
+      <title>【草稿】EP3 胰島素阻抗 · 能量飛輪（d2 修：長痘發音/beat6 聲音/TOFI）</title>
       <description>糖的科學系列第三篇。主角從糖換成胰島素——儲存模式總開關、正回饋飛輪、內臟脂肪、HOMA-IR、跟阿茲海默的關聯。已過 Codex+Grok 雙審、科學放軟。反向 QA 待補（API 尖峰）。歡迎 feedback。</description>
       <itunes:summary>糖的科學系列第三篇。主角從糖換成胰島素——儲存模式總開關、正回饋飛輪、內臟脂肪、HOMA-IR、跟阿茲海默的關聯。已過 Codex+Grok 雙審、科學放軟。反向 QA 待補（API 尖峰）。歡迎 feedback。</itunes:summary>
-      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/insulin_pod_ep1_d1.mp3" length="20346525" type="audio/mpeg"/>
+      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/insulin_pod_ep1_d2.mp3" length="20529189" type="audio/mpeg"/>
       <guid isPermaLink="false">draft-insulin-ep3-d1</guid>
-      <pubDate>Fri, 14 Aug 2026 11:30:00 -0700</pubDate>
-      <itunes:duration>00:26:42</itunes:duration>
+      <pubDate>Mon, 17 Aug 2026 09:30:00 -0700</pubDate>
+      <itunes:duration>00:26:54</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
