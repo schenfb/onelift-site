@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Mon, 10 Aug 2026 20:16:06 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 10:30:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學</title>
       <link>https://onelift.org/podcast/</link>
     </image>
+    <item>
+      <title>EP3 胰島素阻抗：自我加速的能量飛輪</title>
+      <description>糖的科學系列第三篇，主角從「糖」換成「胰島素」。前兩集講糖怎麼進細胞、糖怎麼撞壞膠原蛋白；這一集講真正的能量總指揮——胰島素——失控之後，整個系統怎麼一起出事。Scott 跟 Emma 用工程師的比喻拆給你聽：胰島素其實是「儲存模式總開關」；胰島素阻抗不是單一指標紅字，是一台會自我加速的正回饋飛輪，有四個可怕特性（互相加重、長期隱形、越晚越難、瘦不保證安全）；為什麼體檢全綠、血糖正常，飛輪可能已經轉了好幾年（HOMA-IR 才看得到）；它下游牽動脂肪肝、高血壓、部分癌症、視網膜、多囊與痘痘，甚至跟阿茲海默的關聯（「第三型糖尿病」假說）。最後講怎麼踩煞車：減脂、練肌肉、把血糖曲線壓平。內容改編自粉專「矽谷工程師的抗衰老實驗室」深度長文，科學經雙重審稿放軟。一般衛教資訊，非醫療建議。</description>
+      <itunes:summary>糖的科學系列第三篇，主角從「糖」換成「胰島素」。前兩集講糖怎麼進細胞、糖怎麼撞壞膠原蛋白；這一集講真正的能量總指揮——胰島素——失控之後，整個系統怎麼一起出事。Scott 跟 Emma 用工程師的比喻拆給你聽：胰島素其實是「儲存模式總開關」；胰島素阻抗不是單一指標紅字，是一台會自我加速的正回饋飛輪，有四個可怕特性（互相加重、長期隱形、越晚越難、瘦不保證安全）；為什麼體檢全綠、血糖正常，飛輪可能已經轉了好幾年（HOMA-IR 才看得到）；它下游牽動脂肪肝、高血壓、部分癌症、視網膜、多囊與痘痘，甚至跟阿茲海默的關聯（「第三型糖尿病」假說）。最後講怎麼踩煞車：減脂、練肌肉、把血糖曲線壓平。內容改編自粉專「矽谷工程師的抗衰老實驗室」深度長文，科學經雙重審稿放軟。一般衛教資訊，非醫療建議。</itunes:summary>
+      <enclosure url="https://op3.dev/e/onelift.org/podcast/episodes/insulin_pod_ep3_v1.mp3" length="20529045" type="audio/mpeg"/>
+      <guid isPermaLink="false">insulin-ep3</guid>
+      <pubDate>Mon, 17 Aug 2026 10:30:00 -0700</pubDate>
+      <itunes:duration>00:26:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>EP1 糖的科學：葡萄糖分子在你身體裡的完整旅程</title>
       <description>你身邊有沒有那種「戒糖教」的朋友？這集我們不灌雞湯，直接從第一性原理出發，像 debug 程式碼一樣，把葡萄糖和果糖的底層差異、糖進身體之後怎麼跑、為什麼吃糖會變胖、為什麼會升壞膽固醇、脂肪肝是怎麼來的，一條一條講清楚。聽完你以後看任何飲食法，大腦裡都會有一個超清晰的骨架。</description>
