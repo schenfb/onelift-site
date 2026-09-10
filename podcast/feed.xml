@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Wed, 02 Sep 2026 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 10:00:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學</title>
       <link>https://onelift.org/podcast/</link>
     </image>
+    <item>
+      <title>EP6 肌酸會傷腎嗎？一個被驗血報告冤枉的補充劑</title>
+      <description>補充劑系列第一集。肌酸大概是市面上被研究最多、卻最常被冤枉的補充劑。這集從最根本講起：肌酸到底是什麼、吃進去怎麼在肌肉裡變成磷酸肌酸、又怎麼在你出力的頭幾秒鐘當「快充電池」供能；為什麼它對力量、肌肉量、甚至(證據還在累積的)大腦與抗疲勞都有幫助，證據等級各到哪。然後正面對決那個讓一堆人不敢吃的迷思——「肌酸會傷腎」：驗血報告上的肌酸酐(creatinine)升高，其實是肌酸代謝的正常產物變多，不等於腎功能變差；真正該怎麼看 eGFR、哪些人才需要謹慎，一次講清楚。Scott 也分享自己吃了十年的親身經歷，最後給你最省事的執行版：每天 3 到 5 克單水合物(monohydrate)就好，不必衝擊期、不必挑貴的、什麼時候吃都行。運動段自然帶到 Scott 自己做的免費 App「Soliday」(利益揭露，非業配)。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 Codex 審稿放軟、並過語者一致性 QA。一般衛教資訊，非醫療建議。　▍想開始練？我做的免費 App「Soliday」：一天一個動作，App Store / Google Play 搜 Soliday。</description>
+      <itunes:summary>補充劑系列第一集。肌酸大概是市面上被研究最多、卻最常被冤枉的補充劑。這集從最根本講起：肌酸到底是什麼、吃進去怎麼在肌肉裡變成磷酸肌酸、又怎麼在你出力的頭幾秒鐘當「快充電池」供能；為什麼它對力量、肌肉量、甚至(證據還在累積的)大腦與抗疲勞都有幫助，證據等級各到哪。然後正面對決那個讓一堆人不敢吃的迷思——「肌酸會傷腎」：驗血報告上的肌酸酐(creatinine)升高，其實是肌酸代謝的正常產物變多，不等於腎功能變差；真正該怎麼看 eGFR、哪些人才需要謹慎，一次講清楚。Scott 也分享自己吃了十年的親身經歷，最後給你最省事的執行版：每天 3 到 5 克單水合物(monohydrate)就好，不必衝擊期、不必挑貴的、什麼時候吃都行。運動段自然帶到 Scott 自己做的免費 App「Soliday」(利益揭露，非業配)。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 Codex 審稿放軟、並過語者一致性 QA。一般衛教資訊，非醫療建議。　▍想開始練？我做的免費 App「Soliday」：一天一個動作，App Store / Google Play 搜 Soliday。</itunes:summary>
+      <enclosure url="https://op3.dev/e/onelift.org/podcast/episodes/creatine_pod_ep6_v1.mp3" length="22106108" type="audio/mpeg"/>
+      <guid isPermaLink="false">creatine-ep6</guid>
+      <pubDate>Wed, 09 Sep 2026 10:00:00 -0700</pubDate>
+      <itunes:duration>00:28:57</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>EP5 抗性澱粉 RS3：煮完放冰箱，澱粉就變纖維</title>
       <description>糖系列外傳。你以為纖維都吃到腸子了？其實大部分在大腸前段就被細菌吃光，最容易出問題的遠端結腸長期挨餓。有一種東西撐得到那裡——抗性澱粉第三型（RS3）：把澱粉煮熟、放涼冷藏，直鏈澱粉回凝成消化酶切不動的結晶，一路發酵到大腸遠端、產丁酸，餵飽你腸子最餓的那一段。這集把 RS 四型、大腸地理學、直鏈vs支鏈、糊化→回凝→再加熱的機制、丁酸的角色，用工程師的比喻講清楚，再給你 Scott 真的天天在做的兩招懶人實踐：①高直鏈澱粉的墨西哥黑豆，壓力鍋煮一批冰起來每天吃；②綠豆湯加甘胺酸，壓力鍋一杯綠豆六杯水不用泡、冰隔天、裝碗加一匙甘胺酸。核心哲學：別把簡單的東西搞複雜，能天天做才是真的有用。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 Codex＋Grok 雙審放軟。一般衛教資訊，非醫療建議。　▍想開始練？我做的免費 App「Soliday」：一天一個動作，App Store / Google Play 搜 Soliday。</description>
