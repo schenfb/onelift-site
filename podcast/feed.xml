@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Wed, 16 Sep 2026 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 10:00:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學</title>
       <link>https://onelift.org/podcast/</link>
     </image>
+    <item>
+      <title>EP8 你吃的益生菌都變成大便了？發酵食物 vs 益生菌膠囊</title>
+      <description>腸道菌下集(實作篇)，接 EP7。你花錢買的益生菌膠囊，對健康人來說，大多幾天就被排掉了——像一批拿觀光簽證的過客。這集講清楚為什麼:你的原生菌群早就把腸道的生態位佔滿了(殖民化抵抗)，外來菌很難住下來，所以對健康人日常補充，腸道多樣性和結構往往沒有可測量的改變。那什麼才有用?這集比較「發酵食物 vs 益生菌膠囊」的關鍵差別(發酵食物帶的是一整個生態系＋代謝產物，不是單一菌株)，講 Stanford 的 Wastyk 2021 Cell 隨機試驗(高發酵食物組菌相多樣性上升、發炎指標下降)，並給你一個務實的優先級:纖維 &gt; 發酵食物 &gt; 益生菌膠囊——膠囊留給吃抗生素或特定臨床情況再用就好。也談到真正能重建菌相的 FMT 定位。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 Codex＋muse＋Grok 三審放軟(FDA 優格是有限證據非療效認證、發酵食物臨床效益多為小型初步研究、克數改估算)，並過語者一致性 QA。一般衛教資訊，非醫療建議。　▍想開始練?我做的免費 App「Soliday」:一天一個動作，App Store / Google Play 搜 Soliday。</description>
+      <itunes:summary>腸道菌下集(實作篇)，接 EP7。你花錢買的益生菌膠囊，對健康人來說，大多幾天就被排掉了——像一批拿觀光簽證的過客。這集講清楚為什麼:你的原生菌群早就把腸道的生態位佔滿了(殖民化抵抗)，外來菌很難住下來，所以對健康人日常補充，腸道多樣性和結構往往沒有可測量的改變。那什麼才有用?這集比較「發酵食物 vs 益生菌膠囊」的關鍵差別(發酵食物帶的是一整個生態系＋代謝產物，不是單一菌株)，講 Stanford 的 Wastyk 2021 Cell 隨機試驗(高發酵食物組菌相多樣性上升、發炎指標下降)，並給你一個務實的優先級:纖維 &gt; 發酵食物 &gt; 益生菌膠囊——膠囊留給吃抗生素或特定臨床情況再用就好。也談到真正能重建菌相的 FMT 定位。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 Codex＋muse＋Grok 三審放軟(FDA 優格是有限證據非療效認證、發酵食物臨床效益多為小型初步研究、克數改估算)，並過語者一致性 QA。一般衛教資訊，非醫療建議。　▍想開始練?我做的免費 App「Soliday」:一天一個動作，App Store / Google Play 搜 Soliday。</itunes:summary>
+      <enclosure url="https://op3.dev/e/onelift.org/podcast/episodes/gut_pod_ep8_v1.mp3" length="24507380" type="audio/mpeg"/>
+      <guid isPermaLink="false">gut-ep8</guid>
+      <pubDate>Tue, 22 Sep 2026 10:00:00 -0700</pubDate>
+      <itunes:duration>00:31:50</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>EP7 你的腸道是一間外包公司：你身上最大的代謝工程</title>
       <description>腸道菌上集(原理篇)。這集用工程師的比喻,把「腸道菌到底是什麼、幫你做什麼」一次講清楚。核心觀念:你的身體其實把大量代謝工作「外包」給腸道菌——人類基因組只有約 2 萬個蛋白質編碼基因,但你腸道菌加起來有約 330 萬個微生物基因,是你的 150 倍,所以它常被稱為你的「第二基因組」。你以為你在吃纖維,其實你是在餵這群菌,它們發酵後產出短鏈脂肪酸(尤其丁酸)回頭餵養你的腸道細胞、調節免疫——某種意義上,你吸收的是細菌的代謝產物。這集也講:為什麼菌相「多樣性」是健康指標、結腸裡的交叉餵養接力、腸腦軸,以及工業化低纖維飲食可能造成的跨世代菌種流失(動物實驗);最後釐清「纖維 vs 益生元」到底差在哪。這集只講原理,「所以我到底該吃什麼、益生菌膠囊有沒有用」留到下集 EP8。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文,科學經 Codex＋muse＋Grok 三審放軟、並過語者一致性 QA。一般衛教資訊,非醫療建議。　▍想開始練?我做的免費 App「Soliday」:一天一個動作,App Store / Google Play 搜 Soliday。</description>
