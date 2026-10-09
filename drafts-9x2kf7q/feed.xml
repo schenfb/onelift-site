@@ -6,7 +6,7 @@
     <title>抗老工程學（草稿試聽）</title>
     <link>https://onelift.org/drafts-9x2kf7q/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Thu, 08 Oct 2026 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 10:00:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</description>
     <itunes:subtitle>上架前的私人試聽</itunes:subtitle>
@@ -28,23 +28,13 @@
       <link>https://onelift.org/drafts-9x2kf7q/</link>
     </image>
     <item>
-      <title>【草稿·2.5聲線】EP10 膽固醇上·平反篇（舊 TTS 真 Scott）</title>
-      <description>膽固醇系列上集(三集之一·平反篇)。膽固醇是什麼、為什麼每顆細胞都在造它、肝臟怎麼調度、以及「LDL 太低很危險」的迷思逐條破解(失智/睪固酮/出血中風)。真兇 ApoB 與怎麼管留到中下集。這版用 2.5(現有真 Scott/Emma 聲線)。拿來跟 3.8 版 A/B,聽聲線/口音/破音哪版好。三審放軟過。</description>
-      <itunes:summary>膽固醇系列上集(三集之一·平反篇)。膽固醇是什麼、為什麼每顆細胞都在造它、肝臟怎麼調度、以及「LDL 太低很危險」的迷思逐條破解(失智/睪固酮/出血中風)。真兇 ApoB 與怎麼管留到中下集。這版用 2.5(現有真 Scott/Emma 聲線)。拿來跟 3.8 版 A/B,聽聲線/口音/破音哪版好。三審放軟過。</itunes:summary>
-      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/chol1_pod_ep10_25.mp3" length="19812068" type="audio/mpeg"/>
+      <title>【草稿】EP10 膽固醇（上）平反篇：你全身都在造它，低 LDL 真會出事？</title>
+      <description>膽固醇系列上集(三集之一·平反篇)。膽固醇是什麼、為什麼每顆細胞都在造它、肝臟怎麼調度、以及「LDL 太低很危險」的迷思逐條破解(失智/睪固酮/出血中風)。真兇 ApoB 與怎麼管留到中下集。科學經 Codex+muse+Grok 三審放軟。已過 ASR 對稿 gate。試聽,重點聽有沒有念錯/garble、以及節奏。</description>
+      <itunes:summary>膽固醇系列上集(三集之一·平反篇)。膽固醇是什麼、為什麼每顆細胞都在造它、肝臟怎麼調度、以及「LDL 太低很危險」的迷思逐條破解(失智/睪固酮/出血中風)。真兇 ApoB 與怎麼管留到中下集。科學經 Codex+muse+Grok 三審放軟。已過 ASR 對稿 gate。試聽,重點聽有沒有念錯/garble、以及節奏。</itunes:summary>
+      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/chol1_pod_ep10_d2.mp3" length="19810964" type="audio/mpeg"/>
       <guid isPermaLink="false">draft-chol1-ep10-25</guid>
-      <pubDate>Thu, 08 Oct 2026 10:00:00 -0700</pubDate>
+      <pubDate>Fri, 09 Oct 2026 10:00:00 -0700</pubDate>
       <itunes:duration>00:26:04</itunes:duration>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-    <item>
-      <title>【草稿·3.8聲線】EP10 膽固醇上·平反篇（新 TTS）</title>
-      <description>同一集、同一份稿、同三審,改用新的 gemini-3.8-flash-tts(餵純文字)。跟 2.5 版 A/B:聽聲線像不像原 Scott、台灣口音、以及哪版 garble 少。</description>
-      <itunes:summary>同一集、同一份稿、同三審,改用新的 gemini-3.8-flash-tts(餵純文字)。跟 2.5 版 A/B:聽聲線像不像原 Scott、台灣口音、以及哪版 garble 少。</itunes:summary>
-      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/chol1_pod38_ep10.mp3" length="12638828" type="audio/mpeg"/>
-      <guid isPermaLink="false">draft-chol1-ep10-38</guid>
-      <pubDate>Thu, 08 Oct 2026 09:30:00 -0700</pubDate>
-      <itunes:duration>00:25:21</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
     </item>
     <item>
