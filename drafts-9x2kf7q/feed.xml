@@ -6,7 +6,7 @@
     <title>抗老工程學（草稿試聽）</title>
     <link>https://onelift.org/drafts-9x2kf7q/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Fri, 09 Oct 2026 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 10 Oct 2026 11:00:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>私人草稿——上架前先在這裡試聽，確認 OK 再搬到正式節目。</description>
     <itunes:subtitle>上架前的私人試聽</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學（草稿試聽）</title>
       <link>https://onelift.org/drafts-9x2kf7q/</link>
     </image>
+    <item>
+      <title>【草稿】EP11 膽固醇（中）犯罪現場：ApoB 顆粒怎麼一步步毀掉血管</title>
+      <description>膽固醇系列中集(犯罪現場篇),接上集。上集幫膽固醇平反、講了低 LDL 其實安全;這集講真正的兇手:LDL/ApoB 這套物流系統到底是什麼、ApoB 顆粒怎麼滲進血管壁滯留、引爆動脈粥狀硬化(response-to-retention)、全身效應(不只心臟)、人類統計斷面、演化漏洞、其他動物會不會塞血管。怎麼管理(HDL/纖維/statin/N=1)留到下集。科學經 Codex+muse+Grok 三審放軟。已過語者 QA(含 pyin)+ASR 對稿 gate。試聽,重點聽犯罪現場那段機制清不清楚、有沒有數字太硬。</description>
+      <itunes:summary>膽固醇系列中集(犯罪現場篇),接上集。上集幫膽固醇平反、講了低 LDL 其實安全;這集講真正的兇手:LDL/ApoB 這套物流系統到底是什麼、ApoB 顆粒怎麼滲進血管壁滯留、引爆動脈粥狀硬化(response-to-retention)、全身效應(不只心臟)、人類統計斷面、演化漏洞、其他動物會不會塞血管。怎麼管理(HDL/纖維/statin/N=1)留到下集。科學經 Codex+muse+Grok 三審放軟。已過語者 QA(含 pyin)+ASR 對稿 gate。試聽,重點聽犯罪現場那段機制清不清楚、有沒有數字太硬。</itunes:summary>
+      <enclosure url="https://onelift.org/drafts-9x2kf7q/episodes/chol2_pod_ep11_d1.mp3" length="17118548" type="audio/mpeg"/>
+      <guid isPermaLink="false">draft-chol2-ep11-d1</guid>
+      <pubDate>Sat, 10 Oct 2026 11:00:00 -0700</pubDate>
+      <itunes:duration>00:22:38</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>【草稿】EP10 膽固醇（上）平反篇：你全身都在造它，低 LDL 真會出事？</title>
       <description>膽固醇系列上集(三集之一·平反篇)。膽固醇是什麼、為什麼每顆細胞都在造它、肝臟怎麼調度、以及「LDL 太低很危險」的迷思逐條破解(失智/睪固酮/出血中風)。真兇 ApoB 與怎麼管留到中下集。科學經 Codex+muse+Grok 三審放軟。已過 ASR 對稿 gate。試聽,重點聽有沒有念錯/garble、以及節奏。</description>
