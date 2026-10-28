@@ -6,7 +6,7 @@
     <title>抗老工程學</title>
     <link>https://onelift.org/podcast/</link>
     <language>zh-Hant</language>
-    <lastBuildDate>Fri, 16 Oct 2026 10:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 10:00:00 -0700</lastBuildDate>
     <copyright>© 2026 抗老工程學</copyright>
     <description>矽谷工程師 Scott 用第一性原理和工程師的類比，把血糖、膽固醇、脂肪酸、纖維、肌力訓練、皮膚抗老這些長壽科學，一集一個主題講到你徹底聽懂。不灌雞湯、不賣補品，只給你能自己判斷的核心原理。內容改編自粉專「矽谷工程師的抗衰老實驗室」的深度長文。</description>
     <itunes:subtitle>用工程師的邏輯，拆解長壽科學</itunes:subtitle>
@@ -27,6 +27,16 @@
       <title>抗老工程學</title>
       <link>https://onelift.org/podcast/</link>
     </image>
+    <item>
+      <title>EP12 膽固醇（下）完結篇：到底怎麼管理？HDL、纖維、飽和脂肪、statin 與我的 N=1</title>
+      <description>膽固醇系列三集之三·完結篇（怎麼辦）。上集進了犯罪現場、看 ApoB 顆粒怎麼毀血管；這集全部講怎麼管理。先談 HDL：數值不等於功能，藥廠花幾十億拉高 HDL 數字的藥幾乎全失敗，天然偏高是好訊號但不是越高越好。再談三個把 LDL 拉下來的攔截點：膳食纖維在腸道綁走膽汁酸、逼肝臟消耗膽固醇、多長 LDL 受體（黏性纖維證據硬、發酵型纖維養菌為主）；飽和脂肪會下調 LDL 受體、讓 LDL 上升——關鍵是『換成什麼』，換成橄欖油堅果那類不飽和脂肪才降、換成精製碳水化合物是白換，每個人敏感度也不同；statin 是逼肝臟多長 LDL 受體（跟 PCSK9 抑制劑殊途同歸），副作用（肌肉痠痛的 nocebo 效應、極罕見的橫紋肌溶解、CoQ10、血糖）可監測、大部分可逆，再加 ezetimibe 雙管齊下。也破除『statin 都是藥廠陰謀』（專利早過期、一顆幾塊錢）。最後是 Scott 的 N=1 血管管理報告（LDL-C 22、ApoB&lt;40、睪固酮同齡前 1%、CAC 0、帶 9p21 風險基因與已知斑塊）與一句話：你修不好一個沒量過的東西，先去驗一次 ApoB。改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 codex＋muse 審與文獻核實，並過語者與 ASR 對稿 QA。一般衛教資訊，非醫療建議；用藥請遵醫囑。</description>
+      <itunes:summary>膽固醇系列三集之三·完結篇（怎麼辦）。上集進了犯罪現場、看 ApoB 顆粒怎麼毀血管；這集全部講怎麼管理。先談 HDL：數值不等於功能，藥廠花幾十億拉高 HDL 數字的藥幾乎全失敗，天然偏高是好訊號但不是越高越好。再談三個把 LDL 拉下來的攔截點：膳食纖維在腸道綁走膽汁酸、逼肝臟消耗膽固醇、多長 LDL 受體（黏性纖維證據硬、發酵型纖維養菌為主）；飽和脂肪會下調 LDL 受體、讓 LDL 上升——關鍵是『換成什麼』，換成橄欖油堅果那類不飽和脂肪才降、換成精製碳水化合物是白換，每個人敏感度也不同；statin 是逼肝臟多長 LDL 受體（跟 PCSK9 抑制劑殊途同歸），副作用（肌肉痠痛的 nocebo 效應、極罕見的橫紋肌溶解、CoQ10、血糖）可監測、大部分可逆，再加 ezetimibe 雙管齊下。也破除『statin 都是藥廠陰謀』（專利早過期、一顆幾塊錢）。最後是 Scott 的 N=1 血管管理報告（LDL-C 22、ApoB&lt;40、睪固酮同齡前 1%、CAC 0、帶 9p21 風險基因與已知斑塊）與一句話：你修不好一個沒量過的東西，先去驗一次 ApoB。改編自粉專「矽谷工程師的抗衰老實驗室」長文，科學經 codex＋muse 審與文獻核實，並過語者與 ASR 對稿 QA。一般衛教資訊，非醫療建議；用藥請遵醫囑。</itunes:summary>
+      <enclosure url="https://op3.dev/e/onelift.org/podcast/episodes/chol3_pod_ep12_v1.mp3" length="13324124" type="audio/mpeg"/>
+      <guid isPermaLink="false">chol3-ep12</guid>
+      <pubDate>Wed, 28 Oct 2026 10:00:00 -0700</pubDate>
+      <itunes:duration>00:17:10</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
     <item>
       <title>EP11 膽固醇（中）犯罪現場：ApoB 顆粒怎麼一步步毀掉血管</title>
       <description>膽固醇系列三集之二·中集(犯罪現場篇),接上集。上集幫膽固醇這個分子平反、也講了把 LDL 降到很低其實是安全的;這集直接進犯罪現場,一步步拆給你看動脈粥狀硬化到底怎麼發生。先搞懂血液的『物流系統』:膽固醇在水裡溶解度極低,要靠脂蛋白這種『貨櫃』運輸;每一顆會闖禍的脂蛋白表面都焊著一個 ApoB-100,像卡車的車牌——所以量 ApoB,等於在數你血裡有幾台卡車。真正滲進血管壁、被滯留、引爆斑塊的顆粒,數量上絕大多數就是 LDL。接著是血管壁裡的五步死亡機制:滲透→滯留(response-to-retention,ApoB 蛋白親自黏住血管壁)→氧化→免疫細胞吞噬變泡沫細胞→斑塊與血栓。然後講全身效應(動脈硬化是血管病,不只心臟——中風、腎病、周邊動脈、血管性失智,甚至『不舉』其實是血管在求救)、為什麼演化沒把這個 bug 修掉(晚發疾病的天擇壓力弱)、以及為什麼多數野生動物比較少見。核心公式:帶 ApoB 的顆粒濃度 × 暴露時間。怎麼管理(HDL、纖維、statin、Scott 的 N=1)留到下集(完結篇)。內容改編自粉專「矽谷工程師的抗衰老實驗室」長文,科學經 Codex＋muse＋Grok 三審、再加一輪 ApoB/LDL 框架專審與文獻核實(Ez-PAVE 等),並過語者與 ASR 對稿 QA。一般衛教資訊,非醫療建議;用藥請遵醫囑。</description>
